@@ -12,6 +12,10 @@
     "proactive-agent": {
       "version": "3.1.0",
       "installedAt": 1771319681226
+    },
+    "send-email": {
+      "version": "1.0.1",
+      "installedAt": 1771321338131
     }
   }
 }
