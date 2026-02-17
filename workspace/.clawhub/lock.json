@@ -36,6 +36,18 @@
     "notion": {
       "version": "1.0.0",
       "installedAt": 1771325062188
+    },
+    "gog": {
+      "version": "1.0.0",
+      "installedAt": 1771325103300
+    },
+    "sag": {
+      "version": "1.0.0",
+      "installedAt": 1771325166570
+    },
+    "summarize": {
+      "version": "1.0.0",
+      "installedAt": 1771325228364
     }
   }
 }
