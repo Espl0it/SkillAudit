@@ -1,7 +1,7 @@
 {
   "agent:main:main": {
     "sessionId": "29b8ced6-834e-4a0a-86fe-3112ed468627",
-    "updatedAt": 1771321780187,
+    "updatedAt": 1771321850737,
     "systemSent": true,
     "abortedLastRun": false,
     "chatType": "direct",
@@ -121,16 +121,16 @@
     "authProfileOverride": "minimax-cn:default",
     "authProfileOverrideSource": "auto",
     "authProfileOverrideCompactionCount": 0,
-    "inputTokens": 829960,
-    "outputTokens": 577,
-    "totalTokens": 134651,
+    "inputTokens": 844921,
+    "outputTokens": 710,
+    "totalTokens": 137235,
     "totalTokensFresh": true,
     "modelProvider": "minimax-cn",
     "model": "MiniMax-M2.5",
     "contextTokens": 200000,
     "systemPromptReport": {
       "source": "run",
-      "generatedAt": 1771321269120,
+      "generatedAt": 1771321780327,
       "sessionId": "29b8ced6-834e-4a0a-86fe-3112ed468627",
       "sessionKey": "agent:main:main",
       "provider": "minimax-cn",
@@ -448,5 +448,534 @@
     },
     "lastTo": "user:ou_622f688f24a6bca0390ca0c8b913eb9e",
     "lastAccountId": "default"
+  },
+  "agent:main:feishu:group:oc_830af2400f89abc5a121acbf8208d0c2": {
+    "sessionId": "d44f6600-9877-4927-b61d-a757804157a3",
+    "updatedAt": 1771322074155,
+    "systemSent": true,
+    "abortedLastRun": false,
+    "displayName": "feishu:g-oc_830af2400f89abc5a121acbf8208d0c2",
+    "chatType": "group",
+    "channel": "feishu",
+    "groupId": "ou_622f688f24a6bca0390ca0c8b913eb9e",
+    "subject": "oc_830af2400f89abc5a121acbf8208d0c2",
+    "deliveryContext": {
+      "channel": "feishu",
+      "to": "chat:oc_830af2400f89abc5a121acbf8208d0c2",
+      "accountId": "default"
+    },
+    "lastChannel": "feishu",
+    "lastTo": "chat:oc_830af2400f89abc5a121acbf8208d0c2",
+    "lastAccountId": "default",
+    "origin": {
+      "label": "oc_830af2400f89abc5a121acbf8208d0c2",
+      "provider": "feishu",
+      "surface": "feishu",
+      "chatType": "group",
+      "from": "feishu:ou_622f688f24a6bca0390ca0c8b913eb9e",
+      "to": "chat:oc_830af2400f89abc5a121acbf8208d0c2",
+      "accountId": "default"
+    },
+    "sessionFile": "/home/ecs-user/.openclaw/agents/main/sessions/d44f6600-9877-4927-b61d-a757804157a3.jsonl",
+    "compactionCount": 0,
+    "skillsSnapshot": {
+      "prompt": "\n\nThe following skills provide specialized instructions for specific tasks.\nUse the read tool to load a skill's file when the task matches its description.\nWhen a skill file references a relative path, resolve it against the skill directory (parent of SKILL.md / dirname of the path) and use that absolute path in tool commands.\n\n<available_skills>\n  <skill>\n    <name>feishu-doc</name>\n    <description>Feishu document read/write operations. Activate when user mentions Feishu docs, cloud docs, or docx links.\n</description>\n    <location>/home/ecs-user/.nvm/versions/node/v24.13.1/lib/node_modules/openclaw/extensions/feishu/skills/feishu-doc/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>feishu-drive</name>\n    <description>Feishu cloud storage file management. Activate when user mentions cloud space, folders, drive.\n</description>\n    <location>/home/ecs-user/.nvm/versions/node/v24.13.1/lib/node_modules/openclaw/extensions/feishu/skills/feishu-drive/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>feishu-perm</name>\n    <description>Feishu permission management for documents and files. Activate when user mentions sharing, permissions, collaborators.\n</description>\n    <location>/home/ecs-user/.nvm/versions/node/v24.13.1/lib/node_modules/openclaw/extensions/feishu/skills/feishu-perm/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>feishu-wiki</name>\n    <description>Feishu knowledge base navigation. Activate when user mentions knowledge base, wiki, or wiki links.\n</description>\n    <location>/home/ecs-user/.nvm/versions/node/v24.13.1/lib/node_modules/openclaw/extensions/feishu/skills/feishu-wiki/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>healthcheck</name>\n    <description>Host security hardening and risk-tolerance configuration for OpenClaw deployments. Use when a user asks for security audits, firewall/SSH/update hardening, risk posture, exposure review, OpenClaw cron scheduling for periodic checks, or version status checks on a machine running OpenClaw (laptop, workstation, Pi, VPS).</description>\n    <location>/home/ecs-user/.nvm/versions/node/v24.13.1/lib/node_modules/openclaw/skills/healthcheck/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>himalaya</name>\n    <description>CLI to manage emails via IMAP/SMTP. Use `himalaya` to list, read, write, reply, forward, search, and organize emails from the terminal. Supports multiple accounts and message composition with MML (MIME Meta Language).</description>\n    <location>/home/ecs-user/.nvm/versions/node/v24.13.1/lib/node_modules/openclaw/skills/himalaya/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>skill-creator</name>\n    <description>Create or update AgentSkills. Use when designing, structuring, or packaging skills with scripts, references, and assets.</description>\n    <location>/home/ecs-user/.nvm/versions/node/v24.13.1/lib/node_modules/openclaw/skills/skill-creator/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>tmux</name>\n    <description>Remote-control tmux sessions for interactive CLIs by sending keystrokes and scraping pane output.</description>\n    <location>/home/ecs-user/.nvm/versions/node/v24.13.1/lib/node_modules/openclaw/skills/tmux/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>weather</name>\n    <description>Get current weather and forecasts (no API key required).</description>\n    <location>/home/ecs-user/.nvm/versions/node/v24.13.1/lib/node_modules/openclaw/skills/weather/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>find-skills</name>\n    <description>Helps users discover and install agent skills when they ask questions like &quot;how do I do X&quot;, &quot;find a skill for X&quot;, &quot;is there a skill that can...&quot;, or express interest in extending capabilities. This skill should be used when the user is looking for functionality that might exist as an installable skill.</description>\n    <location>/home/ecs-user/.openclaw/workspace/skills/find-skills/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>proactive-agent</name>\n    <description>Transform AI agents from task-followers into proactive partners that anticipate needs and continuously improve. Now with WAL Protocol, Working Buffer, Autonomous Crons, and battle-tested patterns. Part of the Hal Stack 🦞</description>\n    <location>/home/ecs-user/.openclaw/workspace/skills/proactive-agent/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>send-email</name>\n    <description>Send emails via SMTP. Configure in ~/.openclaw/openclaw.json under skills.entries.send-email.env.</description>\n    <location>/home/ecs-user/.openclaw/workspace/skills/send-email/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>tavily</name>\n    <description>AI-optimized web search via Tavily API. Returns concise, relevant results for AI agents.</description>\n    <location>/home/ecs-user/.openclaw/workspace/skills/tavily-search/SKILL.md</location>\n  </skill>\n</available_skills>",
+      "skills": [
+        {
+          "name": "feishu-doc"
+        },
+        {
+          "name": "feishu-drive"
+        },
+        {
+          "name": "feishu-perm"
+        },
+        {
+          "name": "feishu-wiki"
+        },
+        {
+          "name": "healthcheck"
+        },
+        {
+          "name": "himalaya"
+        },
+        {
+          "name": "skill-creator"
+        },
+        {
+          "name": "tmux"
+        },
+        {
+          "name": "weather"
+        },
+        {
+          "name": "find-skills"
+        },
+        {
+          "name": "proactive-agent"
+        },
+        {
+          "name": "send-email"
+        },
+        {
+          "name": "tavily"
+        }
+      ],
+      "resolvedSkills": [
+        {
+          "name": "feishu-doc",
+          "description": "Feishu document read/write operations. Activate when user mentions Feishu docs, cloud docs, or docx links.\n",
+          "filePath": "/home/ecs-user/.nvm/versions/node/v24.13.1/lib/node_modules/openclaw/extensions/feishu/skills/feishu-doc/SKILL.md",
+          "baseDir": "/home/ecs-user/.nvm/versions/node/v24.13.1/lib/node_modules/openclaw/extensions/feishu/skills/feishu-doc",
+          "source": "openclaw-extra",
+          "disableModelInvocation": false
+        },
+        {
+          "name": "feishu-drive",
+          "description": "Feishu cloud storage file management. Activate when user mentions cloud space, folders, drive.\n",
+          "filePath": "/home/ecs-user/.nvm/versions/node/v24.13.1/lib/node_modules/openclaw/extensions/feishu/skills/feishu-drive/SKILL.md",
+          "baseDir": "/home/ecs-user/.nvm/versions/node/v24.13.1/lib/node_modules/openclaw/extensions/feishu/skills/feishu-drive",
+          "source": "openclaw-extra",
+          "disableModelInvocation": false
+        },
+        {
+          "name": "feishu-perm",
+          "description": "Feishu permission management for documents and files. Activate when user mentions sharing, permissions, collaborators.\n",
+          "filePath": "/home/ecs-user/.nvm/versions/node/v24.13.1/lib/node_modules/openclaw/extensions/feishu/skills/feishu-perm/SKILL.md",
+          "baseDir": "/home/ecs-user/.nvm/versions/node/v24.13.1/lib/node_modules/openclaw/extensions/feishu/skills/feishu-perm",
+          "source": "openclaw-extra",
+          "disableModelInvocation": false
+        },
+        {
+          "name": "feishu-wiki",
+          "description": "Feishu knowledge base navigation. Activate when user mentions knowledge base, wiki, or wiki links.\n",
+          "filePath": "/home/ecs-user/.nvm/versions/node/v24.13.1/lib/node_modules/openclaw/extensions/feishu/skills/feishu-wiki/SKILL.md",
+          "baseDir": "/home/ecs-user/.nvm/versions/node/v24.13.1/lib/node_modules/openclaw/extensions/feishu/skills/feishu-wiki",
+          "source": "openclaw-extra",
+          "disableModelInvocation": false
+        },
+        {
+          "name": "healthcheck",
+          "description": "Host security hardening and risk-tolerance configuration for OpenClaw deployments. Use when a user asks for security audits, firewall/SSH/update hardening, risk posture, exposure review, OpenClaw cron scheduling for periodic checks, or version status checks on a machine running OpenClaw (laptop, workstation, Pi, VPS).",
+          "filePath": "/home/ecs-user/.nvm/versions/node/v24.13.1/lib/node_modules/openclaw/skills/healthcheck/SKILL.md",
+          "baseDir": "/home/ecs-user/.nvm/versions/node/v24.13.1/lib/node_modules/openclaw/skills/healthcheck",
+          "source": "openclaw-bundled",
+          "disableModelInvocation": false
+        },
+        {
+          "name": "himalaya",
+          "description": "CLI to manage emails via IMAP/SMTP. Use `himalaya` to list, read, write, reply, forward, search, and organize emails from the terminal. Supports multiple accounts and message composition with MML (MIME Meta Language).",
+          "filePath": "/home/ecs-user/.nvm/versions/node/v24.13.1/lib/node_modules/openclaw/skills/himalaya/SKILL.md",
+          "baseDir": "/home/ecs-user/.nvm/versions/node/v24.13.1/lib/node_modules/openclaw/skills/himalaya",
+          "source": "openclaw-bundled",
+          "disableModelInvocation": false
+        },
+        {
+          "name": "skill-creator",
+          "description": "Create or update AgentSkills. Use when designing, structuring, or packaging skills with scripts, references, and assets.",
+          "filePath": "/home/ecs-user/.nvm/versions/node/v24.13.1/lib/node_modules/openclaw/skills/skill-creator/SKILL.md",
+          "baseDir": "/home/ecs-user/.nvm/versions/node/v24.13.1/lib/node_modules/openclaw/skills/skill-creator",
+          "source": "openclaw-bundled",
+          "disableModelInvocation": false
+        },
+        {
+          "name": "tmux",
+          "description": "Remote-control tmux sessions for interactive CLIs by sending keystrokes and scraping pane output.",
+          "filePath": "/home/ecs-user/.nvm/versions/node/v24.13.1/lib/node_modules/openclaw/skills/tmux/SKILL.md",
+          "baseDir": "/home/ecs-user/.nvm/versions/node/v24.13.1/lib/node_modules/openclaw/skills/tmux",
+          "source": "openclaw-bundled",
+          "disableModelInvocation": false
+        },
+        {
+          "name": "weather",
+          "description": "Get current weather and forecasts (no API key required).",
+          "filePath": "/home/ecs-user/.nvm/versions/node/v24.13.1/lib/node_modules/openclaw/skills/weather/SKILL.md",
+          "baseDir": "/home/ecs-user/.nvm/versions/node/v24.13.1/lib/node_modules/openclaw/skills/weather",
+          "source": "openclaw-bundled",
+          "disableModelInvocation": false
+        },
+        {
+          "name": "find-skills",
+          "description": "Helps users discover and install agent skills when they ask questions like \"how do I do X\", \"find a skill for X\", \"is there a skill that can...\", or express interest in extending capabilities. This skill should be used when the user is looking for functionality that might exist as an installable skill.",
+          "filePath": "/home/ecs-user/.openclaw/workspace/skills/find-skills/SKILL.md",
+          "baseDir": "/home/ecs-user/.openclaw/workspace/skills/find-skills",
+          "source": "openclaw-workspace",
+          "disableModelInvocation": false
+        },
+        {
+          "name": "proactive-agent",
+          "description": "Transform AI agents from task-followers into proactive partners that anticipate needs and continuously improve. Now with WAL Protocol, Working Buffer, Autonomous Crons, and battle-tested patterns. Part of the Hal Stack 🦞",
+          "filePath": "/home/ecs-user/.openclaw/workspace/skills/proactive-agent/SKILL.md",
+          "baseDir": "/home/ecs-user/.openclaw/workspace/skills/proactive-agent",
+          "source": "openclaw-workspace",
+          "disableModelInvocation": false
+        },
+        {
+          "name": "send-email",
+          "description": "Send emails via SMTP. Configure in ~/.openclaw/openclaw.json under skills.entries.send-email.env.",
+          "filePath": "/home/ecs-user/.openclaw/workspace/skills/send-email/SKILL.md",
+          "baseDir": "/home/ecs-user/.openclaw/workspace/skills/send-email",
+          "source": "openclaw-workspace",
+          "disableModelInvocation": false
+        },
+        {
+          "name": "tavily",
+          "description": "AI-optimized web search via Tavily API. Returns concise, relevant results for AI agents.",
+          "filePath": "/home/ecs-user/.openclaw/workspace/skills/tavily-search/SKILL.md",
+          "baseDir": "/home/ecs-user/.openclaw/workspace/skills/tavily-search",
+          "source": "openclaw-workspace",
+          "disableModelInvocation": false
+        }
+      ],
+      "version": 0
+    },
+    "authProfileOverride": "minimax-cn:default",
+    "authProfileOverrideSource": "auto",
+    "authProfileOverrideCompactionCount": 0,
+    "inputTokens": 36,
+    "outputTokens": 65,
+    "totalTokens": 16602,
+    "totalTokensFresh": true,
+    "modelProvider": "minimax-cn",
+    "model": "MiniMax-M2.5",
+    "contextTokens": 200000,
+    "systemPromptReport": {
+      "source": "run",
+      "generatedAt": 1771322053725,
+      "sessionId": "d44f6600-9877-4927-b61d-a757804157a3",
+      "sessionKey": "agent:main:feishu:group:oc_830af2400f89abc5a121acbf8208d0c2",
+      "provider": "minimax-cn",
+      "model": "MiniMax-M2.5",
+      "workspaceDir": "/home/ecs-user/.openclaw/workspace",
+      "bootstrapMaxChars": 20000,
+      "sandbox": {
+        "mode": "off",
+        "sandboxed": false
+      },
+      "systemPrompt": {
+        "chars": 28702,
+        "projectContextChars": 11494,
+        "nonProjectContextChars": 17208
+      },
+      "injectedWorkspaceFiles": [
+        {
+          "name": "AGENTS.md",
+          "path": "/home/ecs-user/.openclaw/workspace/AGENTS.md",
+          "missing": false,
+          "rawChars": 7804,
+          "injectedChars": 7804,
+          "truncated": false
+        },
+        {
+          "name": "SOUL.md",
+          "path": "/home/ecs-user/.openclaw/workspace/SOUL.md",
+          "missing": false,
+          "rawChars": 1664,
+          "injectedChars": 1664,
+          "truncated": false
+        },
+        {
+          "name": "TOOLS.md",
+          "path": "/home/ecs-user/.openclaw/workspace/TOOLS.md",
+          "missing": false,
+          "rawChars": 850,
+          "injectedChars": 850,
+          "truncated": false
+        },
+        {
+          "name": "IDENTITY.md",
+          "path": "/home/ecs-user/.openclaw/workspace/IDENTITY.md",
+          "missing": false,
+          "rawChars": 190,
+          "injectedChars": 190,
+          "truncated": false
+        },
+        {
+          "name": "USER.md",
+          "path": "/home/ecs-user/.openclaw/workspace/USER.md",
+          "missing": false,
+          "rawChars": 180,
+          "injectedChars": 180,
+          "truncated": false
+        },
+        {
+          "name": "HEARTBEAT.md",
+          "path": "/home/ecs-user/.openclaw/workspace/HEARTBEAT.md",
+          "missing": false,
+          "rawChars": 167,
+          "injectedChars": 167,
+          "truncated": false
+        },
+        {
+          "name": "BOOTSTRAP.md",
+          "path": "/home/ecs-user/.openclaw/workspace/BOOTSTRAP.md",
+          "missing": true,
+          "rawChars": 0,
+          "injectedChars": 70,
+          "truncated": false
+        }
+      ],
+      "skills": {
+        "promptChars": 4901,
+        "entries": [
+          {
+            "name": "feishu-doc",
+            "blockChars": 324
+          },
+          {
+            "name": "feishu-drive",
+            "blockChars": 316
+          },
+          {
+            "name": "feishu-perm",
+            "blockChars": 338
+          },
+          {
+            "name": "feishu-wiki",
+            "blockChars": 318
+          },
+          {
+            "name": "healthcheck",
+            "blockChars": 520
+          },
+          {
+            "name": "himalaya",
+            "blockChars": 412
+          },
+          {
+            "name": "skill-creator",
+            "blockChars": 325
+          },
+          {
+            "name": "tmux",
+            "blockChars": 284
+          },
+          {
+            "name": "weather",
+            "blockChars": 249
+          },
+          {
+            "name": "find-skills",
+            "blockChars": 500
+          },
+          {
+            "name": "proactive-agent",
+            "blockChars": 396
+          },
+          {
+            "name": "send-email",
+            "blockChars": 262
+          },
+          {
+            "name": "tavily",
+            "blockChars": 252
+          }
+        ]
+      },
+      "tools": {
+        "listChars": 3035,
+        "schemaChars": 22172,
+        "entries": [
+          {
+            "name": "read",
+            "summaryChars": 298,
+            "schemaChars": 392,
+            "propertiesCount": 4
+          },
+          {
+            "name": "edit",
+            "summaryChars": 129,
+            "schemaChars": 591,
+            "propertiesCount": 6
+          },
+          {
+            "name": "write",
+            "summaryChars": 127,
+            "schemaChars": 313,
+            "propertiesCount": 3
+          },
+          {
+            "name": "exec",
+            "summaryChars": 181,
+            "schemaChars": 1037,
+            "propertiesCount": 12
+          },
+          {
+            "name": "process",
+            "summaryChars": 85,
+            "schemaChars": 949,
+            "propertiesCount": 12
+          },
+          {
+            "name": "browser",
+            "summaryChars": 1251,
+            "schemaChars": 1869,
+            "propertiesCount": 28
+          },
+          {
+            "name": "canvas",
+            "summaryChars": 106,
+            "schemaChars": 661,
+            "propertiesCount": 18
+          },
+          {
+            "name": "nodes",
+            "summaryChars": 101,
+            "schemaChars": 1479,
+            "propertiesCount": 33
+          },
+          {
+            "name": "cron",
+            "summaryChars": 2600,
+            "schemaChars": 581,
+            "propertiesCount": 13
+          },
+          {
+            "name": "message",
+            "summaryChars": 89,
+            "schemaChars": 7011,
+            "propertiesCount": 85
+          },
+          {
+            "name": "tts",
+            "summaryChars": 129,
+            "schemaChars": 223,
+            "propertiesCount": 2
+          },
+          {
+            "name": "gateway",
+            "summaryChars": 354,
+            "schemaChars": 465,
+            "propertiesCount": 11
+          },
+          {
+            "name": "agents_list",
+            "summaryChars": 72,
+            "schemaChars": 33,
+            "propertiesCount": 0
+          },
+          {
+            "name": "sessions_list",
+            "summaryChars": 54,
+            "schemaChars": 176,
+            "propertiesCount": 4
+          },
+          {
+            "name": "sessions_history",
+            "summaryChars": 36,
+            "schemaChars": 149,
+            "propertiesCount": 3
+          },
+          {
+            "name": "sessions_send",
+            "summaryChars": 84,
+            "schemaChars": 203,
+            "propertiesCount": 5
+          },
+          {
+            "name": "sessions_spawn",
+            "summaryChars": 107,
+            "schemaChars": 312,
+            "propertiesCount": 8
+          },
+          {
+            "name": "subagents",
+            "summaryChars": 105,
+            "schemaChars": 179,
+            "propertiesCount": 4
+          },
+          {
+            "name": "session_status",
+            "summaryChars": 207,
+            "schemaChars": 89,
+            "propertiesCount": 2
+          },
+          {
+            "name": "web_search",
+            "summaryChars": 175,
+            "schemaChars": 728,
+            "propertiesCount": 6
+          },
+          {
+            "name": "web_fetch",
+            "summaryChars": 129,
+            "schemaChars": 360,
+            "propertiesCount": 3
+          },
+          {
+            "name": "feishu_doc",
+            "summaryChars": 116,
+            "schemaChars": 584,
+            "propertiesCount": 6
+          },
+          {
+            "name": "feishu_app_scopes",
+            "summaryChars": 102,
+            "schemaChars": 33,
+            "propertiesCount": 0
+          },
+          {
+            "name": "feishu_wiki",
+            "summaryChars": 83,
+            "schemaChars": 880,
+            "propertiesCount": 10
+          },
+          {
+            "name": "feishu_drive",
+            "summaryChars": 81,
+            "schemaChars": 458,
+            "propertiesCount": 5
+          },
+          {
+            "name": "feishu_bitable_get_meta",
+            "summaryChars": 114,
+            "schemaChars": 170,
+            "propertiesCount": 1
+          },
+          {
+            "name": "feishu_bitable_list_fields",
+            "summaryChars": 76,
+            "schemaChars": 255,
+            "propertiesCount": 2
+          },
+          {
+            "name": "feishu_bitable_list_records",
+            "summaryChars": 64,
+            "schemaChars": 436,
+            "propertiesCount": 4
+          },
+          {
+            "name": "feishu_bitable_get_record",
+            "summaryChars": 46,
+            "schemaChars": 335,
+            "propertiesCount": 3
+          },
+          {
+            "name": "feishu_bitable_create_record",
+            "summaryChars": 44,
+            "schemaChars": 515,
+            "propertiesCount": 3
+          },
+          {
+            "name": "feishu_bitable_update_record",
+            "summaryChars": 50,
+            "schemaChars": 439,
+            "propertiesCount": 4
+          },
+          {
+            "name": "memory_search",
+            "summaryChars": 235,
+            "schemaChars": 139,
+            "propertiesCount": 3
+          },
+          {
+            "name": "memory_get",
+            "summaryChars": 151,
+            "schemaChars": 128,
+            "propertiesCount": 3
+          }
+        ]
+      }
+    }
   }
 }
