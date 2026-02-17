@@ -2,7 +2,6 @@
 credentials/
 *.json.bak*
 logs/
-openclaw.json
 *.log
 
 # OS files
