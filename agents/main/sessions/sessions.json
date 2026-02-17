@@ -1,7 +1,7 @@
 {
   "agent:main:main": {
     "sessionId": "29b8ced6-834e-4a0a-86fe-3112ed468627",
-    "updatedAt": 1771318063468,
+    "updatedAt": 1771318334557,
     "systemSent": true,
     "abortedLastRun": false,
     "chatType": "direct",
@@ -121,16 +121,16 @@
     "authProfileOverride": "minimax-cn:default",
     "authProfileOverrideSource": "auto",
     "authProfileOverrideCompactionCount": 0,
-    "inputTokens": 436059,
-    "outputTokens": 744,
-    "totalTokens": 65377,
+    "inputTokens": 102560,
+    "outputTokens": 510,
+    "totalTokens": 67580,
     "totalTokensFresh": true,
     "modelProvider": "minimax-cn",
     "model": "MiniMax-M2.5",
     "contextTokens": 200000,
     "systemPromptReport": {
       "source": "run",
-      "generatedAt": 1771317931142,
+      "generatedAt": 1771318297184,
       "sessionId": "29b8ced6-834e-4a0a-86fe-3112ed468627",
       "sessionKey": "agent:main:main",
       "provider": "minimax-cn",
@@ -142,8 +142,8 @@
         "sandboxed": false
       },
       "systemPrompt": {
-        "chars": 28154,
-        "projectContextChars": 13610,
+        "chars": 27417,
+        "projectContextChars": 12873,
         "nonProjectContextChars": 14544
       },
       "injectedWorkspaceFiles": [
@@ -175,16 +175,16 @@
           "name": "IDENTITY.md",
           "path": "/home/ecs-user/.openclaw/workspace/IDENTITY.md",
           "missing": false,
-          "rawChars": 633,
-          "injectedChars": 633,
+          "rawChars": 190,
+          "injectedChars": 190,
           "truncated": false
         },
         {
           "name": "USER.md",
           "path": "/home/ecs-user/.openclaw/workspace/USER.md",
           "missing": false,
-          "rawChars": 474,
-          "injectedChars": 474,
+          "rawChars": 180,
+          "injectedChars": 180,
           "truncated": false
         },
         {
