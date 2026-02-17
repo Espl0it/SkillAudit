@@ -1,7 +1,7 @@
 {
   "agent:main:main": {
     "sessionId": "29b8ced6-834e-4a0a-86fe-3112ed468627",
-    "updatedAt": 1771329587951,
+    "updatedAt": 1771330106849,
     "systemSent": true,
     "abortedLastRun": false,
     "chatType": "direct",
@@ -121,14 +121,14 @@
     "authProfileOverride": "minimax-cn:default",
     "authProfileOverrideSource": "auto",
     "authProfileOverrideCompactionCount": 1,
-    "totalTokens": 180674,
+    "totalTokens": 50843,
     "totalTokensFresh": true,
     "modelProvider": "minimax-cn",
     "model": "MiniMax-M2.5",
     "contextTokens": 200000,
     "systemPromptReport": {
       "source": "run",
-      "generatedAt": 1771329050353,
+      "generatedAt": 1771329587983,
       "sessionId": "29b8ced6-834e-4a0a-86fe-3112ed468627",
       "sessionKey": "agent:main:main",
       "provider": "minimax-cn",
@@ -447,7 +447,9 @@
     "lastTo": "user:ou_622f688f24a6bca0390ca0c8b913eb9e",
     "lastAccountId": "default",
     "memoryFlushAt": 1771329587951,
-    "memoryFlushCompactionCount": 2
+    "memoryFlushCompactionCount": 2,
+    "inputTokens": 738645,
+    "outputTokens": 1957
   },
   "agent:main:feishu:group:oc_830af2400f89abc5a121acbf8208d0c2": {
     "sessionId": "d44f6600-9877-4927-b61d-a757804157a3",
