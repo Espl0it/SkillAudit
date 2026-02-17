@@ -3,6 +3,12 @@
 
 cd ~/.openclaw || exit 1
 
+# Ensure SSH agent is running
+if ! ssh-add -l >/dev/null 2>&1; then
+    eval "$(ssh-agent -s)" >/dev/null
+    ssh-add ~/.ssh/id_rsa 2>/dev/null
+fi
+
 while true; do
     # Check if there are any changes
     if git diff --quiet && git diff --cached --quiet; then
