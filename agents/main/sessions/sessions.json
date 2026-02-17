@@ -1,7 +1,7 @@
 {
   "agent:main:main": {
     "sessionId": "29b8ced6-834e-4a0a-86fe-3112ed468627",
-    "updatedAt": 1771323635477,
+    "updatedAt": 1771323965107,
     "systemSent": true,
     "abortedLastRun": false,
     "chatType": "direct",
@@ -121,16 +121,16 @@
     "authProfileOverride": "minimax-cn:default",
     "authProfileOverrideSource": "auto",
     "authProfileOverrideCompactionCount": 0,
-    "inputTokens": 122956,
-    "outputTokens": 301,
-    "totalTokens": 138605,
+    "inputTokens": 36,
+    "outputTokens": 45,
+    "totalTokens": 159546,
     "totalTokensFresh": true,
     "modelProvider": "minimax-cn",
     "model": "MiniMax-M2.5",
     "contextTokens": 200000,
     "systemPromptReport": {
       "source": "run",
-      "generatedAt": 1771323000926,
+      "generatedAt": 1771323351338,
       "sessionId": "29b8ced6-834e-4a0a-86fe-3112ed468627",
       "sessionKey": "agent:main:main",
       "provider": "minimax-cn",
@@ -451,7 +451,7 @@
   },
   "agent:main:feishu:group:oc_830af2400f89abc5a121acbf8208d0c2": {
     "sessionId": "d44f6600-9877-4927-b61d-a757804157a3",
-    "updatedAt": 1771322074155,
+    "updatedAt": 1771323955435,
     "systemSent": true,
     "abortedLastRun": false,
     "displayName": "feishu:g-oc_830af2400f89abc5a121acbf8208d0c2",
@@ -633,15 +633,15 @@
     "authProfileOverrideSource": "auto",
     "authProfileOverrideCompactionCount": 0,
     "inputTokens": 36,
-    "outputTokens": 65,
-    "totalTokens": 16602,
+    "outputTokens": 67,
+    "totalTokens": 17498,
     "totalTokensFresh": true,
     "modelProvider": "minimax-cn",
     "model": "MiniMax-M2.5",
     "contextTokens": 200000,
     "systemPromptReport": {
       "source": "run",
-      "generatedAt": 1771322053725,
+      "generatedAt": 1771323951809,
       "sessionId": "d44f6600-9877-4927-b61d-a757804157a3",
       "sessionKey": "agent:main:feishu:group:oc_830af2400f89abc5a121acbf8208d0c2",
       "provider": "minimax-cn",
@@ -653,9 +653,9 @@
         "sandboxed": false
       },
       "systemPrompt": {
-        "chars": 28702,
+        "chars": 28251,
         "projectContextChars": 11494,
-        "nonProjectContextChars": 17208
+        "nonProjectContextChars": 16757
       },
       "injectedWorkspaceFiles": [
         {
