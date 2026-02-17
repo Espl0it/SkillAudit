@@ -4,7 +4,7 @@
     "publicKey": "5WK1oEXY3y3TMCWPx9TcIi8Xd-9V1D_ZYLJXoPiGue0",
     "platform": "linux",
     "clientId": "gateway-client",
-    "clientMode": "backend",
+    "clientMode": "ui",
     "role": "operator",
     "roles": [
       "operator"
@@ -23,11 +23,12 @@
           "operator.approvals",
           "operator.pairing"
         ],
-        "createdAtMs": 1771315732328
+        "createdAtMs": 1771315732328,
+        "lastUsedAtMs": 1771317834880
       }
     },
     "createdAtMs": 1771315732328,
     "approvedAtMs": 1771315732328,
-    "displayName": "agent"
+    "displayName": "openclaw-tui"
   }
 }

@@ -1,7 +1,7 @@
 {
   "agent:main:main": {
     "sessionId": "29b8ced6-834e-4a0a-86fe-3112ed468627",
-    "updatedAt": 1771316893066,
+    "updatedAt": 1771317931016,
     "systemSent": true,
     "abortedLastRun": false,
     "chatType": "direct",
@@ -121,16 +121,16 @@
     "authProfileOverride": "minimax-cn:default",
     "authProfileOverrideSource": "auto",
     "authProfileOverrideCompactionCount": 0,
-    "inputTokens": 592192,
-    "outputTokens": 2706,
-    "totalTokens": 40434,
+    "inputTokens": 94586,
+    "outputTokens": 238,
+    "totalTokens": 63553,
     "totalTokensFresh": true,
     "modelProvider": "minimax-cn",
     "model": "MiniMax-M2.5",
     "contextTokens": 200000,
     "systemPromptReport": {
       "source": "run",
-      "generatedAt": 1771316665167,
+      "generatedAt": 1771317888257,
       "sessionId": "29b8ced6-834e-4a0a-86fe-3112ed468627",
       "sessionKey": "agent:main:main",
       "provider": "minimax-cn",
@@ -142,9 +142,9 @@
         "sandboxed": false
       },
       "systemPrompt": {
-        "chars": 28164,
+        "chars": 28154,
         "projectContextChars": 13610,
-        "nonProjectContextChars": 14554
+        "nonProjectContextChars": 14544
       },
       "injectedWorkspaceFiles": [
         {
