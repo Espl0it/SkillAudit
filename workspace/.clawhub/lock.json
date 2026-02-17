@@ -16,6 +16,26 @@
     "send-email": {
       "version": "1.0.1",
       "installedAt": 1771321338131
+    },
+    "weather": {
+      "version": "1.0.0",
+      "installedAt": 1771324861756
+    },
+    "github": {
+      "version": "1.0.0",
+      "installedAt": 1771324868788
+    },
+    "wacli": {
+      "version": "1.0.0",
+      "installedAt": 1771324936436
+    },
+    "blogwatcher": {
+      "version": "1.0.0",
+      "installedAt": 1771324943378
+    },
+    "notion": {
+      "version": "1.0.0",
+      "installedAt": 1771325062188
     }
   }
 }
