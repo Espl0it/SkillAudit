@@ -1,7 +1,7 @@
 {
   "agent:main:main": {
     "sessionId": "29b8ced6-834e-4a0a-86fe-3112ed468627",
-    "updatedAt": 1771318334557,
+    "updatedAt": 1771318781153,
     "systemSent": true,
     "abortedLastRun": false,
     "chatType": "direct",
@@ -121,16 +121,16 @@
     "authProfileOverride": "minimax-cn:default",
     "authProfileOverrideSource": "auto",
     "authProfileOverrideCompactionCount": 0,
-    "inputTokens": 102560,
-    "outputTokens": 510,
-    "totalTokens": 67580,
+    "inputTokens": 320888,
+    "outputTokens": 665,
+    "totalTokens": 69430,
     "totalTokensFresh": true,
     "modelProvider": "minimax-cn",
     "model": "MiniMax-M2.5",
     "contextTokens": 200000,
     "systemPromptReport": {
       "source": "run",
-      "generatedAt": 1771318297184,
+      "generatedAt": 1771318665573,
       "sessionId": "29b8ced6-834e-4a0a-86fe-3112ed468627",
       "sessionKey": "agent:main:main",
       "provider": "minimax-cn",
@@ -142,9 +142,9 @@
         "sandboxed": false
       },
       "systemPrompt": {
-        "chars": 27417,
-        "projectContextChars": 12873,
-        "nonProjectContextChars": 14544
+        "chars": 25977,
+        "projectContextChars": 11494,
+        "nonProjectContextChars": 14483
       },
       "injectedWorkspaceFiles": [
         {
@@ -198,9 +198,9 @@
         {
           "name": "BOOTSTRAP.md",
           "path": "/home/ecs-user/.openclaw/workspace/BOOTSTRAP.md",
-          "missing": false,
-          "rawChars": 1449,
-          "injectedChars": 1449,
+          "missing": true,
+          "rawChars": 0,
+          "injectedChars": 70,
           "truncated": false
         }
       ],
