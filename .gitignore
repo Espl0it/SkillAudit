@@ -1,0 +1,14 @@
+# Sensitive files
+credentials/
+*.json.bak*
+logs/
+openclaw.json
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Temp files
+*.tmp
+*.swp
