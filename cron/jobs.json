@@ -1,27 +1,4 @@
 {
   "version": 1,
-  "jobs": [
-    {
-      "id": "cf9b6c2a-a578-489a-b6cb-2a73b04bb86d",
-      "agentId": "main",
-      "name": "auto-push-openclaw",
-      "enabled": true,
-      "createdAtMs": 1771316730038,
-      "updatedAtMs": 1771316730038,
-      "schedule": {
-        "kind": "every",
-        "everyMs": 300000,
-        "anchorMs": 1771316730038
-      },
-      "sessionTarget": "main",
-      "wakeMode": "now",
-      "payload": {
-        "kind": "systemEvent",
-        "text": "auto-push"
-      },
-      "state": {
-        "nextRunAtMs": 1771317030038
-      }
-    }
-  ]
+  "jobs": []
 }
