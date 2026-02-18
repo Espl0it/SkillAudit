@@ -48,6 +48,10 @@
     "summarize": {
       "version": "1.0.0",
       "installedAt": 1771325228364
+    },
+    "dietitian": {
+      "version": "1.0.0",
+      "installedAt": 1771403596216
     }
   }
 }
