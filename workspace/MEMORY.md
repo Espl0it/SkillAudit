@@ -94,3 +94,50 @@ npx skills add https://github.com/username/skills.git --skill skill-name
 - OpenCodeGuide: https://github.com/Espl0it/OpenCodeGuide
 - OpenClawGuide: https://github.com/Espl0it/OpenClawGuide
 - MakeSkillGuide: https://github.com/Espl0it/MakeSkillGuide
+- SkillAudit: https://github.com/Espl0it/SkillAudit
+
+---
+
+## Skill 安全审计
+
+### 安装前审计流程 (方案1)
+
+```bash
+# 1. 克隆或下载 Skill（不直接安装）
+npx clawhub install <skill> --dry-run  # 先查看信息
+
+# 2. 审计 Skill
+cd /tmp/<skill>
+skill-audit /tmp/<skill>
+
+# 3. 确认安全后安装
+npx clawhub install <skill>
+# 或
+cp -r /tmp/<skill> ~/.openclaw/skills/
+```
+
+### 审计命令
+
+```bash
+# 审计指定 Skill
+cd ~/.openclaw/workspace/skills/skill-audit
+node scripts/scanner.js <skill路径>
+```
+
+### 审计规则
+
+| 规则ID | 类型 | 说明 |
+|--------|------|------|
+| S001-S005 | secrets | 硬编码凭证 |
+| C001-C005 | commands | 命令注入 |
+| F001-F004 | files | 文件操作 |
+| N001-N003 | network | 网络安全 |
+| P001-P003 | permissions | 权限问题 |
+
+### 严重等级
+
+- 🔴 Critical - 立即处理
+- 🟠 High - 尽快修复
+- 🟡 Medium - 需要审查
+- 🔵 Low - 轻微问题
+- ℹ️ Info - 信息性
