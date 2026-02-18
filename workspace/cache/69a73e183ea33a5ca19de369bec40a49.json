@@ -1,0 +1,26 @@
+[
+  {
+    "symbol": "AAPL",
+    "name": "Apple Inc.",
+    "price": 263.88,
+    "changesPercentage": 3.16678,
+    "change": 8.1,
+    "dayLow": 255.54,
+    "dayHigh": 266.29,
+    "yearHigh": 288.62,
+    "yearLow": 169.21,
+    "marketCap": 3878488612868.9995,
+    "priceAvg50": 267.4752,
+    "priceAvg200": 240.0591,
+    "exchange": "NASDAQ",
+    "volume": 58081661,
+    "avgVolume": 48701543,
+    "open": 258.05,
+    "previousClose": 255.78,
+    "eps": 7.91,
+    "pe": 33.36,
+    "earningsAnnouncement": "2026-04-26T21:00:00.000+0000",
+    "sharesOutstanding": 14697925621,
+    "timestamp": 1771362002
+  }
+]
