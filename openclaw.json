@@ -1,12 +1,13 @@
 {
   "meta": {
     "lastTouchedVersion": "2026.2.15",
-    "lastTouchedAt": "2026-02-18T09:33:54.629Z"
+    "lastTouchedAt": "2026-02-18T11:39:48.764Z"
   },
   "env": {
     "TUSHARE_TOKEN": "31c7a3335c9245deaec2bdc613531ab5ec794100df889e50353a31a9",
     "TAVILY_API_KEY": "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",
-    "PATH": "/home/ecs-user/.opencode/bin:/home/ecs-user/.nvm/versions/node/v24.13.1/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+    "PATH": "/home/ecs-user/.opencode/bin:/home/ecs-user/.nvm/versions/node/v24.13.1/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+    "FMP_API_KEY": "xR3Idx8yrJBj83g5Wb8S5o5s6rexMjNT"
   },
   "wizard": {
     "lastRunAt": "2026-02-17T08:42:59.930Z",
