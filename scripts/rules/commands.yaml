@@ -1,0 +1,26 @@
+# Command Injection Detection Rules
+- id: C001
+  title: Unsafe eval() Usage
+  pattern: '\b(?:eval|Function)\s*\([^)]'
+  severity: high
+  recommendation: Avoid using eval() and Function constructor with dynamic input
+- id: C002
+  title: Unsafe exec() Usage
+  pattern: '\b(?:exec|execSync|execFile|spawn)\s*\([^)]*(?:\$|process\.argv|req\.|\bdynamic\b)'
+  severity: critical
+  recommendation: Validate and sanitize all inputs before executing commands
+- id: C003
+  title: Shell Command Concatenation
+  pattern: '(?:shell|cmd|command).*["''`]?\s*\+'
+  severity: high
+  recommendation: Use array form of command execution to prevent shell injection
+- id: C004
+  title: Child Process Command Injection
+  pattern: 'child_process\.(?:exec|execSync)\s*\(\s*[`"$''\w]'
+  severity: high
+  recommendation: Use execFile instead of exec for better security
+- id: C005
+  title: OS System Command Injection
+  pattern: 'os\.system\s*\(\s*[`"$''\w]'
+  severity: high
+  recommendation: Validate all inputs passed to system commands

@@ -1,0 +1,15 @@
+- id: P001
+  title: Excessive Always Permission
+  pattern: "always: true"
+  severity: low
+  recommendation: Only use always true when the skill is truly needed in all contexts
+- id: P002
+  title: Excessive Environment Variable Requirements
+  pattern: "env:"
+  severity: low
+  recommendation: Request only necessary environment variables
+- id: P003
+  title: Excessive Command Requirements
+  pattern: "bins:"
+  severity: low
+  recommendation: Request only necessary command line tools
