@@ -7,7 +7,7 @@
       "name": "auto-push",
       "enabled": true,
       "createdAtMs": 1771376305632,
-      "updatedAtMs": 1771377219098,
+      "updatedAtMs": 1771377526185,
       "schedule": {
         "everyMs": 300000,
         "kind": "every",
@@ -20,15 +20,15 @@
         "message": "执行 ~/.openclaw/scripts/auto-push-cron.sh 脚本"
       },
       "delivery": {
-        "mode": "announce"
+        "mode": "none"
       },
       "state": {
-        "nextRunAtMs": 1771377505632,
-        "lastRunAtMs": 1771377205635,
+        "nextRunAtMs": 1771377805632,
+        "lastRunAtMs": 1771377505637,
         "lastStatus": "ok",
-        "lastDurationMs": 13463,
+        "lastDurationMs": 20548,
         "consecutiveErrors": 0,
-        "runningAtMs": 1771377505636
+        "runningAtMs": 1771377805633
       }
     }
   ]
