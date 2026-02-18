@@ -1,0 +1,26 @@
+[
+  {
+    "symbol": "NVDA",
+    "name": "NVIDIA Corporation",
+    "price": 184.97,
+    "changesPercentage": 1.18155,
+    "change": 2.16,
+    "dayLow": 179.18,
+    "dayHigh": 187.15,
+    "yearHigh": 212.19,
+    "yearLow": 86.62,
+    "marketCap": 4503464838230,
+    "priceAvg50": 184.4052,
+    "priceAvg200": 171.6762,
+    "exchange": "NASDAQ",
+    "volume": 160849172,
+    "avgVolume": 179983561,
+    "open": 181.72,
+    "previousClose": 182.81,
+    "eps": 4.04,
+    "pe": 45.78,
+    "earningsAnnouncement": "2026-02-25T21:00:00.000+0000",
+    "sharesOutstanding": 24347001342,
+    "timestamp": 1771362001
+  }
+]
