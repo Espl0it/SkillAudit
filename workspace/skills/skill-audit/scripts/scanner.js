@@ -71,6 +71,9 @@ function matchRules(content, rules, filePath, verbose = false) {
           // Skip if line is commented out
           if (isCommentedLine(lineContent, filePath)) continue;
           
+          // Skip if line matches exclude pattern
+          if (rule.exclude && new RegExp(rule.exclude).test(lineContent)) continue;
+          
           const issue = {
             rule_id: rule.id,
             severity: rule.severity || 'medium',

@@ -18,4 +18,5 @@
   title: Writing to Executable Directories
   pattern: '(?:/bin/|/usr/bin/|/usr/local/bin/)[^"\s''\$]+'
   severity: high
+  exclude: '^#!'
   recommendation: Never write to system executable directories
