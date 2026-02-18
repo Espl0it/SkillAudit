@@ -1,4 +1,31 @@
 {
   "version": 1,
-  "jobs": []
+  "jobs": [
+    {
+      "id": "ddd3c269-0e02-4b4b-96bc-db2dd40bdddd",
+      "agentId": "main",
+      "name": "auto-push",
+      "enabled": true,
+      "createdAtMs": 1771376305632,
+      "updatedAtMs": 1771376305632,
+      "schedule": {
+        "everyMs": 300000,
+        "kind": "every",
+        "anchorMs": 1771376305632
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "执行 ~/.openclaw/scripts/auto-push-cron.sh 脚本"
+      },
+      "delivery": {
+        "mode": "announce"
+      },
+      "state": {
+        "nextRunAtMs": 1771376605632,
+        "runningAtMs": 1771376605653
+      }
+    }
+  ]
 }
