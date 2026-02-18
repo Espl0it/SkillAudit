@@ -64,7 +64,11 @@ done
 # Determine target path
 if [ -z "$TARGET_PATH" ]; then
   # Try to find skills directory in common locations
-  if [ -d "./skills" ]; then
+  if [ -d "./OpenClawSkills" ]; then
+    TARGET_PATH="./OpenClawSkills"
+  elif [ -d "../OpenClawSkills" ]; then
+    TARGET_PATH="../OpenClawSkills"
+  elif [ -d "./skills" ]; then
     TARGET_PATH="./skills"
   elif [ -d "../skills" ]; then
     TARGET_PATH="../skills"
