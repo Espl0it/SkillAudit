@@ -52,6 +52,10 @@
     "dietitian": {
       "version": "1.0.0",
       "installedAt": 1771403596216
+    },
+    "stock-evaluator": {
+      "version": "1.0.0",
+      "installedAt": 1771416784945
     }
   }
 }
