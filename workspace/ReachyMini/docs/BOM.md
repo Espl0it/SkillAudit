@@ -120,12 +120,27 @@
 
 ### 国内
 
-| 组件 | 供应商 | 备注 |
-|------|--------|------|
-| 树莓派 | 天猫 raspberrypi官方旗舰店 | 正品保证 |
-| 舵机 | 淘宝 RASTAN / 飞特 | 品质较好 |
-| 摄像头 | 淘宝 华芯微特 | 树莓派兼容 |
-| 结构件 | 闲鱼/淘宝定制 | 3D打印 |
+| 组件 | 供应商 | 链接 | 备注 |
+|------|--------|------|------|
+| 树莓派4B | 淘宝/天猫 raspberrypi官方旗舰店 | https://www.taobao.com | 4GB约¥400-500 |
+| 树莓派4B | 杭州隽鹏电子科技 (天猫) | 搜索店铺 | 散片/套件 |
+| 舵机 DS3218MG | 达盛舵机 (淘宝) | 搜索"DS3218MG 20KG" | 约¥70-80/个 |
+| 舵机 DS3115 | 智探模型配件批发 (淘宝) | 搜索"DS3115 金属舵机" | 15KG性价比高 |
+| 摄像头 | 微雪电子 (淘宝/京东) | https://www.waveshare.net | 树莓派官方兼容 |
+| 摄像头 | 树莓派官方摄像头 | 搜索"Pi Camera HQ" | 1200万像素 |
+| 麦克风阵列 | Seeed Studio 官方 | https://www.seeedstudio.com | ReSpeaker 4-Mic |
+| 麦克风阵列 | 亚博智能 (淘宝) | 搜索"4麦阵列" | 国产替代 |
+| PCA9685 | 亚博智能/DFRobot | 搜索"PCA9685 16路" | 约¥20-30 |
+| 3D打印外壳 | 淘宝/闲鱼定制 | 搜索"3D打印 结构件" | 支持定制 |
+| 锂电池 | 动力电池商家 | 搜索"7.4V 2S 锂电池" | 带保护板 |
+
+### 官方渠道
+
+| 组件 | 官网 | 特点 |
+|------|------|------|
+| 树莓派 | https://www.raspberrypi.com | 正品保证 |
+| 摄像头 | https://www.raspberrypi.com/products/camera-module-3 | 官方兼容 |
+| ReSpeaker | https://www.seeedstudio.com/ReSpeaker-4-Mic-Array-for-Raspberry-Pi.html | 官方正品 |
 
 ### 采购提示
 
