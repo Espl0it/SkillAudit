@@ -56,6 +56,10 @@
     "stock-evaluator": {
       "version": "1.0.0",
       "installedAt": 1771416784945
+    },
+    "mcporter": {
+      "version": "1.0.0",
+      "installedAt": 1771423336057
     }
   }
 }
