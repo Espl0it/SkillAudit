@@ -1,10 +1,10 @@
 {
   "meta": {
     "lastTouchedVersion": "2026.2.15",
-    "lastTouchedAt": "2026-02-18T04:05:47.427Z"
+    "lastTouchedAt": "2026-02-18T04:08:55.648Z"
   },
   "env": {
-    "TUSHARE_TOKEN": ""
+    "TUSHARE_TOKEN": "31c7a3335c9245deaec2bdc613531ab5ec794100df889e50353a31a9"
   },
   "wizard": {
     "lastRunAt": "2026-02-17T08:42:59.930Z",
