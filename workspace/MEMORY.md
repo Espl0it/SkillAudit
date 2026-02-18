@@ -67,6 +67,8 @@ npx skills add https://github.com/username/skills.git --skill skill-name
 | tushare | 金融数据 |
 | find-skills | 技能发现 |
 | proactive-agent | 主动规划 |
+| Dietitian | 膳食规划 |
+| coding-agent | AI 编程助手 |
 
 ---
 
@@ -76,3 +78,19 @@ npx skills add https://github.com/username/skills.git --skill skill-name
 - Tavily: `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`
 
 （实际使用时应从环境变量读取，不要硬编码）
+
+---
+
+## GitHub 仓库
+
+- Aliyun-Ada (当前): git@github.com:Espl0it/Ada.git
+- Aliyun-Eve (47.106.206.101): git@github.com:Espl0it/Eve.git
+
+---
+
+## 项目
+
+- SmartHome: https://github.com/Espl0it/SmartHome
+- OpenCodeGuide: https://github.com/Espl0it/OpenCodeGuide
+- OpenClawGuide: https://github.com/Espl0it/OpenClawGuide
+- MakeSkillGuide: https://github.com/Espl0it/MakeSkillGuide
