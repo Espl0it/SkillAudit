@@ -1,0 +1,14 @@
+{
+  "mcpServers": {
+    "minimax": {
+      "command": "uvx",
+      "args": ["minimax-mcp", "-y"],
+      "env": {
+        "MINIMAX_API_KEY": "31c7a3335c9245deaec2bdc613531ab5ec794100df889e50353a31a9",
+        "MINIMAX_API_HOST": "https://api.minimaxi.com"
+      },
+      "keepAlive": true
+    }
+  },
+  "imports": []
+}
