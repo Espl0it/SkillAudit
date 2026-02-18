@@ -1,0 +1,28 @@
+#!/bin/bash
+
+# FMP Skill Test Script
+
+echo "=== FMP Skill Test Script ==="
+echo ""
+echo "To use the FMP skill, you need to set your API key:"
+echo "  export FMP_API_KEY=your_actual_api_key_here"
+echo ""
+echo "Then you can use the skill like this:"
+echo "  fmp quote AAPL"
+echo "  fmp profile AAPL"
+echo "  fmp search Apple"
+echo "  fmp income AAPL --period annual"
+echo "  fmp balance AAPL --period quarterly"
+echo "  fmp cashflow AAPL"
+echo "  fmp metrics AAPL"
+echo ""
+echo "For CSV export:"
+echo "  fmp quote AAPL,MSFT --csv --output quotes.csv"
+echo ""
+echo "Cache management:"
+echo "  fmp cache stats"
+echo "  fmp cache clear"
+echo ""
+echo "Get help:"
+echo "  fmp --help"
+echo "  fmp quote --help"
