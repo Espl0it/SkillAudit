@@ -1,0 +1,27 @@
+{
+  "api_key": "${FMP_API_KEY}",
+  "tier": "free",
+  "cache": {
+    "enabled": true,
+    "dir": "./cache/",
+    "ttl": {
+      "quote": 60,
+      "profile": 3600,
+      "statements": 86400,
+      "history": 3600,
+      "default": 1800
+    },
+    "max_size_mb": 100
+  },
+  "output": {
+    "default_format": "json",
+    "pretty": true,
+    "color": true,
+    "csv_delimiter": ","
+  },
+  "rate_limit": {
+    "max_requests_per_minute": 250,
+    "retry_delay_ms": 1000,
+    "max_retries": 3
+  }
+}

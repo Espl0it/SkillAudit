@@ -1,0 +1,29 @@
+{
+  "name": "fmp-skill",
+  "version": "1.0.0",
+  "description": "Financial Modeling Prep API Skill for OpenClaw",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "fmp",
+    "financial",
+    "stock",
+    "api",
+    "openclaw",
+    "skill"
+  ],
+  "author": "OpenClaw Developer",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.6.0",
+    "csv-writer": "^1.6.0",
+    "yargs": "^17.7.2"
+  },
+  "devDependencies": {},
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}
