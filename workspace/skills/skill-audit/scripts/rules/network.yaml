@@ -1,0 +1,16 @@
+# Network Security Rules
+- id: N001
+  title: Disabled SSL Certificate Verification
+  pattern: '(?:rejectUnauthorized|strictSSL|verify)[:\s]*false'
+  severity: high
+  recommendation: Always enable SSL certificate verification in production
+- id: N002
+  title: Insecure HTTP Protocol
+  pattern: 'http://[^\s"\'''']+\.(?:com|org|net|io|co|edu|gov)'
+  severity: medium
+  recommendation: Use HTTPS instead of HTTP for secure communication
+- id: N003
+  title: Unsafe Redirect Handling
+  pattern: 'redirect(?:Url)?\s*[:=]\s*[`\$"\''\w]'
+  severity: medium
+  recommendation: Validate redirect URLs to prevent open redirect vulnerabilities

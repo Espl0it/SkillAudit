@@ -1,0 +1,21 @@
+# File Operation Security Rules
+- id: F001
+  title: Path Traversal Vulnerability
+  pattern: '(?:\.\./){2,}|%2e%2e%2f|%2e%2e/'
+  severity: high
+  recommendation: Validate and sanitize file paths to prevent directory traversal
+- id: F002
+  title: Sensitive File Access
+  pattern: '(?:/etc/(?:passwd|shadow|group)|/windows/system32/config)'
+  severity: critical
+  recommendation: Avoid accessing system-sensitive files directly
+- id: F003
+  title: Insecure Temporary File Creation
+  pattern: '/tmp/[^/]*\$\{?[\w]+\}?|mktemp\s*\([^)]*[^X]\)'
+  severity: medium
+  recommendation: Use secure temporary file creation methods with proper permissions
+- id: F004
+  title: Writing to Executable Directories
+  pattern: '(?:/bin/|/usr/bin/|/usr/local/bin/)[^"\s''\$]+'
+  severity: high
+  recommendation: Never write to system executable directories
