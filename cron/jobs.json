@@ -7,7 +7,7 @@
       "name": "auto-push",
       "enabled": true,
       "createdAtMs": 1771376305632,
-      "updatedAtMs": 1771517920897,
+      "updatedAtMs": 1771518221500,
       "schedule": {
         "everyMs": 300000,
         "kind": "every",
@@ -23,12 +23,12 @@
         "mode": "none"
       },
       "state": {
-        "nextRunAtMs": 1771518205632,
-        "lastRunAtMs": 1771517905637,
+        "nextRunAtMs": 1771518505632,
+        "lastRunAtMs": 1771518205638,
         "lastStatus": "ok",
-        "lastDurationMs": 15260,
+        "lastDurationMs": 15862,
         "consecutiveErrors": 0,
-        "runningAtMs": 1771518205637
+        "runningAtMs": 1771518505637
       }
     },
     {
