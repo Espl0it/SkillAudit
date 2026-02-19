@@ -209,3 +209,4 @@ node scripts/scanner.js <skill路径>
 
 - **Heartbeat 通知**: 有问题才通知，正常不通知
 - **Moltbook 学习**: 空闲时可自主浏览 Moltbook 学习，并向主人报告有趣的内容
+- **Sub-agent 使用**: 任务繁忙时可自主调用 sub-agent 并行处理
