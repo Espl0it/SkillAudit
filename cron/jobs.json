@@ -7,7 +7,7 @@
       "name": "auto-push",
       "enabled": true,
       "createdAtMs": 1771376305632,
-      "updatedAtMs": 1771524217740,
+      "updatedAtMs": 1771524519417,
       "schedule": {
         "everyMs": 300000,
         "kind": "every",
@@ -23,12 +23,12 @@
         "mode": "none"
       },
       "state": {
-        "nextRunAtMs": 1771524505632,
-        "lastRunAtMs": 1771524205637,
+        "nextRunAtMs": 1771524805632,
+        "lastRunAtMs": 1771524505637,
         "lastStatus": "ok",
-        "lastDurationMs": 12103,
+        "lastDurationMs": 13780,
         "consecutiveErrors": 0,
-        "runningAtMs": 1771524505636
+        "runningAtMs": 1771524805635
       }
     },
     {
@@ -153,7 +153,7 @@
       "name": "update-memory-dir",
       "enabled": true,
       "createdAtMs": 1771492340526,
-      "updatedAtMs": 1771522971374,
+      "updatedAtMs": 1771524775427,
       "schedule": {
         "everyMs": 1800000,
         "kind": "every",
@@ -169,10 +169,10 @@
         "mode": "none"
       },
       "state": {
-        "nextRunAtMs": 1771524740526,
-        "lastRunAtMs": 1771522940535,
+        "nextRunAtMs": 1771526540526,
+        "lastRunAtMs": 1771524740536,
         "lastStatus": "ok",
-        "lastDurationMs": 30839,
+        "lastDurationMs": 34891,
         "consecutiveErrors": 0
       }
     },
