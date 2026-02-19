@@ -7,7 +7,7 @@
       "name": "auto-push",
       "enabled": true,
       "createdAtMs": 1771376305632,
-      "updatedAtMs": 1771476588288,
+      "updatedAtMs": 1771476814153,
       "schedule": {
         "everyMs": 300000,
         "kind": "every",
@@ -23,12 +23,65 @@
         "mode": "none"
       },
       "state": {
-        "nextRunAtMs": 1771476805632,
-        "lastRunAtMs": 1771476579069,
+        "nextRunAtMs": 1771477405632,
+        "lastRunAtMs": 1771476805636,
         "lastStatus": "ok",
-        "lastDurationMs": 9219,
+        "lastDurationMs": 8517,
         "consecutiveErrors": 0,
-        "runningAtMs": 1771476805636
+        "runningAtMs": 1771477105636
+      }
+    },
+    {
+      "id": "b6526eb9-4400-4ab0-98c6-83750ee4ec97",
+      "agentId": "main",
+      "sessionKey": "agent:main:main",
+      "name": "daily-weather",
+      "enabled": true,
+      "createdAtMs": 1771477103527,
+      "updatedAtMs": 1771477103527,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 7 * * *",
+        "tz": "Asia/Shanghai"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "查询上海今日天气，然后用飞书发送给主人，内容包含天气状况、温度、建议。"
+      },
+      "delivery": {
+        "mode": "announce",
+        "channel": "feishu"
+      },
+      "state": {
+        "nextRunAtMs": 1771542000000
+      }
+    },
+    {
+      "id": "687d5bfe-0b1a-4641-93cc-a471ac243e1a",
+      "agentId": "main",
+      "sessionKey": "agent:main:main",
+      "name": "health-check",
+      "enabled": true,
+      "createdAtMs": 1771477108254,
+      "updatedAtMs": 1771477108254,
+      "schedule": {
+        "everyMs": 3600000,
+        "kind": "every",
+        "anchorMs": 1771477108254
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "执行 openclaw status 检查服务状态，如果服务异常则用飞书通知主人。"
+      },
+      "delivery": {
+        "mode": "none"
+      },
+      "state": {
+        "nextRunAtMs": 1771480708254
       }
     }
   ]
