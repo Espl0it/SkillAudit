@@ -16,6 +16,7 @@ workspace/
 │   ├── OpenCodeGuide/     # Code 指南
 │   ├── MakeSkillGuide/   # Skill 开发
 │   └── WebSecurityGuide/ # Web安全渗透测试
+│   └── options-research/    # 期权研究
 │
 ├── skills/                # OpenClaw 技能 (20+)
 │   ├── tavily-search/     # AI 联网搜索
