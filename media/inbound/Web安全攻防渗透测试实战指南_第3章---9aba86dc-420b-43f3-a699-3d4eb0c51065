@@ -1,0 +1,710 @@
+# **Chapter 3: 信息收集**
+
+黑客在进行攻击之前，通常会进行侦察，以收集目标系统或网络的信息。这种侦察可以分为被动侦察和主动侦察两种。被动侦察是指黑客通过公开来源或网络嗅探工具来收集信息，不会对目标系统或网络产生任何影响。例如，黑客可以通过搜索引擎、社交媒体或公共数据库来收集目标公司的员工信息、网络架构或系统配置信息。被动侦察的优点是风险低，但收集到的信息可能不够详细。主动侦察则是指黑客通过直接与目标系统或网络交互来收集信息，例如，黑客可以通过扫描端口、探测漏洞或发送 phishing 邮件来收集信息。主动侦察可以收集到更加详细的信息，但风险也更高，因为目标系统或网络可能会检测到黑客的活动。黑客通常会结合被动侦察和主动侦察来收集信息，以便更好地攻击目标系统或网络。
+
+## **3.1 被动侦查**
+
+### **3.1.1 侦察域名**
+
+Whois 是一个命令行工具，用于查询 Internet 域名或 IP 地址的所有权和注册信息。它可以帮助您了解域名或 IP 地址的拥有者、注册日期、到期日期、名称服务器、联系信息等详细信息。
+
+**Whois基本用法**
+
+whois 命令的基本用法如下：
+
+```
+whois <域名或IP地址>
+```
+
+例如：
+
+```
+whois example.com
+```
+
+这将显示 [example.com](http://example.com) 域名的所有权和注册信息。
+
+**详细用法**
+
+whois 命令有多种选项和参数，可以根据需要进行自定义。以下是一些常用的选项和参数：
+
+- `-h` 或 `--help`：显示帮助信息。
+- `-v` 或 `--verbose`：显示详细信息。
+- `-a` 或 `--all`：显示所有可用的信息。
+- `-d` 或 `--domain`：指定要查询的域名。
+- `-i` 或 `--ip`：指定要查询的 IP 地址。
+- `-p` 或 `--port`：指定要使用的端口号（默认为 43）。
+- `-t` 或 `--type`：指定要查询的记录类型（例如，A、NS、MX 等）。
+- `-c` 或 `--country`：指定要查询的国家或地区代码。
+
+例如：
+
+```
+whois -v -a example.com
+```
+
+这将显示 [example.com](http://example.com) 域名的所有权和注册信息，包括详细信息。
+
+```
+whois -i 192.0.2.1
+```
+
+这将显示 192.0.2.1 IP 地址的所有权和注册信息。
+
+**whois 服务器**
+
+whois 命令可以连接到不同的 whois 服务器，以获取不同的信息。一些常用的 whois 服务器包括：
+
+- `whois.internic.net`：InterNIC 的 whois 服务器，提供全球域名注册信息。
+- `whois.ripe.net`：RIPE 的 whois 服务器，提供欧洲域名注册信息。
+- `whois.apnic.net`：APNIC 的 whois 服务器，提供亚洲域名注册信息。
+
+例如：
+
+```
+whois -h whois.internic.net example.com
+```
+
+这将连接到 InterNIC 的 whois 服务器，获取 [example.com](http://example.com) 域名的注册信息。
+
+**Sublist3r 介绍**
+
+Sublist3r 是一个快速、全面的子域名扫描工具，使用多种技术来发现子域名，包括 DNS 侦察、网页抓取和搜索引擎查询。该工具可以帮助安全研究员、渗透测试员和网络管理员发现目标域名下的所有子域名，从而帮助他们更好地了解目标网络的架构和安全风险。
+
+**Sublist3r 的特点**
+
+- 快速扫描：Sublist3r 可以快速扫描目标域名下的所有子域名，通常只需几秒钟。
+- 全面扫描：Sublist3r 使用多种技术来发现子域名，包括 DNS 侦察、网页抓取和搜索引擎查询，从而确保发现所有可能的子域名。
+- 高度可定制：Sublist3r 提供了多种选项和参数，允许用户根据需要自定义扫描过程。
+- 跨平台支持：Sublist3r 支持多种操作系统，包括 Windows、Linux 和 macOS。
+
+**Sublist3r 的用法**
+
+1. 安装 Sublist3r
+
+Sublist3r 可以通过 pip 安装，命令如下：
+
+```
+pip install sublist3r
+```
+
+1. 基本用法
+
+Sublist3r 的基本用法非常简单，只需输入目标域名即可：
+
+```
+sublist3r -d example.com
+```
+
+这将扫描 [example.com](http://example.com) 域名下的所有子域名。
+
+1. 高级用法
+
+Sublist3r 提供了多种选项和参数，允许用户根据需要自定义扫描过程。例如，可以使用 `-t` 选项指定线程数：
+
+```
+sublist3r -d example.com -t 10
+```
+
+这将使用 10 个线程来扫描 [example.com](http://example.com) 域名下的所有子域名。
+
+1. 输出结果
+
+Sublist3r 的输出结果将显示所有发现的子域名，包括子域名、IP 地址和 DNS 记录类型。例如：
+
+```
+sublist3r -d example.com
+
+[+] Subdomains found:
+  - blog.example.com
+  - mail.example.com
+  - ftp.example.com
+  -...
+```
+
+1. 保存结果
+
+Sublist3r 的输出结果可以保存到文件中，使用 `-o` 选项指定输出文件名：
+
+```
+sublist3r -d example.com -o output.txt
+```
+
+这将将所有发现的子域名保存到 output.txt 文件中。
+
+这些只是 Sublist3r 的一些基本用法和选项，更多的用法和选项可以通过 `sublist3r -h` 命令来查看。
+
+### 3.1.2 网络空间测绘**
+
+**Shodan 网络搜索引擎**
+
+Shodan 是一个强大的网络搜索引擎，它可以帮助用户找到连接到互联网的设备，并提取关联的信息。Shodan 提供了一个命令行工具的，这个工具可以进行一些复杂和自定义的查询。以下是一些常见的 Shodan 命令行操作：
+
+**Shodan 命令行工具**
+
+1. **安装与初始化**：使用 pip 安装 Shodan 后，你可以使用 `shodan init <your API key>` 初始化 API 密钥。这样你就可以开始使用 Shodan 提供的各种功能了。
+
+2. **查看公网 IP**： `shodan myip` 命令可以用来查看当前设备的公网 IP。
+
+3. **设备搜索**：`shodan search <query>` 可以根据你输入的查询内容搜索互联网上的设备。例如，输入 `shodan search Apache` 将会列出所有与 Apache 有关的设备。
+
+4. **查看主机信息**：使用 `shodan host <IP>` 可以查看指定 IP 地址的主机信息。
+
+5. **创建和管理警报**：Shodan 的命令行工具还允许您创建和管理警报。例如，`shodan alert create my-alert 188.165.1.1` 将创建一个针对 IP 地址 188.165.1.1 的警报并命名为 my-alert。使用 `shodan alert list` 则可以列出所有的警报。
+
+6. **下载数据**：可以利用 Shodan 提供的数据进行下载操作，例如 `shodan download --limit 100 Redis-Data "Redis` port:6379"\` 命令将会下载前 100 条与 Redis 数据库相关的信息。
+
+7. **解析数据**：你可以使用 `shodan parse --fields ip_str,port,org,hostnames Microsoft-data.json.gz` 解析已经下载的数据。
+
+以上介绍的只是 Shodan 命令行工具中的一小部分功能，Shodan 还有更多的命令和用法等待你去发掘和学习，如需详细了解，建议阅读官方文档或参考相关教程。同时请注意，使用 Shodan 合理且合法，遵守相关法律法规。
+
+**Fofa 网络搜索引擎**
+
+FOFA，全名Fingerprints of the Internet Assets（互联网资产指纹），是由国内知名安全公司白帽汇推出的一款网络空间资产搜索引擎。FOFA 主要进行网络空间资产测绘，收集互联网上公开的设备、服务信息，形成网站、服务器、移动设备、无线热点等资产的数据指纹库，可以帮助研究人员或企业进行网络资产清点、漏洞影响分析和威胁情报对比等工作。
+
+1. **注册与登录**：要使用 FOFA 效果更佳，建议先进行注册，没有 FOFA 账号的用户当天只能搜索十次，而注册用户则没有次数限制。
+
+2. **基于字段查询**：FOFA 支持基于字段的查询，通过精确的字段查询，你可以找出特定的网络资产信息。比如 `title="index of"` 就可以找出所有网页标题中含有 "index of" 的网页。
+
+3. **逻辑操作符查询**：FOFA 同样支持逻辑操作符，包括 AND（&&）、OR（||）、NOT（!）。例如，`title="admin" && body="login"` 可以找出标题中含有 "admin" 且页面内容含有 "login" 的网页。
+
+4. **高级语法查询**：FOFA 的高级语法能力包括支持正则表达式查询、综合查询、大小比较查询等。比如 `body=/.{30}/` 这样的正则表达式可以匹配页面内容里有至少 30 个连续字符的资产。
+
+### 3.1.3 CMS指纹识别**
+
+WhatWeb 是一个流行的 Web 指纹识别工具，可以识别超过 150 种不同的 CMS 和框架。它可以通过 HTTP 头、HTML 代码和 JavaScript 文件来识别 CMS。
+
+**WhatWeb 的特点**
+
+- 支持识别超过 150 种不同的 CMS 和框架
+- 可以通过 HTTP 头、HTML 代码和 JavaScript 文件来识别 CMS
+- 支持多种协议，包括 HTTP、HTTPS、FTP 等
+- 支持多种扫描模式，包括快速扫描、详细扫描等
+- 支持输出结果到文件或数据库
+
+**WhatWeb 的用法**
+
+1. **基本用法**
+
+使用 WhatWeb 可以非常简单，只需输入目标网站的 URL 即可：
+
+```
+whatweb <url>
+```
+
+例如：
+
+```
+whatweb https://example.com
+```
+
+WhatWeb 将会输出识别结果，包括 CMS 的名称、版本号等信息。
+
+2. **扫描模式**
+
+WhatWeb 提供了多种扫描模式，可以根据需要选择不同的扫描模式：
+
+- **快速扫描**：使用 `-q` 选项，可以快速扫描目标网站：
+
+```
+whatweb -q <url>
+```
+
+- **详细扫描**：使用 `-v` 选项，可以详细扫描目标网站：
+
+```
+whatweb -v <url>
+```
+
+3. **输出结果**
+
+WhatWeb 可以输出结果到文件或数据库：
+
+- **输出到文件**：使用 `-o` 选项，可以输出结果到文件：
+
+```
+whatweb -o output.txt <url>
+```
+
+- **输出到数据库**：使用 `-d` 选项，可以输出结果到数据库：
+
+```
+whatweb -d mysql://user:password@host/database <url>
+```
+
+4. **其他选项**
+
+WhatWeb 还提供了其他选项，可以根据需要选择：
+
+- **代理服务器**：使用 `-p` 选项，可以设置代理服务器：
+
+```
+whatweb -p http://proxy:8080 <url>
+```
+
+- **User Agent**：使用 `-u` 选项，可以设置 User Agent：
+
+```
+whatweb -u "Mozilla/5.0" <url>
+```
+
+- **超时时间**：使用 `-t` 选项，可以设置超时时间：
+
+```
+whatweb -t 10 <url>
+```
+
+这些选项可以根据需要组合使用，以满足不同的扫描需求。
+
+### 3.1.4 Google 黑客数据库**
+
+Google 黑客数据库（GHDB）是一种高级搜索查询和技术的集合，用于发现可能被无意中暴露在网上的隐藏、脆弱或敏感信息。它被网络安全专业人士、道德黑客和安全研究人员用于通过 Google 搜索发现特定信息，使用特殊的搜索参数和操作符来定位标准搜索引擎通常不索引的数据。
+
+**GHDB 操作符和语法**
+
+GHDB 通过使用高级搜索操作符和技术来细化搜索查询并获得更精确的结果。这些操作符包括：
+
+- `site:` 操作符：允许在特定网站或域中搜索
+- `filetype:` 操作符：允许搜索特定文件类型（例如 PDF、DOCX 等）
+- `inurl:` 操作符：允许在 URL 中搜索特定关键词
+- `intitle:` 操作符：允许在网页标题中搜索特定关键词
+
+通过组合这些操作符、关键词和语法，用户可以细化搜索并找到高度特定的信息。
+
+**1. 搜索特定网站的敏感文件**
+
+使用 `site:` 操作符和 `filetype:` 操作符来搜索特定网站的敏感文件，例如：
+
+```
+site:example.com filetype:pdf
+```
+
+这将搜索 [example.com](http://example.com) 网站上的所有 PDF 文件。
+
+**2. 搜索包含特定关键词的网页**
+
+使用 `intitle:` 操作符来搜索包含特定关键词的网页，例如：
+
+```
+intitle:login
+```
+
+这将搜索所有网页标题中包含 "login" 关键词的网页。
+
+**3. 搜索特定目录下的文件**
+
+使用 `inurl:` 操作符和 `filetype:` 操作符来搜索特定目录下的文件，例如：
+
+```
+inurl:/admin filetype:txt
+```
+
+这将搜索所有 URL 中包含 "/admin" 目录的 TXT 文件。
+
+**4. 搜索特定网站的数据库错误信息**
+
+使用 `site:` 操作符和 `inurl:` 操作符来搜索特定网站的数据库错误信息，例如：
+
+```
+site:example.com inurl:error
+```
+
+这将搜索 [example.com](http://example.com) 网站上的所有包含 "error" 关键词的网页。
+
+**5. 搜索特定网站的备份文件**
+
+使用 `site:` 操作符和 `filetype:` 操作符来搜索特定网站的备份文件，例如：
+
+```
+site:example.com filetype:bkf
+```
+
+这将搜索 [example.com](http://example.com) 网站上的所有 BKF 文件（备份文件）。
+
+**6. 搜索特定网站的配置文件**
+
+使用 `site:` 操作符和 `filetype:` 操作符来搜索特定网站的配置文件，例如：
+
+```
+site:example.com filetype:conf
+```
+
+这将搜索 [example.com](http://example.com) 网站上的所有 CONF 文件（配置文件）。
+
+**7. 搜索特定网站的登录页面**
+
+使用 `site:` 操作符和 `intitle:` 操作符来搜索特定网站的登录页面，例如：
+
+```
+site:example.com intitle:login
+```
+
+这将搜索 [example.com](http://example.com) 网站上的所有登录页面。
+
+这些只是 GHDB 命令的一些示例，通过组合不同的操作符和关键词，可以搜索到更多的信息。
+
+### **2.1.4 查找真实IP**
+
+绕过 CDN 查找真实 IP 地址的方法需要具备一定的网络知识，同时也需要遵守相关法律法规，不能用于非法目的。以下是一些常见的方法：
+
+1. **历史 DNS 记录查询**：使用如 SecurityTrails 这样的工具，你可以查询到目标网站在过去使用过的 IP 地址。有可能在网站使用 CDN 之前的 IP 地址就是其真实的 IP 地址。
+2. **证书信息查询**：使用如 Censys 这样的工具，你可以查询到目标网站的证书信息。有时候，证书信息会泄露网站的真实 IP 地址。
+3. **子域名扫描**：有时候，网站的某些子域名可能没有使用 CDN，你可以通过子域名扫描找到这些没有使用 CDN 的子域名，从而找到网站的真实 IP 地址。
+4. **邮件服务器查询**：如果目标网站有自己的邮件服务器，那么邮件服务器的 IP 地址可能就是网站的真实 IP 地址。你可以通过 MX 记录查询到邮件服务器的 IP 地址。
+5. **端口扫描**：使用如 Nmap 这样的工具，你可以对目标网站进行端口扫描。有时候，开放的端口会泄露网站的真实 IP 地址。
+
+以上方法并不能保证一定能找到真实的 IP 地址，因为很多网站为了防止 IP 地址泄露，会采取一些额外的安全措施。同时，你在进行这些操作时，一定要确保自己的行为是合法的，不能侵犯他人的隐私权和网络权益。
+
+**DNSRecon 介绍**
+
+DNSRecon 是一个开源的 DNS 侦察工具，用于枚举 DNS 记录、检测 DNS 服务器漏洞、执行 DNS tunneling 攻击等。它可以帮助安全研究员、渗透测试员和网络管理员来评估 DNS 服务器的安全性和配置。
+
+**DNSRecon 的主要功能**
+
+1. **DNS 记录枚举**：DNSRecon 可以枚举 DNS 服务器上的所有记录，包括 A 记录、NS 记录、MX 记录、TXT 记录等。
+2. **DNS 服务器漏洞检测**：DNSRecon 可以检测 DNS 服务器上的常见漏洞，例如缓冲区溢出、格式字符串漏洞等。
+3. **DNS tunneling 攻击**：DNSRecon 可以执行 DNS tunneling 攻击，用于绕过防火墙和 IDS 系统。
+4. **域名生成**：DNSRecon 可以生成可能的域名，用于枚举 DNS 记录或执行 brute-force 攻击。
+
+**DNSRecon 的详细用法**
+
+1. 安装 DNSRecon
+
+DNSRecon 可以在多种平台上安装，包括 Windows、Linux 和 macOS。可以从 GitHub 上下载最新版本的 DNSRecon。
+
+2. 基本用法
+
+使用 DNSRecon 枚举 DNS 记录的基本命令如下：
+
+```
+dnsrecon -d <domain_name>
+```
+
+其中，`<domain_name>` 是要枚举的域名。
+
+3. 枚举 DNS 记录
+
+DNSRecon 可以枚举多种类型的 DNS 记录，例如 A 记录、NS 记录、MX 记录等。使用以下命令枚举所有类型的 DNS 记录：
+
+```
+dnsrecon -d <domain_name> -a
+```
+
+使用以下命令枚举特定类型的 DNS 记录，例如 A 记录：
+
+```
+dnsrecon -d <domain_name> -t A
+```
+
+4. 检测 DNS 服务器漏洞
+
+DNSRecon 可以检测 DNS 服务器上的常见漏洞，例如缓冲区溢出、格式字符串漏洞等。使用以下命令检测 DNS 服务器漏洞：
+
+```
+dnsrecon -d <domain_name> -v
+```
+
+5. 执行 DNS tunneling 攻击
+
+DNSRecon 可以执行 DNS tunneling 攻击，用于绕过防火墙和 IDS 系统。使用以下命令执行 DNS tunneling 攻击：
+
+```
+dnsrecon -d <domain_name> -tunnel
+```
+
+6. 生成域名
+
+DNSRecon 可以生成可能的域名，用于枚举 DNS 记录或执行 brute-force 攻击。使用以下命令生成域名：
+
+```
+dnsrecon -d <domain_name> -g
+```
+
+7. 高级用法
+
+DNSRecon 还提供了许多高级选项，例如指定 DNS 服务器、设置超时时间、启用 debug 模式等。可以使用以下命令查看所有可用的选项：
+
+```
+dnsrecon -h
+```
+
+总之，DNSRecon 是一个功能强大且灵活的 DNS 侦察工具，可以帮助安全研究员、渗透测试员和网络管理员来评估 DNS 服务器的安全性和配置。
+
+## 2.2 主动侦查
+
+### **2.2.1 防火墙/入侵检测系统(IDS)/入侵阻止系统(IPS)**
+
+WafW00f 是一个开源的 Web 应用程序防火墙（WAF）检测工具，用于检测 Web 应用程序是否存在 WAF，并识别 WAF 的类型和版本。下面是 WafW00f 程序的详细用法：
+
+**基本用法**
+
+WafW00f 的基本用法如下：
+
+```
+wafw00f <url>
+```
+
+其中，`<url>` 是要检测的 Web 应用程序的 URL。
+
+**详细用法**
+
+WafW00f 有多种选项和参数，可以根据需要进行自定义。以下是一些常用的选项和参数：
+
+- `-h` 或 `--help`：显示帮助信息。
+- `-v` 或 `--verbose`：显示详细信息。
+- `-a` 或 `--all`：显示所有可用的信息。
+- `-t` 或 `--timeout`：设置超时时间（默认为 10 秒）。
+- `-r` 或 `--retry`：设置重试次数（默认为 3 次）。
+- `-p` 或 `--proxy`：设置代理服务器的 URL。
+- `-u` 或 `--user-agent`：设置 User-Agent 头信息。
+- `-c` 或 `--cookie`：设置 Cookie 头信息。
+- `-H` 或 `--header`：设置自定义头信息。
+
+例如：
+
+```
+wafw00f -v -a -t 30 -r 5 -p http://proxy.example.com:8080 -u "Mozilla/5.0" -c "session_id=123456" -H "Accept-Language: en-US" https://example.com
+```
+
+这将检测 `https://example.com` 的 WAF，显示详细信息，设置超时时间为 30 秒，重试次数为 5 次，使用代理服务器 `http://proxy.example.com:8080`，设置 User-Agent 头信息为 `Mozilla/5.0`，设置 Cookie 头信息为 `session_id=123456`，设置自定义头信息为 `Accept-Language: en-US`。
+
+**输出结果**
+
+WafW00f 的输出结果将包括以下信息：
+
+- WAF 的类型和版本
+- WAF 的检测结果（例如，是否存在 WAF，WAF 的规则等）
+- WAF 的配置信息（例如，WAF 的模式，WAF 的规则等）
+
+例如：
+
+```
+wafw00f https://example.com
+
+WAF Detected: Yes
+WAF Type: ModSecurity
+WAF Version: 2.9.2
+WAF Mode: DetectionOnly
+WAF Rules: 10
+```
+
+这将显示 `https://example.com` 的 WAF 检测结果，包括 WAF 的类型、版本、模式和规则数量。
+
+**注意**
+
+WafW00f 只是一个检测工具，不会对 Web 应用程序进行任何修改或攻击。同时，WafW00f 也可能会受到限制或阻止，例如，某些 Web 应用程序可能会限制 WafW00f 的访问或检测
+
+### 2.2.2 Web漏洞扫描
+
+#### 2.2.2.1 dirsearch
+
+Dirsearch 是一个基于 Python 的 Web 目录扫描工具，用于发现 Web 服务器上的隐藏目录和文件。下面是 Dirsearch 的详细介绍和用法。
+
+**安装**
+
+Dirsearch 可以使用 pip 进行安装：
+
+```
+pip install dirsearch
+```
+
+**基本用法**
+
+Dirsearch 的基本用法非常简单，只需要指定目标 URL 和扫描的目录深度即可：
+
+```
+dirsearch -u <target_url> -d <depth>
+```
+
+其中，`<target_url>` 是要扫描的目标 URL，`<depth>` 是扫描的目录深度。
+
+例如，要扫描 `http://example.com` 的目录，深度为 2，可以使用以下命令：
+
+```
+dirsearch -u http://example.com -d 2
+```
+
+**高级用法**
+
+Dirsearch 还提供了许多高级选项，可以根据需要进行自定义。下面是一些常用的选项：
+
+- `-e`：指定扫描的文件扩展名，多个扩展名用逗号分隔。
+
+```
+dirsearch -u http://example.com -d 2 -e php,html,txt
+```
+
+- `-x`：指定排除的文件扩展名，多个扩展名用逗号分隔。
+
+```
+dirsearch -u http://example.com -d 2 -x php,html,txt
+```
+
+- `-t`：指定线程数，用于加速扫描速度。
+
+```
+dirsearch -u http://example.com -d 2 -t 10
+```
+
+- `-r`：指定递归扫描， Dirsearch 将扫描所有子目录。
+
+```
+dirsearch -u http://example.com -d 2 -r
+```
+
+- `-b`：指定扫描的目录宽度， Dirsearch 将扫描指定宽度的目录。
+
+```
+dirsearch -u http://example.com -d 2 -b 10
+```
+
+- `-o`：指定输出文件， Dirsearch 将扫描结果保存到指定文件中。
+
+```
+dirsearch -u http://example.com -d 2 -o result.txt
+```
+
+- `-a`：指定扫描的用户代理， Dirsearch 将使用指定的用户代理进行扫描。
+
+```
+dirsearch -u http://example.com -d 2 -a "Mozilla/5.0"
+```
+
+- `-p`：指定扫描的代理服务器， Dirsearch 将使用指定的代理服务器进行扫描。
+
+```
+dirsearch -u http://example.com -d 2 -p http://proxy.example.com:8080
+```
+
+**示例**
+
+以下是一个完整的示例， Dirsearch 将扫描 `http://example.com` 的目录，深度为 2，扫描所有 php、html 和 txt 文件，排除 cgi 和 pl 文件，使用 10 个线程，递归扫描所有子目录，并将结果保存到 `result.txt` 文件中：
+
+```
+dirsearch -u http://example.com -d 2 -e php,html,txt -x cgi,pl -t 10 -r -o result.txt
+```
+
+#### 2.2.2.2 WPScan
+
+WPScan 是一个流行的、免费的、开源的漏洞扫描器，专门为 WordPress 网站设计。它是一个功能强大的工具，可以帮助识别漏洞、插件、主题和其他 WordPress 安装信息。下面是 WPScan 的详细介绍和用法：
+
+**功能：**
+
+1. **漏洞扫描**：WPScan 可以检测 WordPress 核心、插件和主题中的已知漏洞。
+2. **插件和主题检测**：WPScan 可以识别安装的插件和主题，包括它们的版本。
+3. **用户名枚举**：WPScan 可以枚举用户名，这对于暴力攻击或其他安全测试非常有用。
+4. **密码破解**：WPScan 可以使用字典或暴力攻击来破解密码。
+5. **配置和设置检测**：WPScan 可以检测 WordPress 配置和设置信息，例如数据库前缀和表名。
+
+**基本用法：**
+
+```
+wpscan --url <目标 URL>
+```
+
+将 `<目标 URL>` 替换为要扫描的 WordPress 网站的 URL。
+
+**高级选项：**
+
+1. **指定用户名**：`wpscan --url <目标 URL> --username <用户名>`
+2. **指定密码**：`wpscan --url <目标 URL> --username <用户名> --password <密码>`
+3. **启用激进扫描**：`wpscan --url <目标 URL> --enable-aggressive`
+4. **禁用某些测试**：`wpscan --url <目标 URL> --disable-timing-attack`
+5. **输出到文件**：`wpscan --url <目标 URL> --output <输出文件>`
+
+**其他选项：**
+
+1. **更新 WPScan**：`wpscan --update`
+2. **列出所有可用选项**：`wpscan --help`
+3. **扫描特定插件或主题**：`wpscan --url <目标 URL> --plugin <插件名称>` 或 `wpscan --url <目标 URL> --theme <主题名称>`
+
+**示例输出：**
+
+```
+[+] URL: http://example.com/
+[+] 开始时间: 2023-03-17 14:30:05
+
+[+] robots.txt: http://example.com/robots.txt
+[+] 有趣发现: WordPress 版本 5.8.2
+[+] 有趣发现: 主题: Twenty Nineteen 1.7
+[+] 有趣发现: 插件: Yoast SEO 14.9
+[+] 漏洞: WordPress 5.8.2 - 认证存储跨站脚本攻击 (XSS)
+[+] 漏洞: Yoast SEO 14.9 - 认证存储跨站脚本攻击 (XSS)
+
+[+] 完成时间: 2023-03-17 14:30:15
+```
+
+**重要注意事项：**
+
+1. **负责任地使用 WPScan**：仅扫描您拥有的或有权限扫描的网站。
+2. **尊重网站资源**：避免对网站进行过多的请求。
+3. **保持 WPScan 更新**：定期更新 WPScan，以确保您拥有最新的漏洞签名。
+
+遵循这些指南并负责任地使用 WPScan，您可以帮助识别漏洞并改善 WordPress 网站的安全性。
+
+**WPScan 参数详解**
+
+**常规选项**
+
+- `-u, --url`: 要扫描的 WordPress 网站的 URL。
+- `-h, --help`: 显示简单帮助并退出。
+- `--hh`: 显示完整帮助并退出。
+- `--version`: 显示版本并退出。
+- `--ignore-main-redirect`: 忽略主重定向（如果有）并扫描目标 URL。
+- `-v, --verbose`: 详细模式。
+- `--[no-]banner`: 是否显示 banner。
+- `--max-scan-duration`: 如果扫描超过指定的秒数，则中止扫描。
+- `-o, --output`: 输出到文件。
+- `-f, --format`: 以指定格式输出结果（例如 cli、json）。
+
+**扫描选项**
+
+- `--detection-mode`: 使用的检测模式（mixed、passive、aggressive）。
+- `--scope`: 考虑在范围内的（子）域，逗号分隔。
+- `--user-agent`, `--ua`: 使用的用户代理。
+- `--headers`: 附加到请求中的头信息。
+- `--vhost`: 使用的虚拟主机（Host 头）。
+- `--random-user-agent`, `--rua`: 对每个扫描使用随机用户代理。
+- `--user-agents-list`: 使用随机用户代理时的代理列表。
+- `--http-auth`: HTTP 认证凭据。
+
+**线程和计时选项**
+
+- `-t, --max-threads`: 最大线程数。
+- `--throttle`: 在执行下一个 Web 请求之前等待的毫秒数。
+- `--request-timeout`: 请求超时时间（秒）。
+- `--connect-timeout`: 连接超时时间（秒）。
+
+**代理和 Cookie 选项**
+
+- `--proxy`: 使用的代理。
+- `--proxy-auth`: 代理认证凭据。
+- `--cookie-string`: 在请求中使用的 Cookie 字符串。
+- `--cookie-jar`: 读写 Cookie 的文件。
+
+**缓存和更新选项**
+
+- `--cache-ttl`: 缓存生命周期（秒）。
+- `--clear-cache`: 在扫描前清除缓存。
+- `--cache-dir`: 缓存目录。
+- `--[no-]update`: 是否更新数据库。
+
+**枚举选项**
+
+- `-e, --enumerate`: 枚举过程（例如易受攻击的插件、所有插件、流行插件）。
+- `--exclude-content-based`: 在枚举过程中排除所有匹配正则表达式/字符串的响应。
+- `--plugins-list`, `--themes-list`, `--timthumbs-list`, `--config-backups-list`, `--db-exports-list`: 要枚举的插件、主题、timthumbs、配置备份和数据库导出列表。
+- `--plugins-detection`, `--themes-detection`, `--timthumbs-detection`, `--config-backups-detection`, `--db-exports-detection`: 插件、主题、timthumbs、配置备份和数据库导出的检测模式。
+
+**密码攻击选项**
+
+- `-P, --passwords`: 密码攻击时使用的密码列表。
+- `-U, --usernames`: 密码攻击时使用的用户名列表。
+- `--multicall-max-passwords`: 使用 XMLRPC 多调用时发送的最大密码数。
+- `--password-attack`: 强制使用指定的攻击方式，而不是自动确定。
+- `--login-uri`: 登录页面的 URI，如果不同于 `/wp-login.php`。
+- `--stealthy`: 等同于 `--random-user-agent --detection-mode passive --plugins-version-detection passive`
+
+### 2.2.3 秘密扫描策略
+
+### 2.2.4 匿名网络代理

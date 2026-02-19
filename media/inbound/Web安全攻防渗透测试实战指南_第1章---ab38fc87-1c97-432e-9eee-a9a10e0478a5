@@ -1,0 +1,223 @@
+![](assets/th-1715433590564-2.jpg)
+
+# Chapter 1: 准备工具
+
+## 1.1 安装渗透测试平台
+
+### 1.1.1 VMWare
+
+VMWare 是一个虚拟化平台，允许用户在单个物理机器上运行多个操作系统。它创建了一个虚拟化环境，即虚拟机（VM），该环境可以运行自己的操作系统和应用程序，独立于宿主机。
+
+**安装 VMWare**
+
+要安装 VMWare，您需要从 VMWare 官方网站下载安装包，然后按照以下步骤进行安装：
+
+1. 从官方网站下载 VMWare 安装包。
+2. 运行安装包并按照提示安装 VMWare。
+3. 接受许可协议并选择安装位置。
+4. 选择安装类型（例如，典型或自定义）。
+5. 按照提示完成安装。
+
+**创建虚拟机**
+
+要创建虚拟机，请按照以下步骤进行：
+
+1. 启动 VMWare 并点击“创建新虚拟机”。
+2. 选择虚拟机类型（例如，Windows 或 Linux）。
+3. 选择操作系统和架构（例如，32 位或 64 位）。
+4. 分配资源给虚拟机（例如，CPU、内存和磁盘空间）。
+5. 选择网络设置（例如，桥接、NAT 或主机 only）。
+6. 创建虚拟硬盘或使用现有的硬盘。
+7. 在虚拟机上安装操作系统。
+
+**使用 VMWare**
+
+要使用 VMWare，请按照以下步骤进行：
+
+1. 启动 VMWare 并选择要使用的虚拟机。
+2. 点击“电源开启”以启动虚拟机。
+3. 使用您在安装过程中设置的凭据登录虚拟机。
+4. 使用虚拟机，如同使用物理机器一样。
+5. 要关闭虚拟机，请点击“电源关闭”或“暂停”。
+
+### 1.1.2 Kali Linux
+
+Kali Linux 是一个基于 Linux 的渗透测试操作系统，旨在提供一个易于攻击的环境，以便安全测试和渗透测试。在 VMware 中安装 Kali Linux，可以让您更方便地进行渗透测试和安全测试。
+
+**1. 下载 Kali Linux VMware镜像**  
+在 Kali Linux 官网上，你可以看到一个 `Download` 的选项，选择它，然后滚动到 `Custom VMware Images` 中去下载 Kali Linux 已经预配置的 VMware 镜像。
+
+**2. 导入 Kali Linux 镜像文件**  
+启动 VMware，点击`打开虚拟机`。找到你下载的 Kali Linux VMware 镜像文件（.vmx 文件），然后点击 `导入`。这将创建一个预配置的 Kali Linux 虚拟机。
+
+**3. 启动 Kali Linux 虚拟机**  
+双击你新创建的 Kali Linux 虚拟机，点击 `开启此虚拟机`，然后就会启动你的 Kali Linux 系统。
+
+注意：默认用户名是`kali`，默认密码也是`kali`。
+
+**4. VMware 虚拟机设置**  
+你可能需要调整虚拟机设置以优化你的使用体验，比如配置网络（NAT、桥接等）、虚拟硬件设置、共享文件夹等。
+
+## 1.2 安装 Docker 环境
+
+Docker 是一个基于 Linux 容器的轻量级虚拟化解决方案，允许开发者在容器中运行应用程序，而不需要创建完整的虚拟机。 Docker 提供了一个隔离的环境，允许多个应用程序在同一个宿主机上运行，而不会相互干扰。
+
+### 1.2.1 Docker 的安装
+
+Docker 可以在多种平台上安装，包括 Windows、macOS 和 Linux。
+
+在 Windows 上安装 Docker 的步骤如下：
+
+**1. 检查你的 Windows 版本**
+
+Docker Desktop 需要 64-bit 的 Windows 10 Pro，并且至少需要 15063 版本（Creators Update）或更高版本。如果你的 Windows 版本不符合这些要求，你可以使用 Docker Toolbox。
+
+**2. 下载 Docker for Windows**
+
+你可以直接从 Docker 的官方网站下载 Docker for Windows 的安装包。
+
+**3. 安装 Docker**
+
+找到你下载的 Docker for Windows 安装包并双击它。安装程序将指引你完成安装过程。
+
+**4. 启动 Docker**
+
+安装完成后，Docker 会自动运行。你可能会被提示需要授予 Docker 访问你的设备上的硬件资源的权限，你需要同意这个请求以保证 Docker 的正常运行。
+
+**5. 验证 Docker 是否正确安装**
+
+打开你的命令行工具（如 PowerShell 或 Command Prompt），输入 `docker run hello-world`，然后按 Enter。如果 Docker 已经正确安装，你将会看到一个消息，告诉你你的 Docker 工作正常。
+
+### 1.2.2 Docker 的基本用法
+
+| 功能   | 详细解释                 | 命令                                |
+| ---- | -------------------- | --------------------------------- |
+| 运行容器 | 启动一个容器，并打开一个 bash 终端 | `docker run -it ubuntu /bin/bash` |
+| 列出容器 | 列出所有容器               | `docker ps -a`                    |
+| 停止容器 | 停止一个容器               | `docker stop <container_id>`      |
+| 删除容器 | 删除一个容器               | `docker rm <container_id>`        |
+| 创建镜像 | 创建一个镜像，基于当前目录的内容     | `docker build -t myimage.`        |
+| 推送镜像 | 推送镜像到 Docker 仓库      | `docker push myimage`             |
+| 拉取镜像 | 拉取镜像从 Docker 仓库      | `docker pull myimage`             |
+
+## 1.3 搭建漏洞环境
+
+### 1.3.1 Metasploitable2
+
+Metasploitable2 是一个基于 Linux 的渗透测试环境，旨在提供一个易于攻击的环境，以便安全测试和渗透测试。Metasploitable2 包含了多种常见的漏洞，例如弱密码、未修补的漏洞、配置错误等。
+
+下载地址：[https://github.com/rapid7/metasploitable2](https://github.com/rapid7/metasploitable2)
+
+搭建过程：
+
+    1. 下载 Metasploitable2 的最新版本。
+    2. 解压缩 Metasploitable2 的压缩包。
+    3. 在 VMWare 中创建一个新的虚拟机。
+    4. 安装 Metasploitable2 到虚拟机中。
+    5. 配置虚拟机的网络设置，以便能够访问 Metasploitable2 的命令行界面。
+    6. 访问 Metasploitable2 的命令行界面，开始进行安全测试和渗透测试。
+
+### 1.3.2 搭建 DVWA
+
+DVWA，即 Damn Vulnerable Web Application，是一款开源的，含有多种常见 Web 安全漏洞的 PHP/MySQL 网页程序。它可以帮助网络安全入门者理解和学习常见的 Web 安全漏洞。
+
+**如何用 Docker 搭建 DVWA**
+
+Docker 是一款开源的应用容器引擎，让开发者可以打包他们的应用以及依赖包到一个可移植的容器里面，然后发布到任何流行的 Linux 机器，也可以实现虚拟化。在 Docker 上搭建 DVWA 相比直接安装更为便捷，以下是详细步骤：
+
+**1. 安装 Docker**
+
+首先你需要在你的机器上安装 Docker。你可以在 Docker 官网下载适合你操作系统的安装包并进行安装。
+
+**2. 拉取 DVWA 镜像**
+
+在 Docker 安装成功后，打开终端（Windows用户可以打开 Docker Quickstart Terminal）并输入以下命令来拉取 DVWA 的 Docker 镜像：
+
+```
+docker pull vulnerables/web-dvwa
+```
+
+这个命令会从 Docker 的仓库拉取最新版本的 DVWA 镜像。
+
+**3. 创建并启动 DVWA 容器**
+
+输入以下命令来创建一个新的容器并启动 DVWA：
+
+```
+docker run -d -p 8080:80 --name dvwa vulnerables/web-dvwa
+```
+
+这个命令将创建一个名为 dvwa 的容器，我们映射了容器的80端口到本地机器的8080端口，然后 -d 参数让容器在后台运行。
+
+**4. 访问 DVWA**
+
+在你的浏览器地址栏输入 `http://localhost:8080`，你应该可以看到 DVWA 的登录界面。默认的用户名和密码都是 `admin`。
+
+**5. 初始化 DVWA 数据库**
+
+点击登录后，你需要点击页面上的 `Create / Reset Database` 按钮来初始化 DVWA 的数据库。
+
+至此，你已经成功利用 Docker 搭建了 DVWA，现在你可以开始尝试各种 Web 安全测试实战了。
+
+### 1.3.3 搭建 SQLI-LABS
+
+SQLI-LABS 是一个由 Audi-1 开发的开源项目，目的是为初学者提供一个可以安全学习 SQL 注入的平台。它包含了低级、中级以及高级的 SQL 注入攻击场景，十分适合初学者逐步学习和提高。
+
+**1. 拉取 SQLi-LABS 镜像**
+
+在 Docker 安装成功后，打开你的终端，运行以下命令：
+
+```
+docker pull acgpiano/sqli-labs
+```
+
+这条命令将从 Docker Hub 下载最新的 SQLi-LABS 镜像。
+
+**2. 运行 SQLi-LABS 镜像**
+
+```
+docker run -d -p 8081:80 --name sqli-labs acgpiano/sqli-labs
+```
+
+此命令将启动一个名为 sqli-labs 的容器，容器的 80 端口映射到你的机器的 8081 端口。
+
+**3. 访问 SQLi-LABS**
+
+你现在可以打开你的网络浏览器，访问 `http://localhost:8081`，就可以看到 SQLi-LABS 的介绍页面了。
+
+**4. 开始学习 SQL 注入**
+
+点击页面上的 `Lessons` 按钮，你可以看到一系列按照难度排序的 SQL 注入示例，你可以依次尝试并学习。
+
+### 1.3.4 搭建 upload-labs
+
+Upload-Labs 是一个专门为测试文件上传漏洞而开发的开源项目。它包括了多种用以练习和研究不同类型文件上传漏洞的实例。这个项目的目的是为安全研究者提供一个具有各种上传漏洞场景的平台以进行学习和研究。
+
+**1. 拉取 Upload-Labs 镜像**
+
+在你的 Docker 安装好后，打开你的终端，输入以下命令来拉取 Upload-Labs 的 Docker 镜像：
+
+```
+docker pull c0ny1/upload-labs
+```
+
+此命令将会从 Docker 的仓库下载最新的 Upload-Labs 镜像。
+
+**2. 运行 Upload-Labs 镜像**
+
+紧接着，你需要运行此 Docker 镜像来创建一个新的 Upload-Labs 容器：
+
+```
+docker run -d -p 8082:80 --name upload-labs c0ny1/upload-labs
+```
+
+这个命令会创建一个名为 "upload-labs" 的 Docker 容器，并将容器的 80 端口映射到你的机器的 8080 端口。
+
+**3. 访问 Upload-Labs**
+
+此时，你可以在你的浏览器中输入 `http://localhost:8082` 来访问你的 Upload-Labs 实例。
+
+**4. 开始实战练习**
+
+在浏览器中，你会看到 Upload-Labs 的主界面，里面包含了许多课程供你学习。你可以逐一尝试每个课程来了解和学习文件上传漏洞的具体场景及防御方法。
+
