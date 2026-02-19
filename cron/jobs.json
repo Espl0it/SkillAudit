@@ -7,7 +7,7 @@
       "name": "auto-push",
       "enabled": true,
       "createdAtMs": 1771376305632,
-      "updatedAtMs": 1771512819834,
+      "updatedAtMs": 1771513160756,
       "schedule": {
         "everyMs": 300000,
         "kind": "every",
@@ -23,11 +23,12 @@
         "mode": "none"
       },
       "state": {
-        "nextRunAtMs": 1771513105632,
-        "lastRunAtMs": 1771512805638,
+        "nextRunAtMs": 1771513405632,
+        "lastRunAtMs": 1771513148953,
         "lastStatus": "ok",
-        "lastDurationMs": 14196,
-        "consecutiveErrors": 0
+        "lastDurationMs": 11803,
+        "consecutiveErrors": 0,
+        "runningAtMs": 1771513405635
       }
     },
     {
@@ -64,7 +65,7 @@
       "name": "health-check",
       "enabled": true,
       "createdAtMs": 1771477108254,
-      "updatedAtMs": 1771509533100,
+      "updatedAtMs": 1771513180404,
       "schedule": {
         "everyMs": 3600000,
         "kind": "every",
@@ -80,10 +81,10 @@
         "mode": "none"
       },
       "state": {
-        "nextRunAtMs": 1771513108254,
-        "lastRunAtMs": 1771509517402,
+        "nextRunAtMs": 1771516708254,
+        "lastRunAtMs": 1771513160757,
         "lastStatus": "ok",
-        "lastDurationMs": 15698,
+        "lastDurationMs": 19647,
         "consecutiveErrors": 0
       }
     },
@@ -94,7 +95,7 @@
       "name": "daily-git-commit",
       "enabled": true,
       "createdAtMs": 1771477113990,
-      "updatedAtMs": 1771477113990,
+      "updatedAtMs": 1771513226574,
       "schedule": {
         "kind": "cron",
         "expr": "0 23 * * *",
@@ -111,7 +112,11 @@
         "channel": "feishu"
       },
       "state": {
-        "nextRunAtMs": 1771513200000
+        "nextRunAtMs": 1771599600000,
+        "lastRunAtMs": 1771513200004,
+        "lastStatus": "ok",
+        "lastDurationMs": 26570,
+        "consecutiveErrors": 0
       }
     },
     {

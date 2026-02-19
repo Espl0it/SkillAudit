@@ -5,6 +5,13 @@
       "type": "api_key",
       "provider": "minimax-cn",
       "key": "sk-cp-6CU30LYedrRGVo47Qke6-6JhHkUJAMn7ctd7YGfaNbqQAxeCFkgFzbeGlXJ3vE1dCtOhQvGy9MyFxkjmO-D_WfccbFmQFT0WBc6VgYXp5-wytPNMHOVuRvY"
+    },
+    "qwen-portal:default": {
+      "type": "oauth",
+      "provider": "qwen-portal",
+      "access": "nQN6NsvC3-hlsL-kfrmaDaSSbNBvR_zwNd67xX0C1tUXK_wiDI2IAKVJY2ve4qvZxskA6AFfoekc2NIVh6dBqA",
+      "refresh": "ykKKNMNKC4Ws6-4rCDPGrxc5bChUOBDFYnXoEwUDcltgATQOpc4cZyPxcKWmCkIp41Zhgc7RZE8JPAMdX4rvzQ",
+      "expires": 1771534992752
     }
   },
   "lastGood": {
@@ -12,7 +19,7 @@
   },
   "usageStats": {
     "minimax-cn:default": {
-      "lastUsed": 1771512819750,
+      "lastUsed": 1771513245574,
       "errorCount": 0,
       "lastFailureAt": 1771512040922
     }
