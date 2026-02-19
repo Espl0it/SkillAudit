@@ -17,7 +17,7 @@ print_usage() {
 Usage: skill-audit [options] [path]
 
 Options:
-  -t, --type TYPES    Comma-separated rule types (secrets,commands,files,network,permissions)
+  -t, --type TYPES    Comma-separated rule types (secrets,commands,files,network,permissions,web,crypto)
   -o, --output FILE   Output JSON report to file
   -v, --verbose       Verbose output with code snippets
   -h, --help          Show this help message

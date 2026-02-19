@@ -150,7 +150,12 @@
       "createdAt": 1771501637709,
       "startedAt": 1771501638444,
       "archiveAtMs": 1771505237709,
-      "cleanupHandled": false
+      "cleanupHandled": true,
+      "endedAt": 1771501758458,
+      "outcome": {
+        "status": "timeout"
+      },
+      "cleanupCompletedAt": 1771501765666
     }
   }
 }
