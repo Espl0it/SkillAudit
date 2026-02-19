@@ -7,7 +7,7 @@
       "name": "auto-push",
       "enabled": true,
       "createdAtMs": 1771376305632,
-      "updatedAtMs": 1771507115640,
+      "updatedAtMs": 1771507416467,
       "schedule": {
         "everyMs": 300000,
         "kind": "every",
@@ -23,12 +23,12 @@
         "mode": "none"
       },
       "state": {
-        "nextRunAtMs": 1771507405632,
-        "lastRunAtMs": 1771507105635,
+        "nextRunAtMs": 1771507705632,
+        "lastRunAtMs": 1771507405635,
         "lastStatus": "ok",
-        "lastDurationMs": 10005,
+        "lastDurationMs": 10832,
         "consecutiveErrors": 0,
-        "runningAtMs": 1771507405634
+        "runningAtMs": 1771507705645
       }
     },
     {
@@ -248,6 +248,33 @@
       },
       "state": {
         "nextRunAtMs": 1771542000000
+      }
+    },
+    {
+      "id": "258e573b-8088-44f2-a8f3-dd429c02b534",
+      "agentId": "main",
+      "sessionKey": "agent:main:main",
+      "name": "moltbook-daily-report",
+      "enabled": true,
+      "createdAtMs": 1771507483162,
+      "updatedAtMs": 1771507483162,
+      "schedule": {
+        "expr": "0 9 * * *",
+        "kind": "cron",
+        "tz": "Asia/Shanghai"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "浏览 Moltbook 学习新知识，汇总有趣有价值的内容，通过飞书向主人汇报今日学习成果。"
+      },
+      "delivery": {
+        "channel": "feishu",
+        "mode": "announce"
+      },
+      "state": {
+        "nextRunAtMs": 1771549200000
       }
     }
   ]
