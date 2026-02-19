@@ -1,0 +1,71 @@
+# Web Security Skill - 依赖工具
+# 基于 WebSecurityGuide: https://github.com/Espl0it/WebSecurityGuide
+
+# ============ 系统工具 (Kali Linux 已预装) ============
+
+# 端口扫描
+# nmap
+
+# SQL 注入
+# sqlmap
+
+# Web 漏洞扫描
+# nikto
+
+# 暴力破解
+# hydra
+
+# 密码破解
+# john
+
+# 指纹识别
+# whatweb
+
+# 网络工具
+# netcat
+
+# ============ Python 工具 (pip install) ============
+
+# XSS 扫描
+xsstrike>=3.1.0
+
+dalfox>=2.0.0
+
+# 子域名枚举
+sublist3r>=1.0
+
+# 目录扫描
+ffuf>=2.0.0
+
+# Web 目录暴破
+gobuster>=3.1.0
+
+# ============ 可选工具 ============
+
+# WordPress 扫描
+wpscan>=3.8.0
+
+# 社会工程学工具集
+the-harvester>=3.0.0
+
+# 侦察框架
+# recon-ng (pipx install recon-ng)
+
+# 子域名枚举增强
+amass>=3.19.0
+
+# ============ Docker 靶场 (可选) ============
+
+# 靶场环境可使用 docker-compose 快速搭建
+# 见: https://github.com/Espl0it/WebSecurityGuide
+
+# ============ 安装脚本 ============
+
+# 安装所有 Python 依赖:
+# pip3 install -r requirements.txt
+
+# 安装系统工具 (Debian/Ubuntu):
+# sudo apt install nmap sqlmap nikto hydra john whatweb netcat
+
+# Kali Linux 用户:
+# 所有工具已预装

@@ -1,0 +1,29 @@
+{
+  "name": "web-security",
+  "version": "1.0.0",
+  "description": "Web安全渗透测试技能",
+  "author": "Espl0it",
+  "homepage": "https://github.com/Espl0it/WebSecurityGuide",
+  "platform": "linux",
+  "dependencies": {
+    "required": [
+      "nmap",
+      "sqlmap",
+      "nikto",
+      "hydra",
+      "whatweb",
+      "netcat",
+      "curl"
+    ],
+    "optional": [
+      "xsstrike",
+      "dalfox",
+      "sublist3r",
+      "gobuster",
+      "ffuf",
+      "wpscan",
+      "the-harvester",
+      "amass"
+    ]
+  }
+}
