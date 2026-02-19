@@ -15,13 +15,18 @@
     }
   },
   "lastGood": {
-    "minimax-cn": "minimax-cn:default"
+    "minimax-cn": "minimax-cn:default",
+    "qwen-portal": "qwen-portal:default"
   },
   "usageStats": {
     "minimax-cn:default": {
       "lastUsed": 1771513245574,
       "errorCount": 0,
       "lastFailureAt": 1771512040922
+    },
+    "qwen-portal:default": {
+      "lastUsed": 1771513420363,
+      "errorCount": 0
     }
   }
 }
