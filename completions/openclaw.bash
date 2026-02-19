@@ -6,7 +6,7 @@ _openclaw_completion() {
     prev="${COMP_WORDS[COMP_CWORD-1]}"
     
     # Simple top-level completion for now
-    opts="completion setup onboard configure config doctor dashboard reset uninstall message memory agent agents status health sessions browser acp gateway daemon logs system models approvals nodes devices node sandbox tui cron dns docs hooks webhooks pairing plugins channels directory security skills update -V, --dev --profile --no-color"
+    opts="completion setup onboard configure config doctor dashboard reset uninstall message memory agent agents status health sessions browser acp gateway daemon logs system models approvals nodes devices node sandbox tui cron dns docs hooks webhooks qr clawbot pairing plugins channels directory security skills update -V, --dev --profile --no-color"
     
     case "${prev}" in
       completion)
@@ -176,6 +176,16 @@ _openclaw_completion() {
         ;;
       webhooks)
         opts="gmail "
+        COMPREPLY=( $(compgen -W "${opts}" -- ${cur}) )
+        return 0
+        ;;
+      qr)
+        opts=" --remote --url --public-url --token --password --setup-code-only --no-ascii --json"
+        COMPREPLY=( $(compgen -W "${opts}" -- ${cur}) )
+        return 0
+        ;;
+      clawbot)
+        opts="qr "
         COMPREPLY=( $(compgen -W "${opts}" -- ${cur}) )
         return 0
         ;;
