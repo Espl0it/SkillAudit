@@ -1,6 +1,6 @@
 # MEMORY.md - Ada's Long-term Memory
 
-## 工作区目录分类 (2026-02-20 03:42)
+## 工作区目录分类 (2026-02-20 04:12)
 
 ```
 workspace/
@@ -38,6 +38,7 @@ workspace/
 │   ├── find-skills/      # 技能发现
 │   ├── mcporter/         # MCP 服务器管理
 │   ├── notion/           # Notion 集成
+│   ├── option-trading/   # 期权交易
 │   └── ...
 │
 ├── config/               # 配置文件
@@ -45,6 +46,7 @@ workspace/
 ├── memory/               # 每日记忆
 ├── cache/                # 缓存目录
 ├── .agents/              # Agent 配置
+│   └── skills/           # 技能软链接
 ├── .pi/                  # Pi 配置
 ├── .clawhub/             # ClawHub 配置
 └── .openclaw/            # OpenClaw 内部配置
