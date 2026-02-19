@@ -1,7 +1,7 @@
 {
   "agent:main:main": {
     "sessionId": "35317ff3-e609-48c9-b7a8-4b5773bc1fc5",
-    "updatedAt": 1771531474228,
+    "updatedAt": 1771533267910,
     "systemSent": true,
     "abortedLastRun": false,
     "chatType": "direct",
@@ -382,16 +382,16 @@
     "authProfileOverride": "qwen-portal:default",
     "authProfileOverrideSource": "auto",
     "authProfileOverrideCompactionCount": 0,
-    "inputTokens": 1951,
-    "outputTokens": 401,
-    "totalTokens": 20583,
+    "inputTokens": 1097,
+    "outputTokens": 136,
+    "totalTokens": 20635,
     "totalTokensFresh": true,
     "modelProvider": "minimax-cn",
     "model": "MiniMax-M2.5",
     "contextTokens": 200000,
     "systemPromptReport": {
       "source": "run",
-      "generatedAt": 1771531459433,
+      "generatedAt": 1771533259186,
       "sessionId": "35317ff3-e609-48c9-b7a8-4b5773bc1fc5",
       "sessionKey": "agent:main:main",
       "provider": "minimax-cn",
@@ -404,8 +404,8 @@
         "sandboxed": false
       },
       "systemPrompt": {
-        "chars": 37914,
-        "projectContextChars": 16188,
+        "chars": 37981,
+        "projectContextChars": 16255,
         "nonProjectContextChars": 21726
       },
       "injectedWorkspaceFiles": [
@@ -469,8 +469,8 @@
           "name": "MEMORY.md",
           "path": "/home/ecs-user/.openclaw/workspace/MEMORY.md",
           "missing": false,
-          "rawChars": 4813,
-          "injectedChars": 4813,
+          "rawChars": 4880,
+          "injectedChars": 4880,
           "truncated": false
         }
       ],
@@ -1362,7 +1362,7 @@
   },
   "agent:main:cron:ddd3c269-0e02-4b4b-96bc-db2dd40bdddd": {
     "sessionId": "19bd2fc4-b856-4b98-b62b-62b71f2df5c8",
-    "updatedAt": 1771533205646,
+    "updatedAt": 1771533505649,
     "systemSent": true,
     "model": "MiniMax-M2.5",
     "contextTokens": 200000,
@@ -1596,9 +1596,9 @@
       "version": 0
     },
     "modelProvider": "minimax-cn",
-    "inputTokens": 1481,
-    "outputTokens": 110,
-    "totalTokens": 13853,
+    "inputTokens": 1657,
+    "outputTokens": 90,
+    "totalTokens": 14029,
     "totalTokensFresh": true
   },
   "agent:main:cron:ddd3c269-0e02-4b4b-96bc-db2dd40bdddd:run:11160576-4831-4720-8862-deba07236ac1": {
@@ -23800,7 +23800,7 @@
   },
   "agent:main:cron:ddd3c269-0e02-4b4b-96bc-db2dd40bdddd:run:19bd2fc4-b856-4b98-b62b-62b71f2df5c8": {
     "sessionId": "19bd2fc4-b856-4b98-b62b-62b71f2df5c8",
-    "updatedAt": 1771533205646,
+    "updatedAt": 1771533505649,
     "systemSent": true,
     "model": "MiniMax-M2.5",
     "contextTokens": 200000,
@@ -24034,9 +24034,9 @@
       "version": 0
     },
     "modelProvider": "minimax-cn",
-    "inputTokens": 1481,
-    "outputTokens": 110,
-    "totalTokens": 13853,
+    "inputTokens": 1657,
+    "outputTokens": 90,
+    "totalTokens": 14029,
     "totalTokensFresh": true
   },
   "agent:main:cron:cd34fced-188e-4336-9b7b-cf2061eed1a9:run:83fb332e-ae90-4e6d-9ab2-d76ddb6e243b": {
