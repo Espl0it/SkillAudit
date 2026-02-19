@@ -7,7 +7,7 @@
       "name": "auto-push",
       "enabled": true,
       "createdAtMs": 1771376305632,
-      "updatedAtMs": 1771501123924,
+      "updatedAtMs": 1771501415541,
       "schedule": {
         "everyMs": 300000,
         "kind": "every",
@@ -23,12 +23,12 @@
         "mode": "none"
       },
       "state": {
-        "nextRunAtMs": 1771501405632,
-        "lastRunAtMs": 1771501105634,
+        "nextRunAtMs": 1771501705632,
+        "lastRunAtMs": 1771501405634,
         "lastStatus": "ok",
-        "lastDurationMs": 18290,
+        "lastDurationMs": 9907,
         "consecutiveErrors": 0,
-        "runningAtMs": 1771501405633
+        "runningAtMs": 1771501705635
       }
     },
     {
@@ -170,6 +170,84 @@
         "lastStatus": "ok",
         "lastDurationMs": 11299,
         "consecutiveErrors": 0
+      }
+    },
+    {
+      "id": "bf99d812-dd78-4a1a-b6cf-6a93d859f622",
+      "name": "daily-backup",
+      "description": "每天凌晨 3 点备份 workspace",
+      "enabled": true,
+      "createdAtMs": 1771501678463,
+      "updatedAtMs": 1771501678463,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 3 * * *"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "请执行备份脚本: ~/.openclaw/scripts/backup.sh",
+        "timeoutSeconds": 300
+      },
+      "delivery": {
+        "mode": "announce",
+        "channel": "last"
+      },
+      "state": {
+        "nextRunAtMs": 1771527600000
+      }
+    },
+    {
+      "id": "8407d67d-398c-4387-b467-8000734530be",
+      "name": "daily-log-cleanup",
+      "description": "每天凌晨 2 点清理 7 天前的日志",
+      "enabled": true,
+      "createdAtMs": 1771501682649,
+      "updatedAtMs": 1771501682649,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 2 * * *"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "请执行日志清理脚本: ~/.openclaw/scripts/cleanup.sh",
+        "timeoutSeconds": 120
+      },
+      "delivery": {
+        "mode": "announce",
+        "channel": "last"
+      },
+      "state": {
+        "nextRunAtMs": 1771524000000
+      }
+    },
+    {
+      "id": "922c9c1d-bf52-4565-918a-9507ccc0a3ee",
+      "name": "morning-briefing",
+      "description": "每天早上 7 点生成晨间简报并发送到飞书",
+      "enabled": true,
+      "createdAtMs": 1771501686915,
+      "updatedAtMs": 1771501686915,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 7 * * *"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "请执行晨间简报脚本: ~/.openclaw/scripts/briefing.sh",
+        "timeoutSeconds": 180
+      },
+      "delivery": {
+        "mode": "announce",
+        "channel": "last"
+      },
+      "state": {
+        "nextRunAtMs": 1771542000000
       }
     }
   ]
