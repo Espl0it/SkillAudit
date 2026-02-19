@@ -1,5 +1,33 @@
 # MEMORY.md - Ada's Long-term Memory
 
+## 工作区目录分类 (2026-02-19)
+
+```
+workspace/
+├── projects/              # 独立项目
+│   ├── SmartHome/         # 智能家居项目
+│   ├── ReachyMini/        # 机器人项目
+│   ├── fmp/               # 金融数据项目
+│   └── OpenClawInstall/   # 安装脚本项目
+│
+├── skills/                # OpenClaw 技能 (系统)
+│   └── [各种技能]
+│
+├── docs/                  # 文档/指南
+│   ├── OpenClawGuide/     # OpenClaw 指南
+│   ├── OpenCodeGuide/     # Code 指南
+│   └── MakeSkillGuide/   # Skill 开发
+│
+├── config/                # 配置文件 (系统)
+├── scripts/               # 脚本工具
+├── memory/                # 记忆/日志 (系统)
+├── cache/                 # 缓存
+├── .agents/              # Agent 配置 (系统)
+└── .openclaw/            # OpenClaw 内部 (系统)
+```
+
+---
+
 ## OpenClaw Skill 开发指南
 
 ### 目录结构
