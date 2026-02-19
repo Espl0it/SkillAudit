@@ -12,13 +12,9 @@
   },
   "usageStats": {
     "minimax-cn:default": {
-      "lastUsed": 1771496775752,
-      "errorCount": 2,
-      "lastFailureAt": 1771496788128,
-      "failureCounts": {
-        "timeout": 2
-      },
-      "cooldownUntil": 1771497088128
+      "lastUsed": 1771497313478,
+      "errorCount": 0,
+      "lastFailureAt": 1771496788128
     }
   }
 }
