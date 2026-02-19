@@ -170,3 +170,9 @@ node scripts/scanner.js <skill路径>
 - 🟡 Medium - 需要审查
 - 🔵 Low - 轻微问题
 - ℹ️ Info - 信息性
+
+---
+
+## 用户偏好
+
+- **Heartbeat 通知**: 有问题才通知，正常不通知
