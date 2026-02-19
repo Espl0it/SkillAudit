@@ -136,7 +136,44 @@ sqlmap -u "http://target.com?id=1" --random-agent --delay=1 --timeout=10
 sqlmap -u "http://target.com?id=1" --proxy=http://127.0.0.1:8080
 ```
 
-### 8. WAF 绕过 Tamper 脚本
+### 8. 浏览器自动化 (Cloudflare 绕过)
+
+```bash
+# 使用 Playwright 绕过 Cloudflare
+cd /home/ecs-user/.openclaw/workspace/skills/puppeteer-browser
+node browser.js screenshot https://www.mehs.us/
+node browser.js content https://www.mehs.us/
+
+# 绕过 Cloudflare JS Challenge
+node -e "
+const { chromium } = require('playwright');
+(async () => {
+  const browser = await chromium.launch({ 
+    headless: false,
+    args: ['--disable-blink-features=AutomationControlled']
+  });
+  const page = await browser.newPage();
+  
+  // 设置真实 UA
+  await page.setUserAgent('Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36');
+  
+  // 绕过自动化检测
+  await page.evaluateOnNewDocument(() => {
+    Object.defineProperty(navigator, 'webdriver', { get: () => undefined });
+  });
+  
+  await page.goto('https://www.mehs.us/', { waitUntil: 'networkidle0', timeout: 60000 });
+  await page.waitForTimeout(5000); // 等待 Cloudflare 挑战
+  
+  const content = await page.content();
+  console.log('页面长度:', content.length);
+  
+  await browser.close();
+})();
+"
+```
+
+### 9. WAF 绕过 Tamper 脚本
 
 SQLMap 内置 Tamper 脚本（位于 `/usr/share/sqlmap/tamper/`）：
 
