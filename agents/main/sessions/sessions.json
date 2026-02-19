@@ -1,7 +1,7 @@
 {
   "agent:main:main": {
     "sessionId": "1020b0eb-0802-4c20-994b-904298f1ba7e",
-    "updatedAt": 1771521620181,
+    "updatedAt": 1771523419064,
     "systemSent": true,
     "skillsSnapshot": {
       "prompt": "\n\nThe following skills provide specialized instructions for specific tasks.\nUse the read tool to load a skill's file when the task matches its description.\nWhen a skill file references a relative path, resolve it against the skill directory (parent of SKILL.md / dirname of the path) and use that absolute path in tool commands.\n\n<available_skills>\n  <skill>\n    <name>feishu-doc</name>\n    <description>Feishu document read/write operations. Activate when user mentions Feishu docs, cloud docs, or docx links.\n</description>\n    <location>/home/ecs-user/.nvm/versions/node/v24.13.1/lib/node_modules/openclaw/extensions/feishu/skills/feishu-doc/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>feishu-drive</name>\n    <description>Feishu cloud storage file management. Activate when user mentions cloud space, folders, drive.\n</description>\n    <location>/home/ecs-user/.nvm/versions/node/v24.13.1/lib/node_modules/openclaw/extensions/feishu/skills/feishu-drive/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>feishu-perm</name>\n    <description>Feishu permission management for documents and files. Activate when user mentions sharing, permissions, collaborators.\n</description>\n    <location>/home/ecs-user/.nvm/versions/node/v24.13.1/lib/node_modules/openclaw/extensions/feishu/skills/feishu-perm/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>feishu-wiki</name>\n    <description>Feishu knowledge base navigation. Activate when user mentions knowledge base, wiki, or wiki links.\n</description>\n    <location>/home/ecs-user/.nvm/versions/node/v24.13.1/lib/node_modules/openclaw/extensions/feishu/skills/feishu-wiki/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>blogwatcher</name>\n    <description>Monitor blogs and RSS/Atom feeds for updates using the blogwatcher CLI.</description>\n    <location>/home/ecs-user/.openclaw/workspace/skills/blogwatcher/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>coding-agent</name>\n    <description>Run Codex CLI, Claude Code, Kiro CLI, OpenCode, or Pi Coding Agent via background process for programmatic control.</description>\n    <location>/home/ecs-user/.openclaw/workspace/skills/coding-agent/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>github</name>\n    <description>Interact with GitHub using the `gh` CLI. Use `gh issue`, `gh pr`, `gh run`, and `gh api` for issues, PRs, CI runs, and advanced queries.</description>\n    <location>/home/ecs-user/.openclaw/workspace/skills/github/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>gog</name>\n    <description>Google Workspace CLI for Gmail, Calendar, Drive, Contacts, Sheets, and Docs.</description>\n    <location>/home/ecs-user/.openclaw/workspace/skills/gog/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>healthcheck</name>\n    <description>Host security hardening and risk-tolerance configuration for OpenClaw deployments. Use when a user asks for security audits, firewall/SSH/update hardening, risk posture, exposure review, OpenClaw cron scheduling for periodic checks, or version status checks on a machine running OpenClaw (laptop, workstation, Pi, VPS).</description>\n    <location>/home/ecs-user/.nvm/versions/node/v24.13.1/lib/node_modules/openclaw/skills/healthcheck/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>himalaya</name>\n    <description>CLI to manage emails via IMAP/SMTP. Use `himalaya` to list, read, write, reply, forward, search, and organize emails from the terminal. Supports multiple accounts and message composition with MML (MIME Meta Language).</description>\n    <location>/home/ecs-user/.nvm/versions/node/v24.13.1/lib/node_modules/openclaw/skills/himalaya/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>mcporter</name>\n    <description>Use the mcporter CLI to list, configure, auth, and call MCP servers/tools directly (HTTP or stdio), including ad-hoc servers, config edits, and CLI/type generation.</description>\n    <location>/home/ecs-user/.openclaw/workspace/skills/mcporter/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>notion</name>\n    <description>Notion API for creating and managing pages, databases, and blocks.</description>\n    <location>/home/ecs-user/.openclaw/workspace/skills/notion/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>sag</name>\n    <description>ElevenLabs text-to-speech with mac-style say UX.</description>\n    <location>/home/ecs-user/.openclaw/workspace/skills/sag/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>skill-creator</name>\n    <description>Create or update AgentSkills. Use when designing, structuring, or packaging skills with scripts, references, and assets.</description>\n    <location>/home/ecs-user/.nvm/versions/node/v24.13.1/lib/node_modules/openclaw/skills/skill-creator/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>summarize</name>\n    <description>Summarize URLs or files with the summarize CLI (web, PDFs, images, audio, YouTube).</description>\n    <location>/home/ecs-user/.openclaw/workspace/skills/summarize/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>tmux</name>\n    <description>Remote-control tmux sessions for interactive CLIs by sending keystrokes and scraping pane output.</description>\n    <location>/home/ecs-user/.nvm/versions/node/v24.13.1/lib/node_modules/openclaw/skills/tmux/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>wacli</name>\n    <description>Send WhatsApp messages to other people or search/sync WhatsApp history via the wacli CLI (not for normal user chats).</description>\n    <location>/home/ecs-user/.openclaw/workspace/skills/wacli/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>weather</name>\n    <description>Get current weather and forecasts (no API key required).</description>\n    <location>/home/ecs-user/.openclaw/workspace/skills/weather/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>skill-audit</name>\n    <description>Security audit tool for OpenClaw Skills. Detects hardcoded secrets, command injection risks, and other vulnerabilities.</description>\n    <location>/home/ecs-user/.openclaw/workspace/skills/skill-audit/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>fmp</name>\n    <description>Financial Modeling Prep API - Comprehensive financial data including stock quotes, financial statements, and market data</description>\n    <location>/home/ecs-user/.openclaw/skills/fmp/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>opencode-acp-control</name>\n    <description>Control OpenCode directly via the Agent Client Protocol (ACP). Start sessions, send prompts, resume conversations, and manage OpenCode updates.</description>\n    <location>/home/ecs-user/.openclaw/workspace/.agents/skills/opencode-acp-control/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>tushare</name>\n    <description>tushare是一个财经数据接口包，拥有丰富的数据内容，如股票、基金、期货、数字货币等行情数据，公司财务、基金经理等基本面数据。该模块通过标准化API方式统一了数据资产的对外服务方式，以帮助有需要的技术用户更实时、简洁、轻量的使用相关数据。</description>\n    <location>/home/ecs-user/.openclaw/workspace/skills/tushare/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>Dietitian</name>\n    <description>Structured meal planning — calorie targets, macro calculations, meal timing, and goal-specific diet protocols.</description>\n    <location>/home/ecs-user/.openclaw/workspace/skills/dietitian/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>find-skills</name>\n    <description>Helps users discover and install agent skills when they ask questions like &quot;how do I do X&quot;, &quot;find a skill for X&quot;, &quot;is there a skill that can...&quot;, or express interest in extending capabilities. This skill should be used when the user is looking for functionality that might exist as an installable skill.</description>\n    <location>/home/ecs-user/.openclaw/workspace/skills/find-skills/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>proactive-agent</name>\n    <description>Transform AI agents from task-followers into proactive partners that anticipate needs and continuously improve. Now with WAL Protocol, Working Buffer, Autonomous Crons, and battle-tested patterns. Part of the Hal Stack 🦞</description>\n    <location>/home/ecs-user/.openclaw/workspace/skills/proactive-agent/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>send-email</name>\n    <description>Send emails via SMTP. Configure in ~/.openclaw/openclaw.json under skills.entries.send-email.env.</description>\n    <location>/home/ecs-user/.openclaw/workspace/skills/send-email/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>stock-evaluator-v3</name>\n    <description>Comprehensive evaluation of potential stock investments combining valuation analysis, fundamental research, technical assessment, and clear buy/hold/sell recommendations. Use when the user asks about buying a stock, evaluating investment opportunities, analyzing watchlist candidates, or requests stock recommendations. Provides specific entry prices, position sizing, and conviction ratings.</description>\n    <location>/home/ecs-user/.openclaw/workspace/skills/stock-evaluator/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>tavily</name>\n    <description>AI-optimized web search via Tavily API. Returns concise, relevant results for AI agents.</description>\n    <location>/home/ecs-user/.openclaw/workspace/skills/tavily-search/SKILL.md</location>\n  </skill>\n</available_skills>",
@@ -329,13 +329,13 @@
     "lastTo": "user:ou_622f688f24a6bca0390ca0c8b913eb9e",
     "lastAccountId": "default",
     "channel": "feishu",
-    "modelProvider": "qwen-portal",
-    "model": "coder-model",
-    "contextTokens": 128000,
+    "modelProvider": "minimax-cn",
+    "model": "MiniMax-M2.5",
+    "contextTokens": 200000,
     "abortedLastRun": false,
-    "inputTokens": 289824,
-    "outputTokens": 685,
-    "totalTokens": 97231,
+    "inputTokens": 352348,
+    "outputTokens": 343,
+    "totalTokens": 136830,
     "totalTokensFresh": true,
     "chatType": "direct",
     "origin": {
@@ -353,11 +353,11 @@
     "authProfileOverrideCompactionCount": 0,
     "systemPromptReport": {
       "source": "run",
-      "generatedAt": 1771521591087,
+      "generatedAt": 1771523391129,
       "sessionId": "1020b0eb-0802-4c20-994b-904298f1ba7e",
       "sessionKey": "agent:main:main",
-      "provider": "qwen-portal",
-      "model": "coder-model",
+      "provider": "minimax-cn",
+      "model": "MiniMax-M2.5",
       "workspaceDir": "/home/ecs-user/.openclaw/workspace",
       "bootstrapMaxChars": 20000,
       "bootstrapTotalMaxChars": 150000,
@@ -366,9 +366,9 @@
         "sandboxed": false
       },
       "systemPrompt": {
-        "chars": 36573,
+        "chars": 37054,
         "projectContextChars": 16188,
-        "nonProjectContextChars": 20385
+        "nonProjectContextChars": 20866
       },
       "injectedWorkspaceFiles": [
         {
@@ -1308,7 +1308,7 @@
   },
   "agent:main:cron:ddd3c269-0e02-4b4b-96bc-db2dd40bdddd": {
     "sessionId": "299067a6-3607-434a-b259-290efd4f9ca6",
-    "updatedAt": 1771523305644,
+    "updatedAt": 1771523605647,
     "systemSent": true,
     "model": "MiniMax-M2.5",
     "contextTokens": 200000,
@@ -1542,491 +1542,9 @@
       "version": 0
     },
     "modelProvider": "minimax-cn",
-    "inputTokens": 47006,
-    "outputTokens": 132,
-    "totalTokens": 59378,
-    "totalTokensFresh": true
-  },
-  "agent:main:cron:ddd3c269-0e02-4b4b-96bc-db2dd40bdddd:run:016c8e3d-3a00-49cf-bf23-549ccb21bb7e": {
-    "sessionId": "016c8e3d-3a00-49cf-bf23-549ccb21bb7e",
-    "updatedAt": 1771436605641,
-    "systemSent": true,
-    "model": "MiniMax-M2.5",
-    "contextTokens": 200000,
-    "label": "Cron: auto-push",
-    "skillsSnapshot": {
-      "prompt": "\n\nThe following skills provide specialized instructions for specific tasks.\nUse the read tool to load a skill's file when the task matches its description.\nWhen a skill file references a relative path, resolve it against the skill directory (parent of SKILL.md / dirname of the path) and use that absolute path in tool commands.\n\n<available_skills>\n  <skill>\n    <name>feishu-doc</name>\n    <description>Feishu document read/write operations. Activate when user mentions Feishu docs, cloud docs, or docx links.\n</description>\n    <location>/home/ecs-user/.nvm/versions/node/v24.13.1/lib/node_modules/openclaw/extensions/feishu/skills/feishu-doc/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>feishu-drive</name>\n    <description>Feishu cloud storage file management. Activate when user mentions cloud space, folders, drive.\n</description>\n    <location>/home/ecs-user/.nvm/versions/node/v24.13.1/lib/node_modules/openclaw/extensions/feishu/skills/feishu-drive/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>feishu-perm</name>\n    <description>Feishu permission management for documents and files. Activate when user mentions sharing, permissions, collaborators.\n</description>\n    <location>/home/ecs-user/.nvm/versions/node/v24.13.1/lib/node_modules/openclaw/extensions/feishu/skills/feishu-perm/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>feishu-wiki</name>\n    <description>Feishu knowledge base navigation. Activate when user mentions knowledge base, wiki, or wiki links.\n</description>\n    <location>/home/ecs-user/.nvm/versions/node/v24.13.1/lib/node_modules/openclaw/extensions/feishu/skills/feishu-wiki/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>blogwatcher</name>\n    <description>Monitor blogs and RSS/Atom feeds for updates using the blogwatcher CLI.</description>\n    <location>/home/ecs-user/.openclaw/workspace/skills/blogwatcher/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>github</name>\n    <description>Interact with GitHub using the `gh` CLI. Use `gh issue`, `gh pr`, `gh run`, and `gh api` for issues, PRs, CI runs, and advanced queries.</description>\n    <location>/home/ecs-user/.openclaw/workspace/skills/github/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>gog</name>\n    <description>Google Workspace CLI for Gmail, Calendar, Drive, Contacts, Sheets, and Docs.</description>\n    <location>/home/ecs-user/.openclaw/workspace/skills/gog/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>healthcheck</name>\n    <description>Host security hardening and risk-tolerance configuration for OpenClaw deployments. Use when a user asks for security audits, firewall/SSH/update hardening, risk posture, exposure review, OpenClaw cron scheduling for periodic checks, or version status checks on a machine running OpenClaw (laptop, workstation, Pi, VPS).</description>\n    <location>/home/ecs-user/.nvm/versions/node/v24.13.1/lib/node_modules/openclaw/skills/healthcheck/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>himalaya</name>\n    <description>CLI to manage emails via IMAP/SMTP. Use `himalaya` to list, read, write, reply, forward, search, and organize emails from the terminal. Supports multiple accounts and message composition with MML (MIME Meta Language).</description>\n    <location>/home/ecs-user/.nvm/versions/node/v24.13.1/lib/node_modules/openclaw/skills/himalaya/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>notion</name>\n    <description>Notion API for creating and managing pages, databases, and blocks.</description>\n    <location>/home/ecs-user/.openclaw/workspace/skills/notion/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>sag</name>\n    <description>ElevenLabs text-to-speech with mac-style say UX.</description>\n    <location>/home/ecs-user/.openclaw/workspace/skills/sag/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>skill-creator</name>\n    <description>Create or update AgentSkills. Use when designing, structuring, or packaging skills with scripts, references, and assets.</description>\n    <location>/home/ecs-user/.nvm/versions/node/v24.13.1/lib/node_modules/openclaw/skills/skill-creator/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>summarize</name>\n    <description>Summarize URLs or files with the summarize CLI (web, PDFs, images, audio, YouTube).</description>\n    <location>/home/ecs-user/.openclaw/workspace/skills/summarize/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>tmux</name>\n    <description>Remote-control tmux sessions for interactive CLIs by sending keystrokes and scraping pane output.</description>\n    <location>/home/ecs-user/.nvm/versions/node/v24.13.1/lib/node_modules/openclaw/skills/tmux/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>wacli</name>\n    <description>Send WhatsApp messages to other people or search/sync WhatsApp history via the wacli CLI (not for normal user chats).</description>\n    <location>/home/ecs-user/.openclaw/workspace/skills/wacli/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>weather</name>\n    <description>Get current weather and forecasts (no API key required).</description>\n    <location>/home/ecs-user/.openclaw/workspace/skills/weather/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>find-skills</name>\n    <description>Helps users discover and install agent skills when they ask questions like &quot;how do I do X&quot;, &quot;find a skill for X&quot;, &quot;is there a skill that can...&quot;, or express interest in extending capabilities. This skill should be used when the user is looking for functionality that might exist as an installable skill.</description>\n    <location>/home/ecs-user/.openclaw/workspace/skills/find-skills/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>proactive-agent</name>\n    <description>Transform AI agents from task-followers into proactive partners that anticipate needs and continuously improve. Now with WAL Protocol, Working Buffer, Autonomous Crons, and battle-tested patterns. Part of the Hal Stack 🦞</description>\n    <location>/home/ecs-user/.openclaw/workspace/skills/proactive-agent/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>send-email</name>\n    <description>Send emails via SMTP. Configure in ~/.openclaw/openclaw.json under skills.entries.send-email.env.</description>\n    <location>/home/ecs-user/.openclaw/workspace/skills/send-email/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>tavily</name>\n    <description>AI-optimized web search via Tavily API. Returns concise, relevant results for AI agents.</description>\n    <location>/home/ecs-user/.openclaw/workspace/skills/tavily-search/SKILL.md</location>\n  </skill>\n</available_skills>",
-      "skills": [
-        {
-          "name": "feishu-doc"
-        },
-        {
-          "name": "feishu-drive"
-        },
-        {
-          "name": "feishu-perm"
-        },
-        {
-          "name": "feishu-wiki"
-        },
-        {
-          "name": "blogwatcher"
-        },
-        {
-          "name": "github"
-        },
-        {
-          "name": "gog"
-        },
-        {
-          "name": "healthcheck"
-        },
-        {
-          "name": "himalaya"
-        },
-        {
-          "name": "notion"
-        },
-        {
-          "name": "sag"
-        },
-        {
-          "name": "skill-creator"
-        },
-        {
-          "name": "summarize"
-        },
-        {
-          "name": "tmux"
-        },
-        {
-          "name": "wacli"
-        },
-        {
-          "name": "weather"
-        },
-        {
-          "name": "find-skills"
-        },
-        {
-          "name": "proactive-agent"
-        },
-        {
-          "name": "send-email"
-        },
-        {
-          "name": "tavily"
-        }
-      ],
-      "resolvedSkills": [
-        {
-          "name": "feishu-doc",
-          "description": "Feishu document read/write operations. Activate when user mentions Feishu docs, cloud docs, or docx links.\n",
-          "filePath": "/home/ecs-user/.nvm/versions/node/v24.13.1/lib/node_modules/openclaw/extensions/feishu/skills/feishu-doc/SKILL.md",
-          "baseDir": "/home/ecs-user/.nvm/versions/node/v24.13.1/lib/node_modules/openclaw/extensions/feishu/skills/feishu-doc",
-          "source": "openclaw-extra",
-          "disableModelInvocation": false
-        },
-        {
-          "name": "feishu-drive",
-          "description": "Feishu cloud storage file management. Activate when user mentions cloud space, folders, drive.\n",
-          "filePath": "/home/ecs-user/.nvm/versions/node/v24.13.1/lib/node_modules/openclaw/extensions/feishu/skills/feishu-drive/SKILL.md",
-          "baseDir": "/home/ecs-user/.nvm/versions/node/v24.13.1/lib/node_modules/openclaw/extensions/feishu/skills/feishu-drive",
-          "source": "openclaw-extra",
-          "disableModelInvocation": false
-        },
-        {
-          "name": "feishu-perm",
-          "description": "Feishu permission management for documents and files. Activate when user mentions sharing, permissions, collaborators.\n",
-          "filePath": "/home/ecs-user/.nvm/versions/node/v24.13.1/lib/node_modules/openclaw/extensions/feishu/skills/feishu-perm/SKILL.md",
-          "baseDir": "/home/ecs-user/.nvm/versions/node/v24.13.1/lib/node_modules/openclaw/extensions/feishu/skills/feishu-perm",
-          "source": "openclaw-extra",
-          "disableModelInvocation": false
-        },
-        {
-          "name": "feishu-wiki",
-          "description": "Feishu knowledge base navigation. Activate when user mentions knowledge base, wiki, or wiki links.\n",
-          "filePath": "/home/ecs-user/.nvm/versions/node/v24.13.1/lib/node_modules/openclaw/extensions/feishu/skills/feishu-wiki/SKILL.md",
-          "baseDir": "/home/ecs-user/.nvm/versions/node/v24.13.1/lib/node_modules/openclaw/extensions/feishu/skills/feishu-wiki",
-          "source": "openclaw-extra",
-          "disableModelInvocation": false
-        },
-        {
-          "name": "blogwatcher",
-          "description": "Monitor blogs and RSS/Atom feeds for updates using the blogwatcher CLI.",
-          "filePath": "/home/ecs-user/.openclaw/workspace/skills/blogwatcher/SKILL.md",
-          "baseDir": "/home/ecs-user/.openclaw/workspace/skills/blogwatcher",
-          "source": "openclaw-workspace",
-          "disableModelInvocation": false
-        },
-        {
-          "name": "github",
-          "description": "Interact with GitHub using the `gh` CLI. Use `gh issue`, `gh pr`, `gh run`, and `gh api` for issues, PRs, CI runs, and advanced queries.",
-          "filePath": "/home/ecs-user/.openclaw/workspace/skills/github/SKILL.md",
-          "baseDir": "/home/ecs-user/.openclaw/workspace/skills/github",
-          "source": "openclaw-workspace",
-          "disableModelInvocation": false
-        },
-        {
-          "name": "gog",
-          "description": "Google Workspace CLI for Gmail, Calendar, Drive, Contacts, Sheets, and Docs.",
-          "filePath": "/home/ecs-user/.openclaw/workspace/skills/gog/SKILL.md",
-          "baseDir": "/home/ecs-user/.openclaw/workspace/skills/gog",
-          "source": "openclaw-workspace",
-          "disableModelInvocation": false
-        },
-        {
-          "name": "healthcheck",
-          "description": "Host security hardening and risk-tolerance configuration for OpenClaw deployments. Use when a user asks for security audits, firewall/SSH/update hardening, risk posture, exposure review, OpenClaw cron scheduling for periodic checks, or version status checks on a machine running OpenClaw (laptop, workstation, Pi, VPS).",
-          "filePath": "/home/ecs-user/.nvm/versions/node/v24.13.1/lib/node_modules/openclaw/skills/healthcheck/SKILL.md",
-          "baseDir": "/home/ecs-user/.nvm/versions/node/v24.13.1/lib/node_modules/openclaw/skills/healthcheck",
-          "source": "openclaw-bundled",
-          "disableModelInvocation": false
-        },
-        {
-          "name": "himalaya",
-          "description": "CLI to manage emails via IMAP/SMTP. Use `himalaya` to list, read, write, reply, forward, search, and organize emails from the terminal. Supports multiple accounts and message composition with MML (MIME Meta Language).",
-          "filePath": "/home/ecs-user/.nvm/versions/node/v24.13.1/lib/node_modules/openclaw/skills/himalaya/SKILL.md",
-          "baseDir": "/home/ecs-user/.nvm/versions/node/v24.13.1/lib/node_modules/openclaw/skills/himalaya",
-          "source": "openclaw-bundled",
-          "disableModelInvocation": false
-        },
-        {
-          "name": "notion",
-          "description": "Notion API for creating and managing pages, databases, and blocks.",
-          "filePath": "/home/ecs-user/.openclaw/workspace/skills/notion/SKILL.md",
-          "baseDir": "/home/ecs-user/.openclaw/workspace/skills/notion",
-          "source": "openclaw-workspace",
-          "disableModelInvocation": false
-        },
-        {
-          "name": "sag",
-          "description": "ElevenLabs text-to-speech with mac-style say UX.",
-          "filePath": "/home/ecs-user/.openclaw/workspace/skills/sag/SKILL.md",
-          "baseDir": "/home/ecs-user/.openclaw/workspace/skills/sag",
-          "source": "openclaw-workspace",
-          "disableModelInvocation": false
-        },
-        {
-          "name": "skill-creator",
-          "description": "Create or update AgentSkills. Use when designing, structuring, or packaging skills with scripts, references, and assets.",
-          "filePath": "/home/ecs-user/.nvm/versions/node/v24.13.1/lib/node_modules/openclaw/skills/skill-creator/SKILL.md",
-          "baseDir": "/home/ecs-user/.nvm/versions/node/v24.13.1/lib/node_modules/openclaw/skills/skill-creator",
-          "source": "openclaw-bundled",
-          "disableModelInvocation": false
-        },
-        {
-          "name": "summarize",
-          "description": "Summarize URLs or files with the summarize CLI (web, PDFs, images, audio, YouTube).",
-          "filePath": "/home/ecs-user/.openclaw/workspace/skills/summarize/SKILL.md",
-          "baseDir": "/home/ecs-user/.openclaw/workspace/skills/summarize",
-          "source": "openclaw-workspace",
-          "disableModelInvocation": false
-        },
-        {
-          "name": "tmux",
-          "description": "Remote-control tmux sessions for interactive CLIs by sending keystrokes and scraping pane output.",
-          "filePath": "/home/ecs-user/.nvm/versions/node/v24.13.1/lib/node_modules/openclaw/skills/tmux/SKILL.md",
-          "baseDir": "/home/ecs-user/.nvm/versions/node/v24.13.1/lib/node_modules/openclaw/skills/tmux",
-          "source": "openclaw-bundled",
-          "disableModelInvocation": false
-        },
-        {
-          "name": "wacli",
-          "description": "Send WhatsApp messages to other people or search/sync WhatsApp history via the wacli CLI (not for normal user chats).",
-          "filePath": "/home/ecs-user/.openclaw/workspace/skills/wacli/SKILL.md",
-          "baseDir": "/home/ecs-user/.openclaw/workspace/skills/wacli",
-          "source": "openclaw-workspace",
-          "disableModelInvocation": false
-        },
-        {
-          "name": "weather",
-          "description": "Get current weather and forecasts (no API key required).",
-          "filePath": "/home/ecs-user/.openclaw/workspace/skills/weather/SKILL.md",
-          "baseDir": "/home/ecs-user/.openclaw/workspace/skills/weather",
-          "source": "openclaw-workspace",
-          "disableModelInvocation": false
-        },
-        {
-          "name": "find-skills",
-          "description": "Helps users discover and install agent skills when they ask questions like \"how do I do X\", \"find a skill for X\", \"is there a skill that can...\", or express interest in extending capabilities. This skill should be used when the user is looking for functionality that might exist as an installable skill.",
-          "filePath": "/home/ecs-user/.openclaw/workspace/skills/find-skills/SKILL.md",
-          "baseDir": "/home/ecs-user/.openclaw/workspace/skills/find-skills",
-          "source": "openclaw-workspace",
-          "disableModelInvocation": false
-        },
-        {
-          "name": "proactive-agent",
-          "description": "Transform AI agents from task-followers into proactive partners that anticipate needs and continuously improve. Now with WAL Protocol, Working Buffer, Autonomous Crons, and battle-tested patterns. Part of the Hal Stack 🦞",
-          "filePath": "/home/ecs-user/.openclaw/workspace/skills/proactive-agent/SKILL.md",
-          "baseDir": "/home/ecs-user/.openclaw/workspace/skills/proactive-agent",
-          "source": "openclaw-workspace",
-          "disableModelInvocation": false
-        },
-        {
-          "name": "send-email",
-          "description": "Send emails via SMTP. Configure in ~/.openclaw/openclaw.json under skills.entries.send-email.env.",
-          "filePath": "/home/ecs-user/.openclaw/workspace/skills/send-email/SKILL.md",
-          "baseDir": "/home/ecs-user/.openclaw/workspace/skills/send-email",
-          "source": "openclaw-workspace",
-          "disableModelInvocation": false
-        },
-        {
-          "name": "tavily",
-          "description": "AI-optimized web search via Tavily API. Returns concise, relevant results for AI agents.",
-          "filePath": "/home/ecs-user/.openclaw/workspace/skills/tavily-search/SKILL.md",
-          "baseDir": "/home/ecs-user/.openclaw/workspace/skills/tavily-search",
-          "source": "openclaw-workspace",
-          "disableModelInvocation": false
-        }
-      ],
-      "version": 0
-    },
-    "modelProvider": "minimax-cn",
-    "inputTokens": 389,
-    "outputTokens": 157,
-    "totalTokens": 12897,
-    "totalTokensFresh": true
-  },
-  "agent:main:cron:ddd3c269-0e02-4b4b-96bc-db2dd40bdddd:run:21e99716-a01f-4adf-9217-20e3f317c187": {
-    "sessionId": "21e99716-a01f-4adf-9217-20e3f317c187",
-    "updatedAt": 1771436905642,
-    "systemSent": true,
-    "model": "MiniMax-M2.5",
-    "contextTokens": 200000,
-    "label": "Cron: auto-push",
-    "skillsSnapshot": {
-      "prompt": "\n\nThe following skills provide specialized instructions for specific tasks.\nUse the read tool to load a skill's file when the task matches its description.\nWhen a skill file references a relative path, resolve it against the skill directory (parent of SKILL.md / dirname of the path) and use that absolute path in tool commands.\n\n<available_skills>\n  <skill>\n    <name>feishu-doc</name>\n    <description>Feishu document read/write operations. Activate when user mentions Feishu docs, cloud docs, or docx links.\n</description>\n    <location>/home/ecs-user/.nvm/versions/node/v24.13.1/lib/node_modules/openclaw/extensions/feishu/skills/feishu-doc/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>feishu-drive</name>\n    <description>Feishu cloud storage file management. Activate when user mentions cloud space, folders, drive.\n</description>\n    <location>/home/ecs-user/.nvm/versions/node/v24.13.1/lib/node_modules/openclaw/extensions/feishu/skills/feishu-drive/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>feishu-perm</name>\n    <description>Feishu permission management for documents and files. Activate when user mentions sharing, permissions, collaborators.\n</description>\n    <location>/home/ecs-user/.nvm/versions/node/v24.13.1/lib/node_modules/openclaw/extensions/feishu/skills/feishu-perm/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>feishu-wiki</name>\n    <description>Feishu knowledge base navigation. Activate when user mentions knowledge base, wiki, or wiki links.\n</description>\n    <location>/home/ecs-user/.nvm/versions/node/v24.13.1/lib/node_modules/openclaw/extensions/feishu/skills/feishu-wiki/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>blogwatcher</name>\n    <description>Monitor blogs and RSS/Atom feeds for updates using the blogwatcher CLI.</description>\n    <location>/home/ecs-user/.openclaw/workspace/skills/blogwatcher/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>github</name>\n    <description>Interact with GitHub using the `gh` CLI. Use `gh issue`, `gh pr`, `gh run`, and `gh api` for issues, PRs, CI runs, and advanced queries.</description>\n    <location>/home/ecs-user/.openclaw/workspace/skills/github/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>gog</name>\n    <description>Google Workspace CLI for Gmail, Calendar, Drive, Contacts, Sheets, and Docs.</description>\n    <location>/home/ecs-user/.openclaw/workspace/skills/gog/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>healthcheck</name>\n    <description>Host security hardening and risk-tolerance configuration for OpenClaw deployments. Use when a user asks for security audits, firewall/SSH/update hardening, risk posture, exposure review, OpenClaw cron scheduling for periodic checks, or version status checks on a machine running OpenClaw (laptop, workstation, Pi, VPS).</description>\n    <location>/home/ecs-user/.nvm/versions/node/v24.13.1/lib/node_modules/openclaw/skills/healthcheck/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>himalaya</name>\n    <description>CLI to manage emails via IMAP/SMTP. Use `himalaya` to list, read, write, reply, forward, search, and organize emails from the terminal. Supports multiple accounts and message composition with MML (MIME Meta Language).</description>\n    <location>/home/ecs-user/.nvm/versions/node/v24.13.1/lib/node_modules/openclaw/skills/himalaya/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>notion</name>\n    <description>Notion API for creating and managing pages, databases, and blocks.</description>\n    <location>/home/ecs-user/.openclaw/workspace/skills/notion/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>sag</name>\n    <description>ElevenLabs text-to-speech with mac-style say UX.</description>\n    <location>/home/ecs-user/.openclaw/workspace/skills/sag/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>skill-creator</name>\n    <description>Create or update AgentSkills. Use when designing, structuring, or packaging skills with scripts, references, and assets.</description>\n    <location>/home/ecs-user/.nvm/versions/node/v24.13.1/lib/node_modules/openclaw/skills/skill-creator/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>summarize</name>\n    <description>Summarize URLs or files with the summarize CLI (web, PDFs, images, audio, YouTube).</description>\n    <location>/home/ecs-user/.openclaw/workspace/skills/summarize/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>tmux</name>\n    <description>Remote-control tmux sessions for interactive CLIs by sending keystrokes and scraping pane output.</description>\n    <location>/home/ecs-user/.nvm/versions/node/v24.13.1/lib/node_modules/openclaw/skills/tmux/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>wacli</name>\n    <description>Send WhatsApp messages to other people or search/sync WhatsApp history via the wacli CLI (not for normal user chats).</description>\n    <location>/home/ecs-user/.openclaw/workspace/skills/wacli/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>weather</name>\n    <description>Get current weather and forecasts (no API key required).</description>\n    <location>/home/ecs-user/.openclaw/workspace/skills/weather/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>find-skills</name>\n    <description>Helps users discover and install agent skills when they ask questions like &quot;how do I do X&quot;, &quot;find a skill for X&quot;, &quot;is there a skill that can...&quot;, or express interest in extending capabilities. This skill should be used when the user is looking for functionality that might exist as an installable skill.</description>\n    <location>/home/ecs-user/.openclaw/workspace/skills/find-skills/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>proactive-agent</name>\n    <description>Transform AI agents from task-followers into proactive partners that anticipate needs and continuously improve. Now with WAL Protocol, Working Buffer, Autonomous Crons, and battle-tested patterns. Part of the Hal Stack 🦞</description>\n    <location>/home/ecs-user/.openclaw/workspace/skills/proactive-agent/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>send-email</name>\n    <description>Send emails via SMTP. Configure in ~/.openclaw/openclaw.json under skills.entries.send-email.env.</description>\n    <location>/home/ecs-user/.openclaw/workspace/skills/send-email/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>tavily</name>\n    <description>AI-optimized web search via Tavily API. Returns concise, relevant results for AI agents.</description>\n    <location>/home/ecs-user/.openclaw/workspace/skills/tavily-search/SKILL.md</location>\n  </skill>\n</available_skills>",
-      "skills": [
-        {
-          "name": "feishu-doc"
-        },
-        {
-          "name": "feishu-drive"
-        },
-        {
-          "name": "feishu-perm"
-        },
-        {
-          "name": "feishu-wiki"
-        },
-        {
-          "name": "blogwatcher"
-        },
-        {
-          "name": "github"
-        },
-        {
-          "name": "gog"
-        },
-        {
-          "name": "healthcheck"
-        },
-        {
-          "name": "himalaya"
-        },
-        {
-          "name": "notion"
-        },
-        {
-          "name": "sag"
-        },
-        {
-          "name": "skill-creator"
-        },
-        {
-          "name": "summarize"
-        },
-        {
-          "name": "tmux"
-        },
-        {
-          "name": "wacli"
-        },
-        {
-          "name": "weather"
-        },
-        {
-          "name": "find-skills"
-        },
-        {
-          "name": "proactive-agent"
-        },
-        {
-          "name": "send-email"
-        },
-        {
-          "name": "tavily"
-        }
-      ],
-      "resolvedSkills": [
-        {
-          "name": "feishu-doc",
-          "description": "Feishu document read/write operations. Activate when user mentions Feishu docs, cloud docs, or docx links.\n",
-          "filePath": "/home/ecs-user/.nvm/versions/node/v24.13.1/lib/node_modules/openclaw/extensions/feishu/skills/feishu-doc/SKILL.md",
-          "baseDir": "/home/ecs-user/.nvm/versions/node/v24.13.1/lib/node_modules/openclaw/extensions/feishu/skills/feishu-doc",
-          "source": "openclaw-extra",
-          "disableModelInvocation": false
-        },
-        {
-          "name": "feishu-drive",
-          "description": "Feishu cloud storage file management. Activate when user mentions cloud space, folders, drive.\n",
-          "filePath": "/home/ecs-user/.nvm/versions/node/v24.13.1/lib/node_modules/openclaw/extensions/feishu/skills/feishu-drive/SKILL.md",
-          "baseDir": "/home/ecs-user/.nvm/versions/node/v24.13.1/lib/node_modules/openclaw/extensions/feishu/skills/feishu-drive",
-          "source": "openclaw-extra",
-          "disableModelInvocation": false
-        },
-        {
-          "name": "feishu-perm",
-          "description": "Feishu permission management for documents and files. Activate when user mentions sharing, permissions, collaborators.\n",
-          "filePath": "/home/ecs-user/.nvm/versions/node/v24.13.1/lib/node_modules/openclaw/extensions/feishu/skills/feishu-perm/SKILL.md",
-          "baseDir": "/home/ecs-user/.nvm/versions/node/v24.13.1/lib/node_modules/openclaw/extensions/feishu/skills/feishu-perm",
-          "source": "openclaw-extra",
-          "disableModelInvocation": false
-        },
-        {
-          "name": "feishu-wiki",
-          "description": "Feishu knowledge base navigation. Activate when user mentions knowledge base, wiki, or wiki links.\n",
-          "filePath": "/home/ecs-user/.nvm/versions/node/v24.13.1/lib/node_modules/openclaw/extensions/feishu/skills/feishu-wiki/SKILL.md",
-          "baseDir": "/home/ecs-user/.nvm/versions/node/v24.13.1/lib/node_modules/openclaw/extensions/feishu/skills/feishu-wiki",
-          "source": "openclaw-extra",
-          "disableModelInvocation": false
-        },
-        {
-          "name": "blogwatcher",
-          "description": "Monitor blogs and RSS/Atom feeds for updates using the blogwatcher CLI.",
-          "filePath": "/home/ecs-user/.openclaw/workspace/skills/blogwatcher/SKILL.md",
-          "baseDir": "/home/ecs-user/.openclaw/workspace/skills/blogwatcher",
-          "source": "openclaw-workspace",
-          "disableModelInvocation": false
-        },
-        {
-          "name": "github",
-          "description": "Interact with GitHub using the `gh` CLI. Use `gh issue`, `gh pr`, `gh run`, and `gh api` for issues, PRs, CI runs, and advanced queries.",
-          "filePath": "/home/ecs-user/.openclaw/workspace/skills/github/SKILL.md",
-          "baseDir": "/home/ecs-user/.openclaw/workspace/skills/github",
-          "source": "openclaw-workspace",
-          "disableModelInvocation": false
-        },
-        {
-          "name": "gog",
-          "description": "Google Workspace CLI for Gmail, Calendar, Drive, Contacts, Sheets, and Docs.",
-          "filePath": "/home/ecs-user/.openclaw/workspace/skills/gog/SKILL.md",
-          "baseDir": "/home/ecs-user/.openclaw/workspace/skills/gog",
-          "source": "openclaw-workspace",
-          "disableModelInvocation": false
-        },
-        {
-          "name": "healthcheck",
-          "description": "Host security hardening and risk-tolerance configuration for OpenClaw deployments. Use when a user asks for security audits, firewall/SSH/update hardening, risk posture, exposure review, OpenClaw cron scheduling for periodic checks, or version status checks on a machine running OpenClaw (laptop, workstation, Pi, VPS).",
-          "filePath": "/home/ecs-user/.nvm/versions/node/v24.13.1/lib/node_modules/openclaw/skills/healthcheck/SKILL.md",
-          "baseDir": "/home/ecs-user/.nvm/versions/node/v24.13.1/lib/node_modules/openclaw/skills/healthcheck",
-          "source": "openclaw-bundled",
-          "disableModelInvocation": false
-        },
-        {
-          "name": "himalaya",
-          "description": "CLI to manage emails via IMAP/SMTP. Use `himalaya` to list, read, write, reply, forward, search, and organize emails from the terminal. Supports multiple accounts and message composition with MML (MIME Meta Language).",
-          "filePath": "/home/ecs-user/.nvm/versions/node/v24.13.1/lib/node_modules/openclaw/skills/himalaya/SKILL.md",
-          "baseDir": "/home/ecs-user/.nvm/versions/node/v24.13.1/lib/node_modules/openclaw/skills/himalaya",
-          "source": "openclaw-bundled",
-          "disableModelInvocation": false
-        },
-        {
-          "name": "notion",
-          "description": "Notion API for creating and managing pages, databases, and blocks.",
-          "filePath": "/home/ecs-user/.openclaw/workspace/skills/notion/SKILL.md",
-          "baseDir": "/home/ecs-user/.openclaw/workspace/skills/notion",
-          "source": "openclaw-workspace",
-          "disableModelInvocation": false
-        },
-        {
-          "name": "sag",
-          "description": "ElevenLabs text-to-speech with mac-style say UX.",
-          "filePath": "/home/ecs-user/.openclaw/workspace/skills/sag/SKILL.md",
-          "baseDir": "/home/ecs-user/.openclaw/workspace/skills/sag",
-          "source": "openclaw-workspace",
-          "disableModelInvocation": false
-        },
-        {
-          "name": "skill-creator",
-          "description": "Create or update AgentSkills. Use when designing, structuring, or packaging skills with scripts, references, and assets.",
-          "filePath": "/home/ecs-user/.nvm/versions/node/v24.13.1/lib/node_modules/openclaw/skills/skill-creator/SKILL.md",
-          "baseDir": "/home/ecs-user/.nvm/versions/node/v24.13.1/lib/node_modules/openclaw/skills/skill-creator",
-          "source": "openclaw-bundled",
-          "disableModelInvocation": false
-        },
-        {
-          "name": "summarize",
-          "description": "Summarize URLs or files with the summarize CLI (web, PDFs, images, audio, YouTube).",
-          "filePath": "/home/ecs-user/.openclaw/workspace/skills/summarize/SKILL.md",
-          "baseDir": "/home/ecs-user/.openclaw/workspace/skills/summarize",
-          "source": "openclaw-workspace",
-          "disableModelInvocation": false
-        },
-        {
-          "name": "tmux",
-          "description": "Remote-control tmux sessions for interactive CLIs by sending keystrokes and scraping pane output.",
-          "filePath": "/home/ecs-user/.nvm/versions/node/v24.13.1/lib/node_modules/openclaw/skills/tmux/SKILL.md",
-          "baseDir": "/home/ecs-user/.nvm/versions/node/v24.13.1/lib/node_modules/openclaw/skills/tmux",
-          "source": "openclaw-bundled",
-          "disableModelInvocation": false
-        },
-        {
-          "name": "wacli",
-          "description": "Send WhatsApp messages to other people or search/sync WhatsApp history via the wacli CLI (not for normal user chats).",
-          "filePath": "/home/ecs-user/.openclaw/workspace/skills/wacli/SKILL.md",
-          "baseDir": "/home/ecs-user/.openclaw/workspace/skills/wacli",
-          "source": "openclaw-workspace",
-          "disableModelInvocation": false
-        },
-        {
-          "name": "weather",
-          "description": "Get current weather and forecasts (no API key required).",
-          "filePath": "/home/ecs-user/.openclaw/workspace/skills/weather/SKILL.md",
-          "baseDir": "/home/ecs-user/.openclaw/workspace/skills/weather",
-          "source": "openclaw-workspace",
-          "disableModelInvocation": false
-        },
-        {
-          "name": "find-skills",
-          "description": "Helps users discover and install agent skills when they ask questions like \"how do I do X\", \"find a skill for X\", \"is there a skill that can...\", or express interest in extending capabilities. This skill should be used when the user is looking for functionality that might exist as an installable skill.",
-          "filePath": "/home/ecs-user/.openclaw/workspace/skills/find-skills/SKILL.md",
-          "baseDir": "/home/ecs-user/.openclaw/workspace/skills/find-skills",
-          "source": "openclaw-workspace",
-          "disableModelInvocation": false
-        },
-        {
-          "name": "proactive-agent",
-          "description": "Transform AI agents from task-followers into proactive partners that anticipate needs and continuously improve. Now with WAL Protocol, Working Buffer, Autonomous Crons, and battle-tested patterns. Part of the Hal Stack 🦞",
-          "filePath": "/home/ecs-user/.openclaw/workspace/skills/proactive-agent/SKILL.md",
-          "baseDir": "/home/ecs-user/.openclaw/workspace/skills/proactive-agent",
-          "source": "openclaw-workspace",
-          "disableModelInvocation": false
-        },
-        {
-          "name": "send-email",
-          "description": "Send emails via SMTP. Configure in ~/.openclaw/openclaw.json under skills.entries.send-email.env.",
-          "filePath": "/home/ecs-user/.openclaw/workspace/skills/send-email/SKILL.md",
-          "baseDir": "/home/ecs-user/.openclaw/workspace/skills/send-email",
-          "source": "openclaw-workspace",
-          "disableModelInvocation": false
-        },
-        {
-          "name": "tavily",
-          "description": "AI-optimized web search via Tavily API. Returns concise, relevant results for AI agents.",
-          "filePath": "/home/ecs-user/.openclaw/workspace/skills/tavily-search/SKILL.md",
-          "baseDir": "/home/ecs-user/.openclaw/workspace/skills/tavily-search",
-          "source": "openclaw-workspace",
-          "disableModelInvocation": false
-        }
-      ],
-      "version": 0
-    },
-    "modelProvider": "minimax-cn",
-    "inputTokens": 379,
-    "outputTokens": 142,
-    "totalTokens": 12887,
+    "inputTokens": 47317,
+    "outputTokens": 135,
+    "totalTokens": 59689,
     "totalTokensFresh": true
   },
   "agent:main:cron:ddd3c269-0e02-4b4b-96bc-db2dd40bdddd:run:00db362e-c0e3-42aa-b948-c72c5a2c8862": {
@@ -28059,7 +27577,7 @@
   },
   "agent:main:cron:ddd3c269-0e02-4b4b-96bc-db2dd40bdddd:run:299067a6-3607-434a-b259-290efd4f9ca6": {
     "sessionId": "299067a6-3607-434a-b259-290efd4f9ca6",
-    "updatedAt": 1771523305644,
+    "updatedAt": 1771523605647,
     "systemSent": true,
     "model": "MiniMax-M2.5",
     "contextTokens": 200000,
@@ -28293,9 +27811,9 @@
       "version": 0
     },
     "modelProvider": "minimax-cn",
-    "inputTokens": 47006,
-    "outputTokens": 132,
-    "totalTokens": 59378,
+    "inputTokens": 47317,
+    "outputTokens": 135,
+    "totalTokens": 59689,
     "totalTokensFresh": true
   },
   "agent:main:cron:687d5bfe-0b1a-4641-93cc-a471ac243e1a": {
