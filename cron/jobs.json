@@ -23,12 +23,11 @@
         "mode": "none"
       },
       "state": {
-        "nextRunAtMs": 1771471405632,
+        "nextRunAtMs": 1771472005632,
         "lastRunAtMs": 1771471105634,
         "lastStatus": "ok",
         "lastDurationMs": 14560,
-        "consecutiveErrors": 0,
-        "runningAtMs": 1771471405638
+        "consecutiveErrors": 0
       }
     }
   ]
