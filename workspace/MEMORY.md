@@ -8,22 +8,22 @@ workspace/
 │   ├── SmartHome/         # 智能家居项目
 │   ├── ReachyMini/        # 机器人项目
 │   ├── fmp/               # 金融数据项目
-│   └── OpenClawInstall/   # 安装脚本项目
-│
-├── skills/                # OpenClaw 技能 (系统)
-│   └── [各种技能]
+│   ├── OpenClawInstall/   # 安装脚本项目
+│   └── financial/         # 金融分析
+│       ├── gold-silver/   # 金银市场
+│       ├── crude-oil/     # 原油市场
+│       └── policy/        # 政策分析
 │
 ├── docs/                  # 文档/指南
-│   ├── OpenClawGuide/     # OpenClaw 指南
-│   ├── OpenCodeGuide/     # Code 指南
-│   └── MakeSkillGuide/   # Skill 开发
+│   ├── OpenClawGuide/
+│   ├── OpenCodeGuide/
+│   └── MakeSkillGuide/
 │
-├── config/                # 配置文件 (系统)
-├── scripts/               # 脚本工具
-├── memory/                # 记忆/日志 (系统)
-├── cache/                 # 缓存
-├── .agents/              # Agent 配置 (系统)
-└── .openclaw/            # OpenClaw 内部 (系统)
+├── skills/                # OpenClaw 技能
+├── config/
+├── scripts/
+├── memory/
+└── cache/
 ```
 
 ---

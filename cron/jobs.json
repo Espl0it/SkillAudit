@@ -7,7 +7,7 @@
       "name": "auto-push",
       "enabled": true,
       "createdAtMs": 1771376305632,
-      "updatedAtMs": 1771478026821,
+      "updatedAtMs": 1771478321792,
       "schedule": {
         "everyMs": 300000,
         "kind": "every",
@@ -23,12 +23,12 @@
         "mode": "none"
       },
       "state": {
-        "nextRunAtMs": 1771478305632,
-        "lastRunAtMs": 1771478005636,
+        "nextRunAtMs": 1771478605632,
+        "lastRunAtMs": 1771478305635,
         "lastStatus": "ok",
-        "lastDurationMs": 21185,
+        "lastDurationMs": 16157,
         "consecutiveErrors": 0,
-        "runningAtMs": 1771478305634
+        "runningAtMs": 1771478605634
       }
     },
     {
@@ -109,6 +109,33 @@
       },
       "state": {
         "nextRunAtMs": 1771513200000
+      }
+    },
+    {
+      "id": "59c9b96c-788b-4e49-934f-f530e04e80b9",
+      "agentId": "main",
+      "sessionKey": "agent:main:main",
+      "name": "sync-notion-financial",
+      "enabled": true,
+      "createdAtMs": 1771478445888,
+      "updatedAtMs": 1771478445888,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 8 * * 1",
+        "tz": "Asia/Shanghai"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "从 Notion 同步金融分析页面到 workspace：查询 Notion 中金融相关的页面（金银市场、原油市场、政策分析），更新到 projects/financial/ 目录下的对应文件。使用 Notion API 和 ~/.config/notion/api_key。同步完成后汇报更新了哪些文件。"
+      },
+      "delivery": {
+        "mode": "announce",
+        "channel": "feishu"
+      },
+      "state": {
+        "nextRunAtMs": 1771804800000
       }
     }
   ]
