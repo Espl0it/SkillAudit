@@ -37,3 +37,16 @@
 - VS Code / Cursor - 编辑器
 - Git - 版本控制
 - Docker - 容器化
+
+## 沟通偏好
+
+- **沟通风格**: 简洁高效，直接了当
+- **高效时段**: 随时可能发消息
+- **沟通方式**: 异步为主
+
+## 当前项目
+
+- SmartHome - 智能家居
+- ReachyMini - 机器人
+- fmp/financial - 金融数据分析
+- OpenClawInstall - 自动化部署脚本
