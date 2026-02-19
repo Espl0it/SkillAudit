@@ -31,7 +31,7 @@ function* walkDirectory(dir, visited = new Set()) {
 
 // Load all rules from YAML files
 function loadRules(rulesDir) {
-  const ruleTypes = ['secrets', 'commands', 'files', 'network', 'permissions'];
+  const ruleTypes = ['secrets', 'commands', 'files', 'network', 'permissions', 'web', 'crypto'];
   const rules = {};
   
   for (const type of ruleTypes) {

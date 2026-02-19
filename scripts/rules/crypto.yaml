@@ -1,0 +1,83 @@
+# Cryptocurrency & Blockchain Security Rules
+# Detects crypto-related security risks
+
+- id: C001
+  title: Hardcoded Cryptocurrency Private Key
+  pattern: '(?i)(?:private[_-]?key|crypto[_-]?wallet).*["\'][a-f0-9]{64}["\']'
+  severity: critical
+  recommendation: Never store private keys in source code; use secure key management
+
+- id: C002
+  title: Cryptocurrency Address Exposure
+  pattern: '(?:bc1|[13])[a-zA-HJ-NP-Z0-9]{25,39}'
+  severity: high
+  recommendation: Avoid hardcoding cryptocurrency addresses in source code
+
+- id: C003
+  title: Suspicious Cryptocurrency Mining Pattern
+  pattern: '(?i)(?:coinhive|coin-hive|cryptonight|webminer|miner\.start)'
+  severity: critical
+  description: Potential cryptojacking detection
+  recommendation: Remove any cryptomining code from web applications
+
+- id: C004
+  title: Wallet Connection with Insecure RPC
+  pattern: '(?i)(?:web3|http://).*(?:wallet|metamask|infura)'
+  severity: medium
+  recommendation: Use secure HTTPS endpoints for blockchain RPC connections
+
+- id: C005
+  title: Hardcoded API Endpoint for Blockchain
+  pattern: '(?i)(?:etherscan|infura|alchemy).*(?:api[_-]?key|url)'
+  severity: critical
+  recommendation: Use environment variables for API keys; never commit to source
+
+- id: C006
+  title: Missing Transaction Validation
+  pattern: '(?i)(?:sendTransaction|transfer|submitTransaction).*\.then'
+  severity: medium
+  description: Transaction sent without proper validation
+  recommendation: Always validate transaction parameters before signing
+
+- id: C007
+  title: Insecure Smart Contract Interaction
+  pattern: '(?i)(?:contract\.methods|contract\.call).*\{.*gas'
+  severity: medium
+  recommendation: Specify appropriate gas limits and use Safe functions
+
+- id: C008
+  title: Exposed Mnemonic Phrase
+  pattern: '(?i)(?:mnemonic|seed[_-]?phrase|bip39).*["\'][a-z ]+["\']'
+  severity: critical
+  recommendation: Never store mnemonic phrases in source code
+
+- id: C009
+  title: Weak Random for Crypto Operations
+  pattern: '(?i)Math\.random.*crypto|random.*wallet'
+  severity: high
+  recommendation: Use crypto.getRandomValues() or proper CSPRNG for wallet generation
+
+- id: C010
+  title: Unsigned Blockchain Transaction
+  pattern: '(?i)(?:sign|signTransaction|sendRawTransaction)'
+  severity: medium
+  recommendation: Always sign transactions before broadcasting to blockchain
+
+- id: C011
+  title: Missing Chain ID Specification
+  pattern: '(?i)(?:chainId|networkId).*[!=]=.*\d+'
+  severity: medium
+  recommendation: Always specify chain ID to prevent replay attacks
+
+- id: C012
+  title: Trusting Block Number for Timing
+  pattern: '(?i)(?:block\.number|blockTimestamp|Date\.now\(\))'
+  severity: low
+  description: Using block numbers or timestamps for critical timing
+  recommendation: Consider using Chainlink oracles for time-sensitive operations
+
+- id: C013
+  title: Deprecated Ethereum API Usage
+  pattern: '(?i)(?:web3\.sha3|web3\.soliditySha3|eth\.sign)'
+  severity: medium
+  recommendation: Use updated API methods; eth_sign is deprecated
