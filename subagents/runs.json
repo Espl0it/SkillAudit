@@ -1,0 +1,83 @@
+{
+  "version": 2,
+  "runs": {
+    "3866fcfe-d17c-4d22-9936-09822bba263c": {
+      "runId": "3866fcfe-d17c-4d22-9936-09822bba263c",
+      "childSessionKey": "agent:main:subagent:e2428328-58dd-4624-b258-4a80975e06fe",
+      "requesterSessionKey": "agent:main:main",
+      "requesterOrigin": {
+        "channel": "feishu",
+        "to": "user:ou_622f688f24a6bca0390ca0c8b913eb9e",
+        "accountId": "default"
+      },
+      "requesterDisplayKey": "agent:main:main",
+      "task": "查询上海当前天气，返回天气状况、温度和湿度。",
+      "cleanup": "keep",
+      "expectsCompletionMessage": true,
+      "label": "weather-query",
+      "model": "minimax-cn/MiniMax-M2.5",
+      "runTimeoutSeconds": 30,
+      "createdAt": 1771479658023,
+      "startedAt": 1771479659032,
+      "archiveAtMs": 1771483258023,
+      "cleanupHandled": true,
+      "endedAt": 1771479689065,
+      "outcome": {
+        "status": "timeout"
+      },
+      "cleanupCompletedAt": 1771479689443
+    },
+    "3146946c-54da-4aea-a176-faf3db0ffc2c": {
+      "runId": "3146946c-54da-4aea-a176-faf3db0ffc2c",
+      "childSessionKey": "agent:main:subagent:50527158-f1e8-4852-9856-d4f61525421e",
+      "requesterSessionKey": "agent:main:main",
+      "requesterOrigin": {
+        "channel": "feishu",
+        "to": "user:ou_622f688f24a6bca0390ca0c8b913eb9e",
+        "accountId": "default"
+      },
+      "requesterDisplayKey": "agent:main:main",
+      "task": "检查 ~/.openclaw/workspace 目录下的 git 仓库状态，返回未提交的更改数量和详情。",
+      "cleanup": "keep",
+      "expectsCompletionMessage": true,
+      "label": "git-status",
+      "model": "minimax-cn/MiniMax-M2.5",
+      "runTimeoutSeconds": 30,
+      "createdAt": 1771479663136,
+      "startedAt": 1771479664125,
+      "archiveAtMs": 1771483263136,
+      "cleanupHandled": true,
+      "endedAt": 1771479682656,
+      "outcome": {
+        "status": "ok"
+      },
+      "cleanupCompletedAt": 1771479698284
+    },
+    "329f5996-f9df-4de7-8dda-8161cfa634ff": {
+      "runId": "329f5996-f9df-4de7-8dda-8161cfa634ff",
+      "childSessionKey": "agent:main:subagent:c682fa09-f347-41cf-9cc4-c30e3b965280",
+      "requesterSessionKey": "agent:main:main",
+      "requesterOrigin": {
+        "channel": "feishu",
+        "to": "user:ou_622f688f24a6bca0390ca0c8b913eb9e",
+        "accountId": "default"
+      },
+      "requesterDisplayKey": "agent:main:main",
+      "task": "检查磁盘使用情况，返回根目录可用空间和内存使用率。",
+      "cleanup": "keep",
+      "expectsCompletionMessage": true,
+      "label": "disk-check",
+      "model": "minimax-cn/MiniMax-M2.5",
+      "runTimeoutSeconds": 30,
+      "createdAt": 1771479675026,
+      "startedAt": 1771479676024,
+      "archiveAtMs": 1771483275026,
+      "cleanupHandled": true,
+      "endedAt": 1771479686633,
+      "outcome": {
+        "status": "ok"
+      },
+      "cleanupCompletedAt": 1771479702087
+    }
+  }
+}
