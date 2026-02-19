@@ -84,20 +84,31 @@ npx skills add https://github.com/username/skills.git --skill skill-name
 
 ---
 
-## 已安装的 Skills
+## 已安装的 Skills (20个)
 
-| Skill | 用途 |
-|-------|------|
-| tavily | AI 联网搜索 |
-| weather | 天气查询 |
-| github | GitHub 操作 |
-| send-email | 发送邮件 |
-| himalaya | 邮件管理 |
-| tushare | 金融数据 |
-| find-skills | 技能发现 |
-| proactive-agent | 主动规划 |
-| Dietitian | 膳食规划 |
-| coding-agent | AI 编程助手 |
+| Skill | 用途 | 状态 |
+|-------|------|------|
+| tavily | AI 联网搜索 | ✅ |
+| weather | 天气查询 | ✅ |
+| github | GitHub 操作 | ✅ |
+| send-email | 发送邮件 | ✅ |
+| tushare | 金融数据 | ✅ |
+| find-skills | 技能发现 | ✅ |
+| proactive-agent | 主动规划 | ✅ |
+| Dietitian | 膳食规划 | ✅ |
+| coding-agent | AI 编程助手 | ✅ |
+| mcporter | MCP 服务器管理 | ✅ |
+| notion | Notion 集成 | ✅ 已配置 API |
+| gog | Google Workspace | ⚠️ 需配置 |
+| wacli | WhatsApp 操作 | ⚠️ 需配置 |
+| himalaya | 邮件管理 | ⚠️ 需配置 |
+| blogwatcher | RSS/博客监控 | ✅ |
+| skill-audit | Skill 安全审计 | ✅ |
+| summarize | URL/文档摘要 | ✅ |
+| stock-evaluator | 股票评估 | ✅ |
+| sag | 语音合成 | ✅ |
+| web-security | Web 安全渗透测试 | ✅ |
+| puppeteer-browser | 浏览器自动化 | ✅ |
 
 ---
 
