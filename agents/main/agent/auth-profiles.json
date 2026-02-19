@@ -26,8 +26,12 @@
     },
     "qwen-portal:default": {
       "lastUsed": 1771522421838,
-      "errorCount": 0,
-      "lastFailureAt": 1771516125881
+      "errorCount": 1,
+      "lastFailureAt": 1771522740499,
+      "failureCounts": {
+        "rate_limit": 1
+      },
+      "cooldownUntil": 1771522800499
     }
   }
 }
