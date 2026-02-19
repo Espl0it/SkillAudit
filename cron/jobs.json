@@ -7,7 +7,7 @@
       "name": "auto-push",
       "enabled": true,
       "createdAtMs": 1771376305632,
-      "updatedAtMs": 1771541914729,
+      "updatedAtMs": 1771542215584,
       "schedule": {
         "everyMs": 300000,
         "kind": "every",
@@ -23,12 +23,12 @@
         "mode": "none"
       },
       "state": {
-        "nextRunAtMs": 1771542205632,
-        "lastRunAtMs": 1771541905635,
+        "nextRunAtMs": 1771542505632,
+        "lastRunAtMs": 1771542205636,
         "lastStatus": "ok",
-        "lastDurationMs": 9094,
+        "lastDurationMs": 9948,
         "consecutiveErrors": 0,
-        "runningAtMs": 1771542205635
+        "runningAtMs": 1771542505635
       }
     },
     {
@@ -187,7 +187,7 @@
       "description": "每天凌晨 3 点备份 workspace",
       "enabled": true,
       "createdAtMs": 1771501678463,
-      "updatedAtMs": 1771527630170,
+      "updatedAtMs": 1771542225614,
       "schedule": {
         "kind": "cron",
         "expr": "0 3 * * *"
@@ -201,7 +201,7 @@
       },
       "delivery": {
         "mode": "announce",
-        "channel": "last"
+        "channel": "feishu"
       },
       "state": {
         "nextRunAtMs": 1771614000000,
@@ -218,7 +218,7 @@
       "description": "每天凌晨 2 点清理 7 天前的日志",
       "enabled": true,
       "createdAtMs": 1771501682649,
-      "updatedAtMs": 1771524020248,
+      "updatedAtMs": 1771542225599,
       "schedule": {
         "kind": "cron",
         "expr": "0 2 * * *"
@@ -232,7 +232,7 @@
       },
       "delivery": {
         "mode": "announce",
-        "channel": "last"
+        "channel": "feishu"
       },
       "state": {
         "nextRunAtMs": 1771610400000,
@@ -249,7 +249,7 @@
       "description": "每天早上 7 点生成晨间简报并发送到飞书",
       "enabled": true,
       "createdAtMs": 1771501686915,
-      "updatedAtMs": 1771542193535,
+      "updatedAtMs": 1771542225627,
       "schedule": {
         "kind": "cron",
         "expr": "0 7 * * *"
@@ -263,7 +263,7 @@
       },
       "delivery": {
         "mode": "announce",
-        "channel": "last"
+        "channel": "feishu"
       },
       "state": {
         "nextRunAtMs": 1771628400000,
