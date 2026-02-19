@@ -20,7 +20,8 @@ OptionTradingGuide/
 │   ├── 01-A 股期权入门指南.md       # A 股期权基础
 │   ├── 02-美股期权入门指南.md       # 美股期权基础
 │   ├── 03-A 股期权进阶指南.md       # A 股进阶策略
-│   └── 04-美股期权进阶指南.md       # 美股进阶策略
+│   ├── 04-美股期权进阶指南.md       # 美股进阶策略
+│   └── 05-期权常用工具与网站.md    # 工具与平台推荐
 ├── tools/                          # 工具集（待完善）
 └── README.md
 ```
@@ -86,6 +87,23 @@ OptionTradingGuide/
 - 量化方法：期权定价模型、隐含波动率计算、概率分析、回测框架
 
 **学习时长：** 5-6 小时
+
+---
+
+### 🛠️ 05-期权常用工具与网站
+
+**适合人群：** 所有投资者
+
+**主要内容：**
+- A 股期权工具：东方财富、新浪财经、上交所官网、Python 数据工具
+- 美股期权平台：ThinkOrSwim、Tastytrade、IBKR、E*TRADE、Webull
+- 数据分析工具：IVolatility、Barchart、OptionStrat、Options Profit Calculator
+- 策略分析工具：策略构建器、希腊字母监控、风险管理计算器
+- 教育资源：Tastytrade Learn、Investopedia Options、The Options Guide
+- 跨市场工具：Tushare、Yahoo Finance、Alpha Vantage
+- 选择建议：新手/进阶/专业投资者的平台推荐
+
+**学习时长：** 1-2 小时
 
 ---
 
@@ -198,6 +216,8 @@ OptionTradingGuide/
 
 ## 更新日志
 
+- **2024-02-19**：新增期权常用工具与网站章节
+  - 新增《05-期权常用工具与网站.md》：A 股/美股行情平台、交易软件、数据分析工具、策略工具、API 服务
 - **2024-02-19**：项目重构，移除原始 PDF/docx 文件，基于网络调研重新撰写 A 股和美股期权指南
   - 新增《01-A 股期权入门指南》
   - 新增《02-美股期权入门指南》
