@@ -1,0 +1,12 @@
+{
+  "name": "puppeteer-browser",
+  "version": "1.0.0",
+  "description": "Puppeteer 浏览器自动化技能",
+  "author": "Espl0it",
+  "homepage": "https://github.com/puppeteer/puppeteer",
+  "platform": "linux",
+  "dependencies": {
+    "required": ["node", "npm"],
+    "optional": ["google-chrome"]
+  }
+}
