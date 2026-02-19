@@ -1,4 +1,86 @@
 {
   "version": 2,
-  "runs": {}
+  "runs": {
+    "a7a4c423-df1b-4ae5-ba31-8692109fed6a": {
+      "runId": "a7a4c423-df1b-4ae5-ba31-8692109fed6a",
+      "childSessionKey": "agent:main:subagent:a84effcd-e497-469e-8e0d-1cae929cd698",
+      "requesterSessionKey": "agent:main:main",
+      "requesterOrigin": {
+        "channel": "feishu",
+        "to": "user:ou_622f688f24a6bca0390ca0c8b913eb9e",
+        "accountId": "default"
+      },
+      "requesterDisplayKey": "agent:main:main",
+      "task": "配置 wacli WhatsApp 技能：\n1. 查看 ~/.openclaw/workspace/skills/wacli/SKILL.md 了解配置方法\n2. 告诉用户需要什么 API 凭证（WhatsApp Business API）\n3. 不需要实际配置，只需要说明配置方法",
+      "cleanup": "keep",
+      "expectsCompletionMessage": true,
+      "label": "config-wacli",
+      "model": "minimax-cn/MiniMax-M2.5",
+      "runTimeoutSeconds": 30,
+      "createdAt": 1771496745732,
+      "startedAt": 1771496746567,
+      "archiveAtMs": 1771500345732,
+      "cleanupHandled": true,
+      "endedAt": 1771496757004,
+      "outcome": {
+        "status": "ok"
+      },
+      "cleanupCompletedAt": 1771496772874
+    },
+    "d92963fe-4c2d-4712-83b6-523a82cec326": {
+      "runId": "d92963fe-4c2d-4712-83b6-523a82cec326",
+      "childSessionKey": "agent:main:subagent:88ca54f9-e405-46c5-bea7-92806934f844",
+      "requesterSessionKey": "agent:main:main",
+      "requesterOrigin": {
+        "channel": "feishu",
+        "to": "user:ou_622f688f24a6bca0390ca0c8b913eb9e",
+        "accountId": "default"
+      },
+      "requesterDisplayKey": "agent:main:main",
+      "task": "配置 gog Google Workspace 技能：\n1. 查看 ~/.openclaw/workspace/skills/gog/SKILL.md 了解配置方法\n2. 告诉用户需要什么 API 凭证（Google Cloud OAuth2）\n3. 不需要实际配置，只需要说明配置方法",
+      "cleanup": "keep",
+      "expectsCompletionMessage": true,
+      "label": "config-gog",
+      "model": "minimax-cn/MiniMax-M2.5",
+      "runTimeoutSeconds": 30,
+      "createdAt": 1771496751271,
+      "startedAt": 1771496752088,
+      "archiveAtMs": 1771500351271,
+      "cleanupHandled": true,
+      "endedAt": 1771496782186,
+      "outcome": {
+        "status": "timeout"
+      },
+      "announceRetryCount": 3,
+      "lastAnnounceRetryAt": 1771496788811,
+      "cleanupCompletedAt": 1771496788811
+    },
+    "23b71344-5286-4cbb-8249-72e2ef3ba5ae": {
+      "runId": "23b71344-5286-4cbb-8249-72e2ef3ba5ae",
+      "childSessionKey": "agent:main:subagent:9cd81a1e-c10e-4082-9f7c-6a5ab193111c",
+      "requesterSessionKey": "agent:main:main",
+      "requesterOrigin": {
+        "channel": "feishu",
+        "to": "user:ou_622f688f24a6bca0390ca0c8b913eb9e",
+        "accountId": "default"
+      },
+      "requesterDisplayKey": "agent:main:main",
+      "task": "配置 himalaya 邮件管理技能：\n1. 查看 ~/.openclaw/workspace/skills/himalaya/SKILL.md 了解配置方法\n2. 告诉用户需要什么配置（IMAP/SMTP 邮件服务器）\n3. 不需要实际配置，只需要说明配置方法",
+      "cleanup": "keep",
+      "expectsCompletionMessage": true,
+      "label": "config-himalaya",
+      "model": "minimax-cn/MiniMax-M2.5",
+      "runTimeoutSeconds": 30,
+      "createdAt": 1771496757163,
+      "startedAt": 1771496758109,
+      "archiveAtMs": 1771500357163,
+      "cleanupHandled": false,
+      "endedAt": 1771496788131,
+      "outcome": {
+        "status": "timeout"
+      },
+      "announceRetryCount": 1,
+      "lastAnnounceRetryAt": 1771496788345
+    }
+  }
 }
