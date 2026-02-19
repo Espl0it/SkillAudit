@@ -7,7 +7,7 @@
       "name": "auto-push",
       "enabled": true,
       "createdAtMs": 1771376305632,
-      "updatedAtMs": 1771476814153,
+      "updatedAtMs": 1771477113633,
       "schedule": {
         "everyMs": 300000,
         "kind": "every",
@@ -24,11 +24,11 @@
       },
       "state": {
         "nextRunAtMs": 1771477405632,
-        "lastRunAtMs": 1771476805636,
+        "lastRunAtMs": 1771477105636,
         "lastStatus": "ok",
-        "lastDurationMs": 8517,
+        "lastDurationMs": 7997,
         "consecutiveErrors": 0,
-        "runningAtMs": 1771477105636
+        "runningAtMs": 1771477405635
       }
     },
     {
@@ -38,7 +38,7 @@
       "name": "daily-weather",
       "enabled": true,
       "createdAtMs": 1771477103527,
-      "updatedAtMs": 1771477103527,
+      "updatedAtMs": 1771477167104,
       "schedule": {
         "kind": "cron",
         "expr": "0 7 * * *",
@@ -48,7 +48,7 @@
       "wakeMode": "now",
       "payload": {
         "kind": "agentTurn",
-        "message": "查询上海今日天气，然后用飞书发送给主人，内容包含天气状况、温度、建议。"
+        "message": "查询昆明今日天气，然后用飞书发送给主人，内容包含天气状况、温度、建议。"
       },
       "delivery": {
         "mode": "announce",
@@ -82,6 +82,33 @@
       },
       "state": {
         "nextRunAtMs": 1771480708254
+      }
+    },
+    {
+      "id": "e06279b9-a439-4139-bb4b-1741ca76c7f4",
+      "agentId": "main",
+      "sessionKey": "agent:main:main",
+      "name": "daily-git-commit",
+      "enabled": true,
+      "createdAtMs": 1771477113990,
+      "updatedAtMs": 1771477113990,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 23 * * *",
+        "tz": "Asia/Shanghai"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "检查 ~/.openclaw/workspace 目录下的 git 仓库，如果有未提交的更改则自动提交并推送。提交信息格式：auto: daily update YYYY-MM-DD"
+      },
+      "delivery": {
+        "mode": "announce",
+        "channel": "feishu"
+      },
+      "state": {
+        "nextRunAtMs": 1771513200000
       }
     }
   ]
