@@ -62,6 +62,13 @@ WebSecurityGuide/
 - 密码破解工具 (Hydra, John, Hashcat)
 - 密码安全策略
 
+### Chapter 8: WAF 绕过技术
+- WAF 识别
+- SQL 注入绕过 (编码、注释、Tamper 脚本)
+- XSS 绕过
+- 绕过工具 (SQLMap, XSStrike, dalfox)
+- WAF 防御策略
+
 ## 快速开始
 
 详见各章节文档。
