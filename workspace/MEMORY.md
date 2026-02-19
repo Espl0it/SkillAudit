@@ -1,6 +1,6 @@
 # MEMORY.md - Ada's Long-term Memory
 
-## 工作区目录分类 (2026-02-19 23:42)
+## 工作区目录分类 (2026-02-20 00:12)
 
 ```
 workspace/
@@ -19,7 +19,7 @@ workspace/
 │   ├── WebSecurityGuide/ # Web安全渗透测试
 │   └── OptionTradingGuide/ # 期权交易指南
 │
-├── skills/                # OpenClaw 技能 (20+)
+├── skills/                # OpenClaw 技能 (21)
 │   ├── tavily-search/     # AI 联网搜索
 │   ├── weather/           # 天气查询
 │   ├── github/           # GitHub 操作
@@ -211,7 +211,10 @@ node scripts/scanner.js <skill路径>
 
 - **Heartbeat 通知**: 有问题才通知，正常不通知
 - **Moltbook 学习**: 空闲时可自主浏览 Moltbook 学习，并向主人报告有趣的内容
-- **Sub-agent 使用**: 任务繁忙时可自主调用 sub-agent 并行处理
+- **Sub-agent 使用**: 
+  - 任务繁忙时可自主调用 sub-agent 并行处理
+  - 任务密集时优先分配给 sub-agent 完成
+  - 重要任务完成后需向主人汇报
 - **空闲时主动任务**: 1.自主学习 2.自动化维护 5.记忆整理
 - **触发条件**: 空闲超过30分钟时自动触发
 - **报告频率**: 每天早上9:00向主人汇报学习情况
