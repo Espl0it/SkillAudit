@@ -1,8 +1,8 @@
 ---
 name: puppeteer-browser
-description: Puppeteer 浏览器自动化技能 - 模拟浏览器行为，可用于绕过 Cloudflare 等 JS Challenge 防护
+description: Puppeteer/Playwright 浏览器自动化技能 - 模拟浏览器行为，可用于绕过 Cloudflare 等 JS Challenge 防护
 homepage: https://github.com/puppeteer/puppeteer
-metadata: {"clawdbot":{"emoji":"🌐","requires":{"bins":["node","npm","google-chrome"],"env":["PUPPETEER_CONFIG"]},"primaryEnv":"PUPPETEER_CONFIG"}}
+metadata: {"clawdbot":{"emoji":"🌐","requires":{"bins":["node","npm"],"env":["BROWSER_CONFIG"]},"primaryEnv":"BROWSER_CONFIG"}}
 ---
 
 # Puppeteer Browser - 浏览器自动化

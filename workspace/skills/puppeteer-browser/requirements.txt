@@ -1,11 +1,8 @@
-# Puppeteer Browser - 依赖
+# Playwright Browser - 依赖
 
 # Node.js 包
-puppeteer>=21.0.0
-
-# 可选：Puppeteer Extra (增强功能)
-# puppeteer-extra>=3.0.0
-# puppeteer-extra-plugin-stealth>=2.0.0
+playwright>=1.40.0
 
 # 安装命令:
-# npm install puppeteer
+# npm install playwright
+# npx playwright install chromium
