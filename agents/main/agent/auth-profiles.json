@@ -20,18 +20,18 @@
   },
   "usageStats": {
     "minimax-cn:default": {
-      "lastUsed": 1771540112699,
+      "lastUsed": 1771540487056,
       "errorCount": 0,
       "lastFailureAt": 1771512040922
     },
     "qwen-portal:default": {
       "lastUsed": 1771522421838,
-      "errorCount": 7,
-      "lastFailureAt": 1771536825806,
+      "errorCount": 8,
+      "lastFailureAt": 1771540478781,
       "failureCounts": {
-        "rate_limit": 7
+        "rate_limit": 8
       },
-      "cooldownUntil": 1771540425806
+      "cooldownUntil": 1771544078781
     }
   }
 }
