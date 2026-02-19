@@ -1,6 +1,6 @@
 # MEMORY.md - Ada's Long-term Memory
 
-## 工作区目录分类 (2026-02-19)
+## 工作区目录分类 (2026-02-19 17:42)
 
 ```
 workspace/
@@ -10,9 +10,6 @@ workspace/
 │   ├── fmp/               # 金融数据项目
 │   ├── OpenClawInstall/   # 安装脚本项目
 │   └── financial/         # 金融分析
-│       ├── gold-silver/   # 金银市场
-│       ├── crude-oil/     # 原油市场
-│       └── policy/        # 政策分析
 │
 ├── docs/                  # 文档/指南 (Guide类项目)
 │   ├── OpenClawGuide/     # OpenClaw 指南
@@ -20,11 +17,35 @@ workspace/
 │   ├── MakeSkillGuide/   # Skill 开发
 │   └── WebSecurityGuide/ # Web安全渗透测试
 │
-├── skills/                # OpenClaw 技能
-├── config/
-├── scripts/
-├── memory/
-└── cache/
+├── skills/                # OpenClaw 技能 (20+)
+│   ├── tavily-search/     # AI 联网搜索
+│   ├── weather/           # 天气查询
+│   ├── github/           # GitHub 操作
+│   ├── send-email/       # 发送邮件
+│   ├── stock-evaluator/  # 股票评估
+│   ├── summarize/        # URL/文档摘要
+│   ├── wacli/            # WhatsApp 操作
+│   ├── gog/              # Google Workspace
+│   ├── puppeteer-browser/# 浏览器自动化
+│   ├── proactive-agent/  # 主动规划
+│   ├── skill-audit/      # Skill 安全审计
+│   ├── blogwatcher/      # RSS/博客监控
+│   ├── web-security/     # Web 安全渗透测试
+│   ├── sag/              # 语音合成
+│   ├── dietitian/        # 膳食规划
+│   ├── find-skills/      # 技能发现
+│   ├── mcporter/         # MCP 服务器管理
+│   ├── notion/           # Notion 集成
+│   └── ...
+│
+├── config/               # 配置文件
+├── scripts/              # 脚本工具
+├── memory/               # 每日记忆
+├── cache/                # 缓存目录
+├── .agents/              # Agent 配置
+├── .pi/                  # Pi 配置
+├── .clawhub/             # ClawHub 配置
+└── .openclaw/            # OpenClaw 内部配置
 ```
 
 ---
