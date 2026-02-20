@@ -7,7 +7,7 @@
       "name": "auto-push",
       "enabled": true,
       "createdAtMs": 1771376305632,
-      "updatedAtMs": 1771610015433,
+      "updatedAtMs": 1771610318770,
       "schedule": {
         "everyMs": 300000,
         "kind": "every",
@@ -23,12 +23,12 @@
         "mode": "none"
       },
       "state": {
-        "nextRunAtMs": 1771610305632,
-        "lastRunAtMs": 1771610005636,
+        "nextRunAtMs": 1771610605632,
+        "lastRunAtMs": 1771610305637,
         "lastStatus": "ok",
-        "lastDurationMs": 9797,
+        "lastDurationMs": 13133,
         "consecutiveErrors": 0,
-        "runningAtMs": 1771610305636
+        "runningAtMs": 1771610605635
       }
     },
     {
@@ -70,7 +70,7 @@
       "name": "health-check",
       "enabled": true,
       "createdAtMs": 1771477108254,
-      "updatedAtMs": 1771606759261,
+      "updatedAtMs": 1771610337852,
       "schedule": {
         "everyMs": 3600000,
         "kind": "every",
@@ -86,10 +86,10 @@
         "mode": "none"
       },
       "state": {
-        "nextRunAtMs": 1771610308254,
-        "lastRunAtMs": 1771606723037,
+        "nextRunAtMs": 1771613908254,
+        "lastRunAtMs": 1771610318778,
         "lastStatus": "ok",
-        "lastDurationMs": 36224,
+        "lastDurationMs": 19074,
         "consecutiveErrors": 0
       }
     },
@@ -218,7 +218,7 @@
       "description": "每天凌晨 2 点清理 7 天前的日志",
       "enabled": true,
       "createdAtMs": 1771501682649,
-      "updatedAtMs": 1771542225599,
+      "updatedAtMs": 1771610416880,
       "schedule": {
         "kind": "cron",
         "expr": "0 2 * * *"
@@ -235,12 +235,12 @@
         "channel": "feishu"
       },
       "state": {
-        "nextRunAtMs": 1771610400000,
-        "lastRunAtMs": 1771524000007,
+        "nextRunAtMs": 1771696800000,
+        "lastRunAtMs": 1771610400004,
         "lastStatus": "error",
-        "lastDurationMs": 20241,
-        "lastError": "cron announce delivery failed",
-        "consecutiveErrors": 1
+        "lastDurationMs": 16876,
+        "consecutiveErrors": 2,
+        "lastError": "cron announce delivery failed"
       }
     },
     {
