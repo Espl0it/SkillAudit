@@ -7,7 +7,7 @@
       "name": "auto-push",
       "enabled": true,
       "createdAtMs": 1771376305632,
-      "updatedAtMs": 1771597433634,
+      "updatedAtMs": 1771598100532,
       "schedule": {
         "everyMs": 300000,
         "kind": "every",
@@ -23,12 +23,12 @@
         "mode": "none"
       },
       "state": {
-        "nextRunAtMs": 1771597705632,
-        "lastRunAtMs": 1771597405636,
-        "lastStatus": "ok",
-        "lastDurationMs": 27998,
-        "consecutiveErrors": 0,
-        "runningAtMs": 1771597705638
+        "nextRunAtMs": 1771598305632,
+        "lastRunAtMs": 1771598100059,
+        "lastStatus": "error",
+        "lastDurationMs": 473,
+        "consecutiveErrors": 1,
+        "runningAtMs": 1771598305638
       }
     },
     {
@@ -346,7 +346,7 @@
       "name": "us-stock-option-opportunities",
       "enabled": true,
       "createdAtMs": 1771517525146,
-      "updatedAtMs": 1771517525146,
+      "updatedAtMs": 1771598100016,
       "schedule": {
         "expr": "30 22 * * 1-5",
         "kind": "cron",
@@ -364,7 +364,12 @@
         "channel": "feishu"
       },
       "state": {
-        "nextRunAtMs": 1771597800000
+        "nextRunAtMs": 1771857000000,
+        "lastRunAtMs": 1771597800004,
+        "lastStatus": "error",
+        "lastDurationMs": 300012,
+        "lastError": "Error: cron: job execution timed out",
+        "consecutiveErrors": 1
       }
     },
     {
@@ -397,7 +402,7 @@
       "name": "receive-email",
       "enabled": true,
       "createdAtMs": 1771558588017,
-      "updatedAtMs": 1771597297160,
+      "updatedAtMs": 1771598200244,
       "schedule": {
         "kind": "every",
         "everyMs": 900000,
@@ -414,10 +419,10 @@
         "channel": "last"
       },
       "state": {
-        "nextRunAtMs": 1771598188017,
-        "lastRunAtMs": 1771597288022,
+        "nextRunAtMs": 1771599088017,
+        "lastRunAtMs": 1771598188022,
         "lastStatus": "ok",
-        "lastDurationMs": 9138,
+        "lastDurationMs": 12222,
         "consecutiveErrors": 0
       }
     }
