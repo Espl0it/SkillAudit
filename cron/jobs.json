@@ -7,7 +7,7 @@
       "name": "auto-push",
       "enabled": true,
       "createdAtMs": 1771376305632,
-      "updatedAtMs": 1771613615857,
+      "updatedAtMs": 1771613917276,
       "schedule": {
         "everyMs": 300000,
         "kind": "every",
@@ -23,12 +23,12 @@
         "mode": "none"
       },
       "state": {
-        "nextRunAtMs": 1771613905632,
-        "lastRunAtMs": 1771613605637,
+        "nextRunAtMs": 1771614205632,
+        "lastRunAtMs": 1771613905636,
         "lastStatus": "ok",
-        "lastDurationMs": 10220,
+        "lastDurationMs": 11640,
         "consecutiveErrors": 0,
-        "runningAtMs": 1771613905635
+        "runningAtMs": 1771614205635
       }
     },
     {
@@ -70,7 +70,7 @@
       "name": "health-check",
       "enabled": true,
       "createdAtMs": 1771477108254,
-      "updatedAtMs": 1771610337852,
+      "updatedAtMs": 1771613932406,
       "schedule": {
         "everyMs": 3600000,
         "kind": "every",
@@ -86,10 +86,10 @@
         "mode": "none"
       },
       "state": {
-        "nextRunAtMs": 1771613908254,
-        "lastRunAtMs": 1771610318778,
+        "nextRunAtMs": 1771617508254,
+        "lastRunAtMs": 1771613917284,
         "lastStatus": "ok",
-        "lastDurationMs": 19074,
+        "lastDurationMs": 15122,
         "consecutiveErrors": 0
       }
     },
@@ -187,7 +187,7 @@
       "description": "每天凌晨 3 点备份 workspace",
       "enabled": true,
       "createdAtMs": 1771501678463,
-      "updatedAtMs": 1771542225614,
+      "updatedAtMs": 1771614037434,
       "schedule": {
         "kind": "cron",
         "expr": "0 3 * * *"
@@ -204,12 +204,11 @@
         "channel": "feishu"
       },
       "state": {
-        "nextRunAtMs": 1771614000000,
-        "lastRunAtMs": 1771527600006,
-        "lastStatus": "error",
-        "lastDurationMs": 30164,
-        "lastError": "cron announce delivery failed",
-        "consecutiveErrors": 1
+        "nextRunAtMs": 1771700400000,
+        "lastRunAtMs": 1771614000004,
+        "lastStatus": "ok",
+        "lastDurationMs": 37430,
+        "consecutiveErrors": 0
       }
     },
     {
@@ -377,7 +376,7 @@
       "name": "daily-virus-scan",
       "enabled": true,
       "createdAtMs": 1771558272787,
-      "updatedAtMs": 1771558272787,
+      "updatedAtMs": 1771614155488,
       "schedule": {
         "kind": "cron",
         "expr": "0 3 * * *",
@@ -394,7 +393,11 @@
         "channel": "feishu"
       },
       "state": {
-        "nextRunAtMs": 1771614000000
+        "nextRunAtMs": 1771700400000,
+        "lastRunAtMs": 1771614037434,
+        "lastStatus": "ok",
+        "lastDurationMs": 118054,
+        "consecutiveErrors": 0
       }
     },
     {
