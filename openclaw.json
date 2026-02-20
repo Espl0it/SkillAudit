@@ -1,7 +1,7 @@
 {
   "meta": {
     "lastTouchedVersion": "2026.2.19-2",
-    "lastTouchedAt": "2026-02-20T12:07:18.864Z"
+    "lastTouchedAt": "2026-02-20T14:54:29.545Z"
   },
   "env": {
     "TUSHARE_TOKEN": "31c7a3335c9245deaec2bdc613531ab5ec794100df889e50353a31a9",
@@ -10,8 +10,8 @@
     "FMP_API_KEY": "xR3Idx8yrJBj83g5Wb8S5o5s6rexMjNT"
   },
   "wizard": {
-    "lastRunAt": "2026-02-20T02:11:01.273Z",
-    "lastRunVersion": "2026.2.17",
+    "lastRunAt": "2026-02-20T14:54:29.529Z",
+    "lastRunVersion": "2026.2.19-2",
     "lastRunCommand": "configure",
     "lastRunMode": "local"
   },
@@ -100,9 +100,7 @@
         "primary": "minimax-cn/MiniMax-M2.5",
         "fallbacks": [
           "qwen-portal/coder-model",
-          "qwen-portal/vision-model",
-          "minimax-cn/MiniMax-M2",
-          "minimax-cn/MiniMax-M2.1"
+          "qwen-portal/vision-model"
         ]
       },
       "models": {
@@ -112,9 +110,7 @@
         "qwen-portal/coder-model": {
           "alias": "qwen"
         },
-        "qwen-portal/vision-model": {},
-        "minimax-cn/MiniMax-M2": {},
-        "minimax-cn/MiniMax-M2.1": {}
+        "qwen-portal/vision-model": {}
       },
       "workspace": "/home/ecs-user/.openclaw/workspace",
       "memorySearch": {
@@ -173,7 +169,7 @@
     "bind": "loopback",
     "auth": {
       "mode": "token",
-      "token": "769903b62323710d1d2f7d2e641a610b907bd6cb895f153d"
+      "token": "1b0a34c8284d1e2e7debbacde1e743f55033a958b23776a1"
     },
     "tailscale": {
       "mode": "off",
