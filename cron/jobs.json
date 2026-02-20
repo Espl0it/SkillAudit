@@ -7,7 +7,7 @@
       "name": "auto-push",
       "enabled": true,
       "createdAtMs": 1771376305632,
-      "updatedAtMs": 1771557827240,
+      "updatedAtMs": 1771558114962,
       "schedule": {
         "everyMs": 300000,
         "kind": "every",
@@ -23,12 +23,12 @@
         "mode": "none"
       },
       "state": {
-        "nextRunAtMs": 1771558105632,
-        "lastRunAtMs": 1771557805635,
+        "nextRunAtMs": 1771558405632,
+        "lastRunAtMs": 1771558105638,
         "lastStatus": "ok",
-        "lastDurationMs": 21605,
+        "lastDurationMs": 9324,
         "consecutiveErrors": 0,
-        "runningAtMs": 1771558105637
+        "runningAtMs": 1771558405640
       }
     },
     {
@@ -395,6 +395,31 @@
         "lastDurationMs": 8733,
         "lastError": "cron announce delivery failed",
         "consecutiveErrors": 1
+      }
+    },
+    {
+      "id": "2d2e0c49-9c1e-496d-a967-58c9aaad259b",
+      "name": "daily-virus-scan",
+      "enabled": true,
+      "createdAtMs": 1771558272787,
+      "updatedAtMs": 1771558272787,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 3 * * *",
+        "tz": "Asia/Shanghai"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "执行 clamscan -r --bell -i ~/.openclaw/workspace 扫描工作区目录，检查是否有病毒。如果发现感染文件，通过飞书通知主人。"
+      },
+      "delivery": {
+        "mode": "announce",
+        "channel": "feishu"
+      },
+      "state": {
+        "nextRunAtMs": 1771614000000
       }
     }
   ]
