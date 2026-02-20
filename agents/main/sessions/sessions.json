@@ -1341,7 +1341,7 @@
   },
   "agent:main:cron:ddd3c269-0e02-4b4b-96bc-db2dd40bdddd": {
     "sessionId": "19bd2fc4-b856-4b98-b62b-62b71f2df5c8",
-    "updatedAt": 1771611805648,
+    "updatedAt": 1771612105647,
     "systemSent": true,
     "model": "MiniMax-M2.5",
     "contextTokens": 200000,
@@ -1575,9 +1575,9 @@
       "version": 0
     },
     "modelProvider": "minimax-cn",
-    "inputTokens": 57384,
-    "outputTokens": 83,
-    "totalTokens": 67982,
+    "inputTokens": 57580,
+    "outputTokens": 85,
+    "totalTokens": 68178,
     "totalTokensFresh": true
   },
   "agent:main:cron:ddd3c269-0e02-4b4b-96bc-db2dd40bdddd:run:299067a6-3607-434a-b259-290efd4f9ca6": {
@@ -4724,7 +4724,7 @@
   },
   "agent:main:cron:ddd3c269-0e02-4b4b-96bc-db2dd40bdddd:run:19bd2fc4-b856-4b98-b62b-62b71f2df5c8": {
     "sessionId": "19bd2fc4-b856-4b98-b62b-62b71f2df5c8",
-    "updatedAt": 1771611805648,
+    "updatedAt": 1771612105647,
     "systemSent": true,
     "model": "MiniMax-M2.5",
     "contextTokens": 200000,
@@ -4958,9 +4958,9 @@
       "version": 0
     },
     "modelProvider": "minimax-cn",
-    "inputTokens": 57384,
-    "outputTokens": 83,
-    "totalTokens": 67982,
+    "inputTokens": 57580,
+    "outputTokens": 85,
+    "totalTokens": 68178,
     "totalTokensFresh": true
   },
   "agent:main:cron:cd34fced-188e-4336-9b7b-cf2061eed1a9:run:83fb332e-ae90-4e6d-9ab2-d76ddb6e243b": {
