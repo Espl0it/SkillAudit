@@ -1,6 +1,6 @@
 # MEMORY.md - Ada's Long-term Memory
 
-## 工作区目录分类 (2026-02-20 13:12)
+## 工作区目录分类 (2026-02-20 13:42)
 
 ```
 workspace/
@@ -19,7 +19,7 @@ workspace/
 │   ├── web-security-guide/ # Web安全渗透测试
 │   └── option-trading-guide/ # 期权交易指南
 │
-├── skills/                # OpenClaw 技能 (21)
+├── skills/                # OpenClaw 技能 (22)
 │   ├── tavily-search/     # AI 联网搜索
 │   ├── weather/           # 天气查询
 │   ├── github/           # GitHub 操作
@@ -39,6 +39,7 @@ workspace/
 │   ├── mcporter/         # MCP 服务器管理
 │   ├── notion/           # Notion 集成
 │   ├── option-trading/   # 期权交易
+│   ├── cos-mount/        # COS 挂载
 │   └── ...
 │
 ├── config/               # 配置文件
