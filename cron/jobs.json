@@ -7,7 +7,7 @@
       "name": "auto-push",
       "enabled": true,
       "createdAtMs": 1771376305632,
-      "updatedAtMs": 1771556319807,
+      "updatedAtMs": 1771556617364,
       "schedule": {
         "everyMs": 300000,
         "kind": "every",
@@ -23,12 +23,12 @@
         "mode": "none"
       },
       "state": {
-        "nextRunAtMs": 1771556605632,
-        "lastRunAtMs": 1771556305636,
+        "nextRunAtMs": 1771556905632,
+        "lastRunAtMs": 1771556605638,
         "lastStatus": "ok",
-        "lastDurationMs": 14171,
+        "lastDurationMs": 11726,
         "consecutiveErrors": 0,
-        "runningAtMs": 1771556605635
+        "runningAtMs": 1771556905635
       }
     },
     {
@@ -365,6 +365,31 @@
       },
       "state": {
         "nextRunAtMs": 1771597800000
+      }
+    },
+    {
+      "id": "3a4c6646-33fa-4a38-a69e-ada0701a54f5",
+      "name": "receive-email",
+      "enabled": true,
+      "createdAtMs": 1771556723857,
+      "updatedAtMs": 1771556723857,
+      "schedule": {
+        "kind": "every",
+        "everyMs": 900000,
+        "anchorMs": 1771556723857
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "执行 python3 ~/.openclaw/scripts/receive_email.py 检查新邮件，如果有新邮件则通过飞书发送给主人"
+      },
+      "delivery": {
+        "mode": "announce",
+        "channel": "feishu"
+      },
+      "state": {
+        "nextRunAtMs": 1771557623857
       }
     }
   ]
