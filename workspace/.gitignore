@@ -1,0 +1,22 @@
+# OpenClaw
+openclaw.json
+openclaw.json.bak
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Dependencies
+node_modules/
+venv/
+.venv/
+__pycache__/
+
+# Logs
+*.log
+logs/
+
+# OS
+.DS_Store
+Thumbs.db
