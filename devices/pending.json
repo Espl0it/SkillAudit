@@ -1,6 +1,6 @@
 {
-  "8ee62019-8d5f-4817-b0d2-599e20fdf431": {
-    "requestId": "8ee62019-8d5f-4817-b0d2-599e20fdf431",
+  "b7224336-a5c1-4850-a972-76a5e4ceb510": {
+    "requestId": "b7224336-a5c1-4850-a972-76a5e4ceb510",
     "deviceId": "e6a6ee3af225ee1dd2404b14de32c58bde51ef406590d101f21b58b02d17768e",
     "publicKey": "5WK1oEXY3y3TMCWPx9TcIi8Xd-9V1D_ZYLJXoPiGue0",
     "platform": "linux",
@@ -11,10 +11,10 @@
       "operator"
     ],
     "scopes": [
-      "operator.read"
+      "operator.write"
     ],
     "silent": false,
     "isRepair": true,
-    "ts": 1771599536198
+    "ts": 1771599836482
   }
 }
