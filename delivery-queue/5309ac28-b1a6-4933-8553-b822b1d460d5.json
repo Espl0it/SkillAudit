@@ -1,0 +1,22 @@
+{
+  "id": "5309ac28-b1a6-4933-8553-b822b1d460d5",
+  "enqueuedAt": 1771628469782,
+  "channel": "feishu",
+  "to": "me",
+  "payloads": [
+    {
+      "text": "🌤️ **昆明今日天气播报** (2026年2月21日)\n\n**天气状况：** 多云转晴 ☀️→🌤️\n\n**温度：** 8℃ ~ 22℃\n\n**📋 建议：**\n- 🧥 穿衣：较舒适，建议穿薄外套或牛仔裤等服装\n- 🧴 防晒：中等强度，涂擦SPF大于15、PA+防晒护肤品\n- 🤧 感冒：少发，感冒机率较低\n- 🏃 运动：适宜，尽情感受运动的快乐吧\n- 🚗 洗车：适宜，适合擦洗汽车\n\n祝您今天心情愉快！🌸",
+      "replyToTag": false,
+      "replyToCurrent": false,
+      "audioAsVoice": false
+    }
+  ],
+  "gifPlayback": false,
+  "mirror": {
+    "sessionKey": "agent:main:main",
+    "agentId": "main",
+    "text": "🌤️ **昆明今日天气播报** (2026年2月21日)\n\n**天气状况：** 多云转晴 ☀️→🌤️\n\n**温度：** 8℃ ~ 22℃\n\n**📋 建议：**\n- 🧥 穿衣：较舒适，建议穿薄外套或牛仔裤等服装\n- 🧴 防晒：中等强度，涂擦SPF大于15、PA+防晒护肤品\n- 🤧 感冒：少发，感冒机率较低\n- 🏃 运动：适宜，尽情感受运动的快乐吧\n- 🚗 洗车：适宜，适合擦洗汽车\n\n祝您今天心情愉快！🌸"
+  },
+  "retryCount": 1,
+  "lastError": "Request failed with status code 400"
+}
