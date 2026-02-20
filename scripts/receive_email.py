@@ -27,26 +27,28 @@ def get_unread_count():
             match = re.search(r'UNSEEN (\d+)', data[0].decode())
             count = int(match.group(1)) if match else 0
             mail.logout()
-            return count
+            return count, None
         
         mail.logout()
-        return 0
+        return 0, None
     except Exception as e:
-        print(f"❌ Error: {e}")
-        return -1
+        return -1, str(e)
 
 def main():
     print(f"📧 检查新邮件...")
-    count = get_unread_count()
+    count, error = get_unread_count()
     
     if count > 0:
         print(f"📬 有 {count} 封未读邮件!")
         # 返回结果供 cron 发送通知
         print(f"RESULT: {count} unread emails")
+        return f"📬 你有 {count} 封未读邮件！"
     elif count == 0:
         print("📭 没有新邮件")
+        return None
     else:
-        print("⚠️ 无法连接邮箱（可能是 126 安全限制）")
+        print(f"⚠️ 无法连接邮箱: {error}")
+        return None
 
 if __name__ == "__main__":
     main()
