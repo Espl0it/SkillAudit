@@ -9,9 +9,9 @@
     "qwen-portal:default": {
       "type": "oauth",
       "provider": "qwen-portal",
-      "access": "QqhbpQP26c3dFxGYPDK9tW-6_-o3SZOH3ErMfJt3wcQxPR61On9jzRp8GguLpEvy8lO12I9AxukLb6wOd57cZw",
-      "refresh": "ZC4L0Lllw7PlB-tbt8vDLTcAjCmAiXLF0KZOtjjL8VOaAQNfop3Y-YZJPviQAOBIpric8ic1MbiOkLRHpsXzjQ",
-      "expires": 1771558405962
+      "access": "5hzCBSvLwMOQZiu8DyUNJaohm4AgYf503BmlmbCsO3svVrpxOFa9tPM-s1D1_t_PQR1Ii9wV8YEiwdVrODm3uA",
+      "refresh": "ZhVskKNrc02VJABdqv2rhZORSCAd_s_oLRHJu4iG0S4pqcReL8pk-3vdOjGCj9CIQ0HwOZFqETfj-W_x5TW_xQ",
+      "expires": 1771600888758
     }
   },
   "lastGood": {
@@ -20,18 +20,18 @@
   },
   "usageStats": {
     "minimax-cn:default": {
-      "lastUsed": 1771578816725,
+      "lastUsed": 1771579308080,
       "errorCount": 0,
-      "lastFailureAt": 1771551900208
+      "lastFailureAt": 1771579288634
     },
     "qwen-portal:default": {
       "lastUsed": 1771522421838,
-      "errorCount": 11,
-      "lastFailureAt": 1771551884008,
+      "errorCount": 12,
+      "lastFailureAt": 1771579309752,
       "failureCounts": {
-        "rate_limit": 11
+        "rate_limit": 12
       },
-      "cooldownUntil": 1771555484008
+      "cooldownUntil": 1771582909752
     }
   }
 }
