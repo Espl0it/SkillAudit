@@ -1564,7 +1564,9 @@ _openclaw_acp() {
   _arguments -C \
     "--url[Gateway WebSocket URL (defaults to gateway.remote.url when configured)]" \
     "--token[Gateway token (if required)]" \
+    "--token-file[Read gateway token from file]" \
     "--password[Gateway password (if required)]" \
+    "--password-file[Read gateway password from file]" \
     "--session[Default session key (e.g. agent:main:main)]" \
     "--session-label[Default session label to resolve]" \
     "--require-existing[Fail if the session key/label does not exist]" \
@@ -2387,6 +2389,18 @@ _openclaw_nodes_notify() {
     "--json[Output JSON]"
 }
 
+_openclaw_nodes_push() {
+  _arguments -C \
+    "--node[Node id, name, or IP]" \
+    "--title[Push title]" \
+    "--body[Push body]" \
+    "--environment[Override APNs environment]" \
+    "--url[Gateway WebSocket URL (defaults to gateway.remote.url when configured)]" \
+    "--token[Gateway token (if required)]" \
+    "--timeout[Timeout in ms]" \
+    "--json[Output JSON]"
+}
+
 _openclaw_nodes_canvas_snapshot() {
   _arguments -C \
     "--node[Node id, name, or IP]" \
@@ -2638,7 +2652,7 @@ _openclaw_nodes() {
   
   _arguments -C \
      \
-    "1: :_values 'command' 'status[List known nodes with connection status and capabilities]' 'describe[Describe a node (capabilities + supported invoke commands)]' 'list[List pending and paired nodes]' 'pending[List pending pairing requests]' 'approve[Approve a pending pairing request]' 'reject[Reject a pending pairing request]' 'rename[Rename a paired node (display name override)]' 'invoke[Invoke a command on a paired node]' 'run[Run a shell command on a node (mac only)]' 'notify[Send a local notification on a node (mac only)]' 'canvas[Capture or render canvas content from a paired node]' 'camera[Capture camera media from a paired node]' 'screen[Capture screen recordings from a paired node]' 'location[Fetch location from a paired node]'" \
+    "1: :_values 'command' 'status[List known nodes with connection status and capabilities]' 'describe[Describe a node (capabilities + supported invoke commands)]' 'list[List pending and paired nodes]' 'pending[List pending pairing requests]' 'approve[Approve a pending pairing request]' 'reject[Reject a pending pairing request]' 'rename[Rename a paired node (display name override)]' 'invoke[Invoke a command on a paired node]' 'run[Run a shell command on a node (mac only)]' 'notify[Send a local notification on a node (mac only)]' 'push[Send an APNs test push to an iOS node]' 'canvas[Capture or render canvas content from a paired node]' 'camera[Capture camera media from a paired node]' 'screen[Capture screen recordings from a paired node]' 'location[Fetch location from a paired node]'" \
     "*::arg:->args"
 
   case $state in
@@ -2654,6 +2668,7 @@ _openclaw_nodes() {
         (invoke) _openclaw_nodes_invoke ;;
         (run) _openclaw_nodes_run ;;
         (notify) _openclaw_nodes_notify ;;
+        (push) _openclaw_nodes_push ;;
         (canvas) _openclaw_nodes_canvas ;;
         (camera) _openclaw_nodes_camera ;;
         (screen) _openclaw_nodes_screen ;;
@@ -2665,6 +2680,26 @@ _openclaw_nodes() {
 
 _openclaw_devices_list() {
   _arguments -C \
+    "--url[Gateway WebSocket URL (defaults to gateway.remote.url when configured)]" \
+    "--token[Gateway token (if required)]" \
+    "--password[Gateway password (password auth)]" \
+    "--timeout[Timeout in ms]" \
+    "--json[Output JSON]"
+}
+
+_openclaw_devices_remove() {
+  _arguments -C \
+    "--url[Gateway WebSocket URL (defaults to gateway.remote.url when configured)]" \
+    "--token[Gateway token (if required)]" \
+    "--password[Gateway password (password auth)]" \
+    "--timeout[Timeout in ms]" \
+    "--json[Output JSON]"
+}
+
+_openclaw_devices_clear() {
+  _arguments -C \
+    "--pending[Also reject all pending pairing requests]" \
+    "--yes[Confirm destructive clear]" \
     "--url[Gateway WebSocket URL (defaults to gateway.remote.url when configured)]" \
     "--token[Gateway token (if required)]" \
     "--password[Gateway password (password auth)]" \
@@ -2720,13 +2755,15 @@ _openclaw_devices() {
   
   _arguments -C \
      \
-    "1: :_values 'command' 'list[List pending and paired devices]' 'approve[Approve a pending device pairing request]' 'reject[Reject a pending device pairing request]' 'rotate[Rotate a device token for a role]' 'revoke[Revoke a device token for a role]'" \
+    "1: :_values 'command' 'list[List pending and paired devices]' 'remove[Remove a paired device entry]' 'clear[Clear paired devices from the gateway table]' 'approve[Approve a pending device pairing request]' 'reject[Reject a pending device pairing request]' 'rotate[Rotate a device token for a role]' 'revoke[Revoke a device token for a role]'" \
     "*::arg:->args"
 
   case $state in
     (args)
       case $line[1] in
         (list) _openclaw_devices_list ;;
+        (remove) _openclaw_devices_remove ;;
+        (clear) _openclaw_devices_clear ;;
         (approve) _openclaw_devices_approve ;;
         (reject) _openclaw_devices_reject ;;
         (rotate) _openclaw_devices_rotate ;;
@@ -3074,7 +3111,8 @@ _openclaw_hooks_disable() {
 
 _openclaw_hooks_install() {
   _arguments -C \
-    "(--link -l)"{--link,-l}"[Link a local path instead of copying]"
+    "(--link -l)"{--link,-l}"[Link a local path instead of copying]" \
+    "--pin[Record npm installs as exact resolved <name>@<version>]"
 }
 
 _openclaw_hooks_update() {
@@ -3294,7 +3332,8 @@ _openclaw_plugins_uninstall() {
 
 _openclaw_plugins_install() {
   _arguments -C \
-    "(--link -l)"{--link,-l}"[Link a local path instead of copying]"
+    "(--link -l)"{--link,-l}"[Link a local path instead of copying]" \
+    "--pin[Record npm installs as exact resolved <name>@<version>]"
 }
 
 _openclaw_plugins_update() {

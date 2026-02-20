@@ -95,7 +95,7 @@ _openclaw_completion() {
         return 0
         ;;
       acp)
-        opts="client --url --token --password --session --session-label --require-existing --reset-session --no-prefix-cwd --verbose,"
+        opts="client --url --token --token-file --password --password-file --session --session-label --require-existing --reset-session --no-prefix-cwd --verbose,"
         COMPREPLY=( $(compgen -W "${opts}" -- ${cur}) )
         return 0
         ;;
@@ -130,12 +130,12 @@ _openclaw_completion() {
         return 0
         ;;
       nodes)
-        opts="status describe list pending approve reject rename invoke run notify canvas camera screen location "
+        opts="status describe list pending approve reject rename invoke run notify push canvas camera screen location "
         COMPREPLY=( $(compgen -W "${opts}" -- ${cur}) )
         return 0
         ;;
       devices)
-        opts="list approve reject rotate revoke "
+        opts="list remove clear approve reject rotate revoke "
         COMPREPLY=( $(compgen -W "${opts}" -- ${cur}) )
         return 0
         ;;
