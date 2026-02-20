@@ -1,11 +1,11 @@
 {
-  "d288e59a-d999-49a5-a148-2173cc9c6071": {
-    "requestId": "d288e59a-d999-49a5-a148-2173cc9c6071",
+  "8ee62019-8d5f-4817-b0d2-599e20fdf431": {
+    "requestId": "8ee62019-8d5f-4817-b0d2-599e20fdf431",
     "deviceId": "e6a6ee3af225ee1dd2404b14de32c58bde51ef406590d101f21b58b02d17768e",
     "publicKey": "5WK1oEXY3y3TMCWPx9TcIi8Xd-9V1D_ZYLJXoPiGue0",
     "platform": "linux",
-    "clientId": "openclaw-probe",
-    "clientMode": "probe",
+    "clientId": "gateway-client",
+    "clientMode": "backend",
     "role": "operator",
     "roles": [
       "operator"
@@ -15,6 +15,6 @@
     ],
     "silent": false,
     "isRepair": true,
-    "ts": 1771599144792
+    "ts": 1771599536198
   }
 }
