@@ -1353,7 +1353,7 @@
   },
   "agent:main:cron:ddd3c269-0e02-4b4b-96bc-db2dd40bdddd": {
     "sessionId": "19bd2fc4-b856-4b98-b62b-62b71f2df5c8",
-    "updatedAt": 1771571305648,
+    "updatedAt": 1771571605652,
     "systemSent": true,
     "model": "MiniMax-M2.5",
     "contextTokens": 200000,
@@ -1587,9 +1587,9 @@
       "version": 0
     },
     "modelProvider": "minimax-cn",
-    "inputTokens": 27953,
-    "outputTokens": 88,
-    "totalTokens": 38843,
+    "inputTokens": 28152,
+    "outputTokens": 80,
+    "totalTokens": 39042,
     "totalTokensFresh": true
   },
   "agent:main:cron:ddd3c269-0e02-4b4b-96bc-db2dd40bdddd:run:299067a6-3607-434a-b259-290efd4f9ca6": {
@@ -2519,7 +2519,7 @@
   },
   "agent:main:cron:cd34fced-188e-4336-9b7b-cf2061eed1a9": {
     "sessionId": "83fb332e-ae90-4e6d-9ab2-d76ddb6e243b",
-    "updatedAt": 1771569740542,
+    "updatedAt": 1771571540545,
     "systemSent": true,
     "label": "Cron: update-memory-dir",
     "skillsSnapshot": {
@@ -2876,9 +2876,9 @@
     "modelProvider": "minimax-cn",
     "model": "MiniMax-M2.5",
     "contextTokens": 200000,
-    "inputTokens": 72188,
-    "outputTokens": 221,
-    "totalTokens": 47069,
+    "inputTokens": 75197,
+    "outputTokens": 205,
+    "totalTokens": 48573,
     "totalTokensFresh": true
   },
   "agent:main:cron:cd34fced-188e-4336-9b7b-cf2061eed1a9:run:5055b112-b0b0-460e-b9f1-65be05026ee8": {
@@ -5475,7 +5475,7 @@
   },
   "agent:main:cron:ddd3c269-0e02-4b4b-96bc-db2dd40bdddd:run:19bd2fc4-b856-4b98-b62b-62b71f2df5c8": {
     "sessionId": "19bd2fc4-b856-4b98-b62b-62b71f2df5c8",
-    "updatedAt": 1771571305648,
+    "updatedAt": 1771571605652,
     "systemSent": true,
     "model": "MiniMax-M2.5",
     "contextTokens": 200000,
@@ -5709,14 +5709,14 @@
       "version": 0
     },
     "modelProvider": "minimax-cn",
-    "inputTokens": 27953,
-    "outputTokens": 88,
-    "totalTokens": 38843,
+    "inputTokens": 28152,
+    "outputTokens": 80,
+    "totalTokens": 39042,
     "totalTokensFresh": true
   },
   "agent:main:cron:cd34fced-188e-4336-9b7b-cf2061eed1a9:run:83fb332e-ae90-4e6d-9ab2-d76ddb6e243b": {
     "sessionId": "83fb332e-ae90-4e6d-9ab2-d76ddb6e243b",
-    "updatedAt": 1771569740542,
+    "updatedAt": 1771571540545,
     "systemSent": true,
     "label": "Cron: update-memory-dir",
     "skillsSnapshot": {
@@ -6073,9 +6073,9 @@
     "modelProvider": "minimax-cn",
     "model": "MiniMax-M2.5",
     "contextTokens": 200000,
-    "inputTokens": 72188,
-    "outputTokens": 221,
-    "totalTokens": 47069,
+    "inputTokens": 75197,
+    "outputTokens": 205,
+    "totalTokens": 48573,
     "totalTokensFresh": true
   },
   "agent:main:cron:687d5bfe-0b1a-4641-93cc-a471ac243e1a:run:457f0fe8-4366-4359-b4a1-2e3f966cf201": {
