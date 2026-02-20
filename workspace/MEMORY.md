@@ -1,6 +1,6 @@
 # MEMORY.md - Ada's Long-term Memory
 
-## 工作区目录分类 (2026-02-21 03:42)
+## 工作区目录分类 (2026-02-21 04:12)
 
 ```
 workspace/
@@ -50,7 +50,8 @@ workspace/
 │   └── skills/           # 技能软链接
 ├── .pi/                  # Pi 配置
 ├── .clawhub/             # ClawHub 配置
-└── .openclaw/            # OpenClaw 内部配置
+├── .openclaw/            # OpenClaw 内部配置
+└── .gitignore            # Git 忽略配置
 ```
 
 ---
