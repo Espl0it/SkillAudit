@@ -1,23 +1,23 @@
 # MEMORY.md - Ada's Long-term Memory
 
-## 工作区目录分类 (2026-02-20 11:12)
+## 工作区目录分类 (2026-02-20 11:42)
 
 ```
 workspace/
 ├── projects/              # 独立项目
-│   ├── SmartHome/         # 智能家居项目
-│   ├── ReachyMini/        # 机器人项目
+│   ├── smart-home/        # 智能家居项目
+│   ├── reachy-mini/       # 机器人项目
 │   ├── fmp/               # 金融数据项目
-│   ├── OpenClawInstall/   # 安装脚本项目
-│   ├── financial/         # 金融分析
-│   └── options-research/  # 期权研究
+│   ├── openclaw-install/ # 安装脚本项目
+│   ├── financial/        # 金融分析
+│   └── options-research/ # 期权研究
 │
 ├── docs/                  # 文档/指南 (Guide类项目)
-│   ├── OpenClawGuide/     # OpenClaw 指南
-│   ├── OpenCodeGuide/     # Code 指南
+│   ├── openclaw-guide/    # OpenClaw 指南
+│   ├── opencode-guide/    # Code 指南
 │   ├── MakeSkillGuide/   # Skill 开发
-│   ├── WebSecurityGuide/ # Web安全渗透测试
-│   └── OptionTradingGuide/ # 期权交易指南
+│   ├── web-security-guide/ # Web安全渗透测试
+│   └── option-trading-guide/ # 期权交易指南
 │
 ├── skills/                # OpenClaw 技能 (21)
 │   ├── tavily-search/     # AI 联网搜索
