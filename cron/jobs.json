@@ -27,7 +27,8 @@
         "lastRunAtMs": 1771599505641,
         "lastStatus": "ok",
         "lastDurationMs": 21281,
-        "consecutiveErrors": 0
+        "consecutiveErrors": 0,
+        "runningAtMs": 1771599805635
       }
     },
     {
@@ -99,7 +100,7 @@
       "name": "daily-git-commit",
       "enabled": true,
       "createdAtMs": 1771477113990,
-      "updatedAtMs": 1771513226574,
+      "updatedAtMs": 1771599637665,
       "schedule": {
         "kind": "cron",
         "expr": "0 23 * * *",
@@ -116,12 +117,11 @@
         "channel": "feishu"
       },
       "state": {
-        "nextRunAtMs": 1771599600000,
-        "lastRunAtMs": 1771513200004,
+        "nextRunAtMs": 1771686000000,
+        "lastRunAtMs": 1771599600007,
         "lastStatus": "ok",
-        "lastDurationMs": 26570,
-        "consecutiveErrors": 0,
-        "runningAtMs": 1771599600007
+        "lastDurationMs": 37658,
+        "consecutiveErrors": 0
       }
     },
     {
