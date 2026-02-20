@@ -195,6 +195,16 @@
     }
   },
   "skills": {
-    "entries": {}
+    "entries": {
+      "send-email": {
+        "enabled": true,
+        "env": {
+          "EMAIL_SMTP_SERVER": "smtp.126.com",
+          "EMAIL_SMTP_PORT": "465",
+          "EMAIL_SENDER": "Espl0it@126.com",
+          "EMAIL_SMTP_PASSWORD": "FST9HYmZGcQfvYXc"
+        }
+      }
+    }
   }
 }
