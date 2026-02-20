@@ -1,7 +1,7 @@
 {
   "meta": {
-    "lastTouchedVersion": "2026.2.17",
-    "lastTouchedAt": "2026-02-20T02:11:01.290Z"
+    "lastTouchedVersion": "2026.2.19-2",
+    "lastTouchedAt": "2026-02-20T12:07:18.864Z"
   },
   "env": {
     "TUSHARE_TOKEN": "31c7a3335c9245deaec2bdc613531ab5ec794100df889e50353a31a9",
@@ -117,6 +117,9 @@
         "minimax-cn/MiniMax-M2.1": {}
       },
       "workspace": "/home/ecs-user/.openclaw/workspace",
+      "memorySearch": {
+        "enabled": false
+      },
       "compaction": {
         "mode": "safeguard"
       },
@@ -142,7 +145,8 @@
   },
   "commands": {
     "native": "auto",
-    "nativeSkills": "auto"
+    "nativeSkills": "auto",
+    "restart": true
   },
   "hooks": {
     "internal": {
@@ -176,6 +180,19 @@
       "resetOnExit": false
     }
   },
+  "skills": {
+    "entries": {
+      "send-email": {
+        "enabled": true,
+        "env": {
+          "EMAIL_SMTP_SERVER": "smtp.126.com",
+          "EMAIL_SMTP_PORT": "465",
+          "EMAIL_SENDER": "Espl0it@126.com",
+          "EMAIL_SMTP_PASSWORD": "FST9HYmZGcQfvYXc"
+        }
+      }
+    }
+  },
   "plugins": {
     "allow": [
       "device-pair",
@@ -191,19 +208,6 @@
       },
       "qwen-portal-auth": {
         "enabled": true
-      }
-    }
-  },
-  "skills": {
-    "entries": {
-      "send-email": {
-        "enabled": true,
-        "env": {
-          "EMAIL_SMTP_SERVER": "smtp.126.com",
-          "EMAIL_SMTP_PORT": "465",
-          "EMAIL_SENDER": "Espl0it@126.com",
-          "EMAIL_SMTP_PASSWORD": "FST9HYmZGcQfvYXc"
-        }
       }
     }
   }
