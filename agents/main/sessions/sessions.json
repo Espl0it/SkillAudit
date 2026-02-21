@@ -1358,7 +1358,7 @@
   },
   "agent:main:cron:ddd3c269-0e02-4b4b-96bc-db2dd40bdddd": {
     "sessionId": "9f53b7a7-d2ea-4dff-933c-ff485e7947eb",
-    "updatedAt": 1771669105659,
+    "updatedAt": 1771669405653,
     "systemSent": true,
     "model": "MiniMax-M2.5",
     "contextTokens": 200000,
@@ -1592,9 +1592,9 @@
       "version": 0
     },
     "modelProvider": "minimax-cn",
-    "inputTokens": 38933,
-    "outputTokens": 116,
-    "totalTokens": 49531,
+    "inputTokens": 39191,
+    "outputTokens": 113,
+    "totalTokens": 49789,
     "totalTokensFresh": true
   },
   "agent:main:cron:687d5bfe-0b1a-4641-93cc-a471ac243e1a": {
@@ -6234,7 +6234,7 @@
   },
   "agent:main:cron:fac03f48-248c-4fc8-a8f9-509d6863b771": {
     "sessionId": "eb353a5d-1d7e-4274-a7bf-229262b5f3c0",
-    "updatedAt": 1771668388042,
+    "updatedAt": 1771669288053,
     "systemSent": true,
     "label": "Cron: receive-email",
     "skillsSnapshot": {
@@ -6602,9 +6602,9 @@
     "modelProvider": "minimax-cn",
     "model": "MiniMax-M2.5",
     "contextTokens": 200000,
-    "inputTokens": 10910,
-    "outputTokens": 71,
-    "totalTokens": 21508,
+    "inputTokens": 11075,
+    "outputTokens": 80,
+    "totalTokens": 21673,
     "totalTokensFresh": true
   },
   "agent:main:cron:fac03f48-248c-4fc8-a8f9-509d6863b771:run:5c1bf8b9-a764-4709-a84f-a616e85801ba": {
@@ -9628,7 +9628,7 @@
   },
   "agent:main:cron:ddd3c269-0e02-4b4b-96bc-db2dd40bdddd:run:9f53b7a7-d2ea-4dff-933c-ff485e7947eb": {
     "sessionId": "9f53b7a7-d2ea-4dff-933c-ff485e7947eb",
-    "updatedAt": 1771669105659,
+    "updatedAt": 1771669405653,
     "systemSent": true,
     "model": "MiniMax-M2.5",
     "contextTokens": 200000,
@@ -9862,14 +9862,14 @@
       "version": 0
     },
     "modelProvider": "minimax-cn",
-    "inputTokens": 38933,
-    "outputTokens": 116,
-    "totalTokens": 49531,
+    "inputTokens": 39191,
+    "outputTokens": 113,
+    "totalTokens": 49789,
     "totalTokensFresh": true
   },
   "agent:main:cron:fac03f48-248c-4fc8-a8f9-509d6863b771:run:eb353a5d-1d7e-4274-a7bf-229262b5f3c0": {
     "sessionId": "eb353a5d-1d7e-4274-a7bf-229262b5f3c0",
-    "updatedAt": 1771668388042,
+    "updatedAt": 1771669288053,
     "systemSent": true,
     "label": "Cron: receive-email",
     "skillsSnapshot": {
@@ -10237,9 +10237,9 @@
     "modelProvider": "minimax-cn",
     "model": "MiniMax-M2.5",
     "contextTokens": 200000,
-    "inputTokens": 10910,
-    "outputTokens": 71,
-    "totalTokens": 21508,
+    "inputTokens": 11075,
+    "outputTokens": 80,
+    "totalTokens": 21673,
     "totalTokensFresh": true
   },
   "agent:main:cron:cd34fced-188e-4336-9b7b-cf2061eed1a9:run:5998c7ac-2c03-48e3-8e40-f08c4ec5fd23": {
