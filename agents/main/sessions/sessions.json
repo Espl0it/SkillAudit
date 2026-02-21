@@ -1,7 +1,7 @@
 {
   "agent:main:main": {
     "sessionId": "61897f4f-1789-4b5a-aead-080e619ec526",
-    "updatedAt": 1771646151789,
+    "updatedAt": 1771646835935,
     "systemSent": true,
     "abortedLastRun": false,
     "chatType": "direct",
@@ -12,9 +12,9 @@
     },
     "lastTo": "user:ou_622f688f24a6bca0390ca0c8b913eb9e",
     "origin": {
-      "label": "user:ou_622f688f24a6bca0390ca0c8b913eb9e",
-      "provider": "heartbeat",
-      "from": "user:ou_622f688f24a6bca0390ca0c8b913eb9e",
+      "label": "ou_622f688f24a6bca0390ca0c8b913eb9e",
+      "provider": "feishu",
+      "from": "feishu:ou_622f688f24a6bca0390ca0c8b913eb9e",
       "to": "user:ou_622f688f24a6bca0390ca0c8b913eb9e",
       "surface": "feishu",
       "chatType": "direct",
@@ -398,16 +398,16 @@
     "authProfileOverride": "minimax-cn:default",
     "authProfileOverrideSource": "auto",
     "authProfileOverrideCompactionCount": 0,
-    "inputTokens": 302287,
-    "outputTokens": 545,
-    "totalTokens": 169199,
+    "inputTokens": 151199,
+    "outputTokens": 991,
+    "totalTokens": 169145,
     "totalTokensFresh": true,
     "modelProvider": "minimax-cn",
     "model": "MiniMax-M2.5",
     "contextTokens": 200000,
     "systemPromptReport": {
       "source": "run",
-      "generatedAt": 1771646115080,
+      "generatedAt": 1771646677838,
       "sessionId": "61897f4f-1789-4b5a-aead-080e619ec526",
       "sessionKey": "agent:main:main",
       "provider": "minimax-cn",
@@ -420,9 +420,9 @@
         "sandboxed": false
       },
       "systemPrompt": {
-        "chars": 36848,
+        "chars": 37217,
         "projectContextChars": 16607,
-        "nonProjectContextChars": 20241
+        "nonProjectContextChars": 20610
       },
       "injectedWorkspaceFiles": [
         {
@@ -629,7 +629,7 @@
       },
       "tools": {
         "listChars": 2404,
-        "schemaChars": 19422,
+        "schemaChars": 19410,
         "entries": [
           {
             "name": "read",
@@ -682,7 +682,7 @@
           {
             "name": "message",
             "summaryChars": 89,
-            "schemaChars": 3897,
+            "schemaChars": 3885,
             "propertiesCount": 84
           },
           {
@@ -1356,7 +1356,7 @@
   },
   "agent:main:cron:ddd3c269-0e02-4b4b-96bc-db2dd40bdddd": {
     "sessionId": "9f53b7a7-d2ea-4dff-933c-ff485e7947eb",
-    "updatedAt": 1771646605651,
+    "updatedAt": 1771646905652,
     "systemSent": true,
     "model": "MiniMax-M2.5",
     "contextTokens": 200000,
@@ -1590,9 +1590,9 @@
       "version": 0
     },
     "modelProvider": "minimax-cn",
-    "inputTokens": 22379,
-    "outputTokens": 102,
-    "totalTokens": 32977,
+    "inputTokens": 22593,
+    "outputTokens": 103,
+    "totalTokens": 33191,
     "totalTokensFresh": true
   },
   "agent:main:cron:687d5bfe-0b1a-4641-93cc-a471ac243e1a": {
@@ -6232,7 +6232,7 @@
   },
   "agent:main:cron:fac03f48-248c-4fc8-a8f9-509d6863b771": {
     "sessionId": "eb353a5d-1d7e-4274-a7bf-229262b5f3c0",
-    "updatedAt": 1771645888041,
+    "updatedAt": 1771646788040,
     "systemSent": true,
     "label": "Cron: receive-email",
     "skillsSnapshot": {
@@ -6600,9 +6600,9 @@
     "modelProvider": "minimax-cn",
     "model": "MiniMax-M2.5",
     "contextTokens": 200000,
-    "inputTokens": 6735,
-    "outputTokens": 87,
-    "totalTokens": 17333,
+    "inputTokens": 6900,
+    "outputTokens": 69,
+    "totalTokens": 17498,
     "totalTokensFresh": true
   },
   "agent:main:cron:fac03f48-248c-4fc8-a8f9-509d6863b771:run:5c1bf8b9-a764-4709-a84f-a616e85801ba": {
@@ -9626,7 +9626,7 @@
   },
   "agent:main:cron:ddd3c269-0e02-4b4b-96bc-db2dd40bdddd:run:9f53b7a7-d2ea-4dff-933c-ff485e7947eb": {
     "sessionId": "9f53b7a7-d2ea-4dff-933c-ff485e7947eb",
-    "updatedAt": 1771646605651,
+    "updatedAt": 1771646905652,
     "systemSent": true,
     "model": "MiniMax-M2.5",
     "contextTokens": 200000,
@@ -9860,14 +9860,14 @@
       "version": 0
     },
     "modelProvider": "minimax-cn",
-    "inputTokens": 22379,
-    "outputTokens": 102,
-    "totalTokens": 32977,
+    "inputTokens": 22593,
+    "outputTokens": 103,
+    "totalTokens": 33191,
     "totalTokensFresh": true
   },
   "agent:main:cron:fac03f48-248c-4fc8-a8f9-509d6863b771:run:eb353a5d-1d7e-4274-a7bf-229262b5f3c0": {
     "sessionId": "eb353a5d-1d7e-4274-a7bf-229262b5f3c0",
-    "updatedAt": 1771645888041,
+    "updatedAt": 1771646788040,
     "systemSent": true,
     "label": "Cron: receive-email",
     "skillsSnapshot": {
@@ -10235,9 +10235,9 @@
     "modelProvider": "minimax-cn",
     "model": "MiniMax-M2.5",
     "contextTokens": 200000,
-    "inputTokens": 6735,
-    "outputTokens": 87,
-    "totalTokens": 17333,
+    "inputTokens": 6900,
+    "outputTokens": 69,
+    "totalTokens": 17498,
     "totalTokensFresh": true
   },
   "agent:main:cron:cd34fced-188e-4336-9b7b-cf2061eed1a9:run:5998c7ac-2c03-48e3-8e40-f08c4ec5fd23": {
