@@ -1,7 +1,7 @@
 {
   "agent:main:main": {
     "sessionId": "61897f4f-1789-4b5a-aead-080e619ec526",
-    "updatedAt": 1771641484874,
+    "updatedAt": 1771641644046,
     "systemSent": true,
     "abortedLastRun": false,
     "chatType": "direct",
@@ -398,16 +398,16 @@
     "authProfileOverride": "minimax-cn:default",
     "authProfileOverrideSource": "auto",
     "authProfileOverrideCompactionCount": 0,
-    "inputTokens": 533191,
-    "outputTokens": 3463,
-    "totalTokens": 151794,
+    "inputTokens": 36,
+    "outputTokens": 470,
+    "totalTokens": 153082,
     "totalTokensFresh": true,
     "modelProvider": "minimax-cn",
     "model": "MiniMax-M2.5",
     "contextTokens": 200000,
     "systemPromptReport": {
       "source": "run",
-      "generatedAt": 1771641232696,
+      "generatedAt": 1771641599360,
       "sessionId": "61897f4f-1789-4b5a-aead-080e619ec526",
       "sessionKey": "agent:main:main",
       "provider": "minimax-cn",
@@ -1356,7 +1356,7 @@
   },
   "agent:main:cron:ddd3c269-0e02-4b4b-96bc-db2dd40bdddd": {
     "sessionId": "9f53b7a7-d2ea-4dff-933c-ff485e7947eb",
-    "updatedAt": 1771641505647,
+    "updatedAt": 1771641805655,
     "systemSent": true,
     "model": "MiniMax-M2.5",
     "contextTokens": 200000,
@@ -1590,9 +1590,9 @@
       "version": 0
     },
     "modelProvider": "minimax-cn",
-    "inputTokens": 18385,
-    "outputTokens": 114,
-    "totalTokens": 28983,
+    "inputTokens": 18647,
+    "outputTokens": 129,
+    "totalTokens": 29245,
     "totalTokensFresh": true
   },
   "agent:main:cron:687d5bfe-0b1a-4641-93cc-a471ac243e1a": {
@@ -1939,7 +1939,7 @@
   },
   "agent:main:cron:cd34fced-188e-4336-9b7b-cf2061eed1a9": {
     "sessionId": "5998c7ac-2c03-48e3-8e40-f08c4ec5fd23",
-    "updatedAt": 1771639940541,
+    "updatedAt": 1771641740545,
     "systemSent": true,
     "label": "Cron: update-memory-dir",
     "skillsSnapshot": {
@@ -2296,9 +2296,9 @@
     "modelProvider": "minimax-cn",
     "model": "MiniMax-M2.5",
     "contextTokens": 200000,
-    "inputTokens": 24290,
-    "outputTokens": 94,
-    "totalTokens": 34888,
+    "inputTokens": 25727,
+    "outputTokens": 103,
+    "totalTokens": 36325,
     "totalTokensFresh": true
   },
   "agent:main:cron:e06279b9-a439-4139-bb4b-1741ca76c7f4": {
@@ -10001,7 +10001,7 @@
   },
   "agent:main:cron:ddd3c269-0e02-4b4b-96bc-db2dd40bdddd:run:9f53b7a7-d2ea-4dff-933c-ff485e7947eb": {
     "sessionId": "9f53b7a7-d2ea-4dff-933c-ff485e7947eb",
-    "updatedAt": 1771641505647,
+    "updatedAt": 1771641805655,
     "systemSent": true,
     "model": "MiniMax-M2.5",
     "contextTokens": 200000,
@@ -10235,9 +10235,9 @@
       "version": 0
     },
     "modelProvider": "minimax-cn",
-    "inputTokens": 18385,
-    "outputTokens": 114,
-    "totalTokens": 28983,
+    "inputTokens": 18647,
+    "outputTokens": 129,
+    "totalTokens": 29245,
     "totalTokensFresh": true
   },
   "agent:main:cron:fac03f48-248c-4fc8-a8f9-509d6863b771:run:eb353a5d-1d7e-4274-a7bf-229262b5f3c0": {
@@ -10617,7 +10617,7 @@
   },
   "agent:main:cron:cd34fced-188e-4336-9b7b-cf2061eed1a9:run:5998c7ac-2c03-48e3-8e40-f08c4ec5fd23": {
     "sessionId": "5998c7ac-2c03-48e3-8e40-f08c4ec5fd23",
-    "updatedAt": 1771639940541,
+    "updatedAt": 1771641740545,
     "systemSent": true,
     "label": "Cron: update-memory-dir",
     "skillsSnapshot": {
@@ -10974,9 +10974,9 @@
     "modelProvider": "minimax-cn",
     "model": "MiniMax-M2.5",
     "contextTokens": 200000,
-    "inputTokens": 24290,
-    "outputTokens": 94,
-    "totalTokens": 34888,
+    "inputTokens": 25727,
+    "outputTokens": 103,
+    "totalTokens": 36325,
     "totalTokensFresh": true
   },
   "agent:main:cron:687d5bfe-0b1a-4641-93cc-a471ac243e1a:run:d5e6cfcd-fa60-431d-924a-5aa2da3d9739": {
