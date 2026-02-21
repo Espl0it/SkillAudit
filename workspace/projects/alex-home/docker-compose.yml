@@ -1,0 +1,27 @@
+version: '3.8'
+
+services:
+  alex-web:
+    image: nginx:alpine
+    ports:
+      - "3000:80"
+    volumes:
+      - ./:/usr/share/nginx/html:ro
+    environment:
+      - NGINX_HOST=localhost
+      - NGINX_PORT=80
+    restart: unless-stopped
+
+  alex-api:
+    build:
+      context: ./api
+      dockerfile: Dockerfile
+    ports:
+      - "3001:3001"
+    environment:
+      - FLASK_ENV=production
+    restart: unless-stopped
+
+networks:
+  default:
+    name: alex-network
