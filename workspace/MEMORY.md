@@ -1,6 +1,6 @@
 # MEMORY.md - Ada's Long-term Memory
 
-## 工作区目录分类 (2026-02-21 11:42)
+## 工作区目录分类 (2026-02-21 17:42)
 
 ```
 workspace/
@@ -10,7 +10,8 @@ workspace/
 │   ├── fmp/               # 金融数据项目
 │   ├── openclaw-install/ # 安装脚本项目
 │   ├── financial/        # 金融分析
-│   └── options-research/ # 期权研究
+│   ├── options-research/ # 期权研究
+│   └── alex-home/        # Alex 家庭项目
 │
 ├── docs/                  # 文档/指南 (Guide类项目)
 │   ├── openclaw-guide/    # OpenClaw 指南
