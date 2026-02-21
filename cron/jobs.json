@@ -7,7 +7,7 @@
       "name": "auto-push",
       "enabled": true,
       "createdAtMs": 1771376305632,
-      "updatedAtMs": 1771635823742,
+      "updatedAtMs": 1771636114247,
       "schedule": {
         "everyMs": 300000,
         "kind": "every",
@@ -23,12 +23,12 @@
         "mode": "none"
       },
       "state": {
-        "nextRunAtMs": 1771636105632,
-        "lastRunAtMs": 1771635810672,
+        "nextRunAtMs": 1771636405632,
+        "lastRunAtMs": 1771636105636,
         "lastStatus": "ok",
-        "lastDurationMs": 13070,
+        "lastDurationMs": 8611,
         "consecutiveErrors": 0,
-        "runningAtMs": 1771636105635
+        "runningAtMs": 1771636405637
       }
     },
     {
@@ -52,7 +52,8 @@
       },
       "delivery": {
         "mode": "announce",
-        "channel": "feishu"
+        "channel": "feishu",
+        "target": "ou_622f688f24a6bca0390ca0c8b913eb9e"
       },
       "state": {
         "nextRunAtMs": 1771714800000,
@@ -114,7 +115,8 @@
       },
       "delivery": {
         "mode": "announce",
-        "channel": "feishu"
+        "channel": "feishu",
+        "target": "ou_622f688f24a6bca0390ca0c8b913eb9e"
       },
       "state": {
         "nextRunAtMs": 1771686000000,
@@ -145,7 +147,8 @@
       },
       "delivery": {
         "mode": "announce",
-        "channel": "feishu"
+        "channel": "feishu",
+        "target": "ou_622f688f24a6bca0390ca0c8b913eb9e"
       },
       "state": {
         "nextRunAtMs": 1771804800000
@@ -158,7 +161,7 @@
       "name": "update-memory-dir",
       "enabled": true,
       "createdAtMs": 1771492340526,
-      "updatedAtMs": 1771634557501,
+      "updatedAtMs": 1771636377571,
       "schedule": {
         "everyMs": 1800000,
         "kind": "every",
@@ -174,10 +177,10 @@
         "mode": "none"
       },
       "state": {
-        "nextRunAtMs": 1771636340526,
-        "lastRunAtMs": 1771634540530,
+        "nextRunAtMs": 1771638140526,
+        "lastRunAtMs": 1771636340530,
         "lastStatus": "ok",
-        "lastDurationMs": 16971,
+        "lastDurationMs": 37041,
         "consecutiveErrors": 0
       }
     },
@@ -201,7 +204,8 @@
       },
       "delivery": {
         "mode": "announce",
-        "channel": "feishu"
+        "channel": "feishu",
+        "target": "ou_622f688f24a6bca0390ca0c8b913eb9e"
       },
       "state": {
         "nextRunAtMs": 1771700400000,
@@ -231,7 +235,8 @@
       },
       "delivery": {
         "mode": "announce",
-        "channel": "feishu"
+        "channel": "feishu",
+        "target": "ou_622f688f24a6bca0390ca0c8b913eb9e"
       },
       "state": {
         "nextRunAtMs": 1771696800000,
@@ -262,7 +267,8 @@
       },
       "delivery": {
         "mode": "announce",
-        "channel": "feishu"
+        "channel": "feishu",
+        "target": "ou_622f688f24a6bca0390ca0c8b913eb9e"
       },
       "state": {
         "nextRunAtMs": 1771714800000,
@@ -294,7 +300,8 @@
       },
       "delivery": {
         "channel": "feishu",
-        "mode": "announce"
+        "mode": "announce",
+        "target": "ou_622f688f24a6bca0390ca0c8b913eb9e"
       },
       "state": {
         "nextRunAtMs": 1771722000000,
@@ -327,7 +334,8 @@
       },
       "delivery": {
         "mode": "announce",
-        "channel": "feishu"
+        "channel": "feishu",
+        "target": "ou_622f688f24a6bca0390ca0c8b913eb9e"
       },
       "state": {
         "nextRunAtMs": 1771810800000,
@@ -360,7 +368,8 @@
       },
       "delivery": {
         "mode": "announce",
-        "channel": "feishu"
+        "channel": "feishu",
+        "target": "ou_622f688f24a6bca0390ca0c8b913eb9e"
       },
       "state": {
         "nextRunAtMs": 1771857000000,
@@ -390,7 +399,8 @@
       },
       "delivery": {
         "mode": "announce",
-        "channel": "feishu"
+        "channel": "feishu",
+        "target": "ou_622f688f24a6bca0390ca0c8b913eb9e"
       },
       "state": {
         "nextRunAtMs": 1771700400000,
