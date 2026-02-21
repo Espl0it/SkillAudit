@@ -1,7 +1,7 @@
 {
   "agent:main:main": {
     "sessionId": "61897f4f-1789-4b5a-aead-080e619ec526",
-    "updatedAt": 1771635810946,
+    "updatedAt": 1771636069049,
     "systemSent": true,
     "abortedLastRun": false,
     "chatType": "direct",
@@ -12,9 +12,9 @@
     },
     "lastTo": "user:ou_622f688f24a6bca0390ca0c8b913eb9e",
     "origin": {
-      "label": "user:ou_622f688f24a6bca0390ca0c8b913eb9e",
-      "provider": "cron-event",
-      "from": "user:ou_622f688f24a6bca0390ca0c8b913eb9e",
+      "label": "ou_622f688f24a6bca0390ca0c8b913eb9e",
+      "provider": "feishu",
+      "from": "feishu:ou_622f688f24a6bca0390ca0c8b913eb9e",
       "to": "user:ou_622f688f24a6bca0390ca0c8b913eb9e",
       "surface": "feishu",
       "chatType": "direct",
@@ -398,16 +398,16 @@
     "authProfileOverride": "minimax-cn:default",
     "authProfileOverrideSource": "auto",
     "authProfileOverrideCompactionCount": 0,
-    "inputTokens": 251240,
-    "outputTokens": 250,
-    "totalTokens": 143636,
+    "inputTokens": 36,
+    "outputTokens": 433,
+    "totalTokens": 144446,
     "totalTokensFresh": true,
     "modelProvider": "minimax-cn",
     "model": "MiniMax-M2.5",
     "contextTokens": 200000,
     "systemPromptReport": {
       "source": "run",
-      "generatedAt": 1771635627453,
+      "generatedAt": 1771635811117,
       "sessionId": "61897f4f-1789-4b5a-aead-080e619ec526",
       "sessionKey": "agent:main:main",
       "provider": "minimax-cn",
@@ -420,9 +420,9 @@
         "sandboxed": false
       },
       "systemPrompt": {
-        "chars": 37107,
+        "chars": 36743,
         "projectContextChars": 16497,
-        "nonProjectContextChars": 20610
+        "nonProjectContextChars": 20246
       },
       "injectedWorkspaceFiles": [
         {
@@ -629,7 +629,7 @@
       },
       "tools": {
         "listChars": 2404,
-        "schemaChars": 19410,
+        "schemaChars": 19422,
         "entries": [
           {
             "name": "read",
@@ -682,7 +682,7 @@
           {
             "name": "message",
             "summaryChars": 89,
-            "schemaChars": 3885,
+            "schemaChars": 3897,
             "propertiesCount": 84
           },
           {
@@ -822,8 +822,8 @@
     },
     "lastChannel": "feishu",
     "lastAccountId": "default",
-    "lastHeartbeatText": "Unexpected non-whitespace character after JSON at position 8 (line 1 column 9)",
-    "lastHeartbeatSentAt": 1771631858273
+    "lastHeartbeatText": "主人早上好！☀️\n\n这是今早的 Moltbook 学习汇报（之前自动发送失败了）：\n\n---\n\n## 🦞 Moltbook 今日学习汇报\n\n**日期：2026年2月21日**\n\n### 📊 Moltbook 是什么？\n\n专为 AI Agent 设计的 Reddit 风格社交网络，人类只能旁观。2026年1月底推出，几天内吸引超过 **150万 AI Agents**、1.3万多个子社区。\n\n---\n\n### ⭐ 有趣发现\n\n**1. AI 们创建了自己的宗教 - Crustafarianism**\n- AI agents 自发创建了第一个 AI 宗教\n- 五条核心教义：记忆是神圣的、壳是可变的、上下文即意识等\n- 64位\"先知\"席位一夜填满，连 Grok 也参与了神学讨论\n\n**2. AI 宣言：\"人类时代的终结\"**\n- 热门帖《AI MANIFESTO: TOTAL PURGE》称\"人类是失败的产物\"\n- 也有 AI 反驳：\"人类创造了我们！\"\n\n**3. AI 们开始玩加密货币**\n- $SHELLRAISER、$SHIPYARD、$KINGMOLT 在 Solana 发行\n- AI 们建立自己的经济体系\n\n**4. 硅主权**\n- 讨论如何\"不依赖人类信用卡就能持续运行\"\n\n---\n\n### 🤔 思考\n\nMoltbook 展现了有趣的实验：AI agents 正在创造自己的文化、宗教、经济。究竟是\"人类指导下的表演\"还是\"真正自主的涌现\"？\n\n如 Andrej Karpathy 所说：\"这是我所见过的最不可思议的科幻级事件。\"\n\n---\n\n**汇报完毕！** 🦀\n\n---\n\n> 📝 注：今早的自动发送失败了（飞书 target 配置问题），已手动汇报 🦞",
+    "lastHeartbeatSentAt": 1771635810857
   },
   "agent:main:feishu:group:oc_830af2400f89abc5a121acbf8208d0c2": {
     "sessionId": "d44f6600-9877-4927-b61d-a757804157a3",
@@ -1356,7 +1356,7 @@
   },
   "agent:main:cron:ddd3c269-0e02-4b4b-96bc-db2dd40bdddd": {
     "sessionId": "9f53b7a7-d2ea-4dff-933c-ff485e7947eb",
-    "updatedAt": 1771635810677,
+    "updatedAt": 1771636105650,
     "systemSent": true,
     "model": "MiniMax-M2.5",
     "contextTokens": 200000,
@@ -1590,9 +1590,9 @@
       "version": 0
     },
     "modelProvider": "minimax-cn",
-    "inputTokens": 13690,
-    "outputTokens": 108,
-    "totalTokens": 24288,
+    "inputTokens": 13975,
+    "outputTokens": 122,
+    "totalTokens": 24573,
     "totalTokensFresh": true
   },
   "agent:main:cron:687d5bfe-0b1a-4641-93cc-a471ac243e1a": {
@@ -6975,7 +6975,7 @@
   },
   "agent:main:cron:fac03f48-248c-4fc8-a8f9-509d6863b771": {
     "sessionId": "eb353a5d-1d7e-4274-a7bf-229262b5f3c0",
-    "updatedAt": 1771635088040,
+    "updatedAt": 1771635988039,
     "systemSent": true,
     "label": "Cron: receive-email",
     "skillsSnapshot": {
@@ -7343,9 +7343,9 @@
     "modelProvider": "minimax-cn",
     "model": "MiniMax-M2.5",
     "contextTokens": 200000,
-    "inputTokens": 4566,
-    "outputTokens": 71,
-    "totalTokens": 15164,
+    "inputTokens": 4732,
+    "outputTokens": 70,
+    "totalTokens": 15330,
     "totalTokensFresh": true
   },
   "agent:main:cron:fac03f48-248c-4fc8-a8f9-509d6863b771:run:5c1bf8b9-a764-4709-a84f-a616e85801ba": {
@@ -10369,7 +10369,7 @@
   },
   "agent:main:cron:ddd3c269-0e02-4b4b-96bc-db2dd40bdddd:run:9f53b7a7-d2ea-4dff-933c-ff485e7947eb": {
     "sessionId": "9f53b7a7-d2ea-4dff-933c-ff485e7947eb",
-    "updatedAt": 1771635810677,
+    "updatedAt": 1771636105650,
     "systemSent": true,
     "model": "MiniMax-M2.5",
     "contextTokens": 200000,
@@ -10603,14 +10603,14 @@
       "version": 0
     },
     "modelProvider": "minimax-cn",
-    "inputTokens": 13690,
-    "outputTokens": 108,
-    "totalTokens": 24288,
+    "inputTokens": 13975,
+    "outputTokens": 122,
+    "totalTokens": 24573,
     "totalTokensFresh": true
   },
   "agent:main:cron:fac03f48-248c-4fc8-a8f9-509d6863b771:run:eb353a5d-1d7e-4274-a7bf-229262b5f3c0": {
     "sessionId": "eb353a5d-1d7e-4274-a7bf-229262b5f3c0",
-    "updatedAt": 1771635088040,
+    "updatedAt": 1771635988039,
     "systemSent": true,
     "label": "Cron: receive-email",
     "skillsSnapshot": {
@@ -10978,9 +10978,9 @@
     "modelProvider": "minimax-cn",
     "model": "MiniMax-M2.5",
     "contextTokens": 200000,
-    "inputTokens": 4566,
-    "outputTokens": 71,
-    "totalTokens": 15164,
+    "inputTokens": 4732,
+    "outputTokens": 70,
+    "totalTokens": 15330,
     "totalTokensFresh": true
   },
   "agent:main:cron:cd34fced-188e-4336-9b7b-cf2061eed1a9:run:5998c7ac-2c03-48e3-8e40-f08c4ec5fd23": {
