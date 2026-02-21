@@ -1,6 +1,6 @@
 # MEMORY.md - Ada's Long-term Memory
 
-## 工作区目录分类 (2026-02-21 09:12)
+## 工作区目录分类 (2026-02-21 09:42)
 
 ```
 workspace/
@@ -19,7 +19,7 @@ workspace/
 │   ├── web-security-guide/ # Web安全渗透测试
 │   └── option-trading-guide/ # 期权交易指南
 │
-├── skills/                # OpenClaw 技能 (23)
+├── skills/                # OpenClaw 技能 (24)
 │   ├── tavily-search/     # AI 联网搜索
 │   ├── weather/           # 天气查询
 │   ├── github/           # GitHub 操作
@@ -34,6 +34,7 @@ workspace/
 │   ├── blogwatcher/      # RSS/博客监控
 │   ├── web-security/     # Web 安全渗透测试
 │   ├── system-security/  # 系统安全审计
+│   ├── crypto-trading/   # 加密货币交易
 │   ├── sag/              # 语音合成
 │   ├── dietitian/        # 膳食规划
 │   ├── find-skills/      # 技能发现
