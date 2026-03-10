@@ -1,87 +1,100 @@
 # Web Security Rules
-# Detects common web security vulnerabilities
 
 - id: W001
   title: SQL Injection Risk
-  pattern: '(?i)(?:select|insert|update|delete|drop|create|alter)\s+.*\+.*["\']'
+  pattern: >
+    (?i)(?:select|insert|update|delete|drop|create|alter)\s+.*\+.*["']
   severity: critical
   recommendation: Use parameterized queries or prepared statements instead of string concatenation
 
 - id: W002
-  title: Unsanitized Input in SQL Query
-  pattern: '(?i)(?:execute|query|exec)\s*\(\s*["\'].*\$\{?'
+  title: Unfiltered Input in SQL Query
+  pattern: >
+    (?i)(?:execute|query|exec)\s*\(\s*["'].*\$\{?
   severity: critical
   recommendation: Sanitize inputs or use ORM/parameterized queries
 
 - id: W003
   title: Potential XSS - innerHTML Assignment
-  pattern: '(?:\.innerHTML|\.outerHTML|insertAdjacentHTML)\s*=\s*[^;]+'
+  pattern: >
+    (?:\.innerHTML|\.outerHTML|insertAdjacentHTML)\s*=\s*[^;]+
   severity: high
   recommendation: Use textContent instead of innerHTML, or sanitize with DOMPurify
 
 - id: W004
   title: Unsanitized eval() Usage
-  pattern: '\beval\s*\([^)]*\$'
+  pattern: >
+    \beval\s*\([^)]*\$
   severity: critical
   recommendation: Avoid eval() with user input; use safer alternatives
 
 - id: W005
   title: Unsafe DOM Manipulation with User Input
-  pattern: '(?i)(?:document\.write|dynDocumentWrite)\s*\('
+  pattern: >
+    (?i)(?:document\.write|dynDocumentWrite)\s*\(
   severity: high
   recommendation: Use safer DOM manipulation methods like textContent
 
 - id: W006
   title: Missing Content Security Policy Header
-  pattern: 'Content-Security-Policy'
+  pattern: >
+    Content-Security-Policy
   severity: medium
   recommendation: Add CSP headers to protect against XSS and data injection
 
 - id: W007
   title: Insecure Random Number Generation
-  pattern: 'Math\.random\s*\('
+  pattern: >
+    Math\.random\s*\(
   severity: medium
   recommendation: Use crypto.getRandomValues() for security-sensitive randomness
 
 - id: W008
   title: Disabled SSL/TLS Verification
-  pattern: '(?i)(?:rejectUnauthorized|verify|ssl:\s*false|secure:\s*false)'
+  pattern: >
+    (?i)(?:rejectUnauthorized|verify|ssl:\s*false|secure:\s*false)
   severity: critical
   recommendation: Always verify SSL certificates in production
 
 - id: W009
   title: Weak Cryptographic Algorithm
-  pattern: '(?i)(?:md5|sha1|des|rc4)\s*\('
+  pattern: >
+    (?i)(?:md5|sha1|des|rc4)\s*\(
   severity: high
   recommendation: Use SHA-256 or stronger algorithms
 
 - id: W010
   title: Path Traversal Risk
-  pattern: '(?:\.\./|\.\.\\\\|%2e%2e)'
+  pattern: >
+    (?:\.\./|\.\.\\|%2e%2e)
   severity: high
   recommendation: Validate and sanitize file path inputs
 
 - id: W011
   title: Server-Side Request Forgery (SSRF) Risk
-  pattern: '(?i)(?:fetch|axios|request|http\.get|http\.post).*\$\{?'
+  pattern: >
+    (?i)(?:fetch|axios|request|http\.get|http\.post).*\$\{?
   severity: high
   description: URL parameters should be validated against allowlists
   recommendation: Validate URLs against allowlists and avoid user-controlled URL parameters
 
 - id: W012
   title: Insecure XML Parser Configuration
-  pattern: '(?i)(?:DOMParser|XMLHttpRequest).*dangerouslySetInnerHTML'
+  pattern: >
+    (?i)(?:DOMParser|XMLHttpRequest).*dangerouslySetInnerHTML
   severity: high
   recommendation: Disable external entity processing in XML parsers
 
 - id: W013
   title: Missing HTTP Security Headers
-  pattern: '(?i)(?:X-Frame-Options|X-Content-Type-Options|X-XSS-Protection)'
+  pattern: >
+    (?i)(?:X-Frame-Options|X-Content-Type-Options|X-XSS-Protection)
   severity: medium
-  recommendation: Add security headers: X-Frame-Options, X-Content-Type-Options, Strict-Transport-Security
+  recommendation: Add security headers
 
 - id: W014
   title: Cookie Without Secure Flag
-  pattern: '(?i)(?:cookie|setCookie).*["\'][^"\']*["\'].*secure:\s*false'
+  pattern: >
+    (?i)(?:cookie|setCookie).*["'][^"']*["'].*secure:\s*false
   severity: medium
   recommendation: Always set the Secure flag for cookies in production
